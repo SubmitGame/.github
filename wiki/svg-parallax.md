@@ -6,6 +6,12 @@ Wrap the SVG scene in a link to `https://omgithub.com/`. Keep the README image l
 
 Run `PORT=8874 ./scripts/preview-svg.sh` for the real browser preview. Choose an available port; account for the occupied default port 8765 encountered during the initial run. Leave unrelated servers running.
 
+## Reuse the workflow
+
+Invoke `$animated-svg-parallax` with a reference image to create another layered animation. Read the personal skill at `/Users/igor/.codex/skills/animated-svg-parallax/SKILL.md`. Reuse its manifest-based embedding helper without copying this banner's theme, text, or destination link. Keep this project's existing build script for routine edits.
+
+Use the 2026-09-29 real-output check as the helper baseline: rebuild the current template with the four existing optimized assets; compare the result byte-for-byte with the 1,486,789-byte production SVG; open that generated file in a browser; confirm eight layers, one JPEG, three WebP images, and changing ship and kart transforms. Keep temporary verification files outside the repository.
+
 ## Preserve the rendering decisions
 
 Keep the reconstructed world behind separate adventurer, ship, and kart sprites. Avoid moving clipped pieces of the original flattened banner; expose the clean inpainted scenery when hiding a sprite. Keep text and simple effects as native SVG. Embed image data to avoid external fetches when distributing the SVG. Use JPEG for the opaque world and WebP with alpha for the three cutouts. Expect an approximately 1.4 MiB hybrid deliverable, not a small all-vector illustration.
