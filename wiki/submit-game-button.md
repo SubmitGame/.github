@@ -7,3 +7,7 @@ Coordinate the eight-second energy sequence: charge the controller, expand the r
 Keep gradients, paths, filters, and CSS animation inside the SVG. Draw lettering as paths to avoid font dependencies. Preserve a complete static appearance. Avoid scripts, external resources, and hover-dependent effects in the README image.
 
 Run the real catalog rebuild after changing the asset or generator. Check both published README views. Confirm the SVG loads at 320 pixels, animates without moving the label, stays legible on light and dark backgrounds, and opens the prefilled issue form. Keep any required login page open for the user.
+
+## Animated variant
+
+Preview `variants/index.html` through a local HTTP server. Open `variants/submit-your-game-neon-run.svg` for the standalone Neon Run loop. Keep the scrolling platformer, jumping hero, gold crystals, spaceship, and controller behind stationary path lettering. Honor reduced-motion preferences by default; use the preview’s Play animation control or the SVG’s `#play` fragment to explicitly play the loop. Inspect the full-size and 320-pixel previews on dark and light surfaces. Keep the production button unchanged until selecting this variant.

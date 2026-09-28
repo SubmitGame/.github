@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Run · Submit your game</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#070b18;color:#f2f5ff;font:15px/1.6 system-ui,-apple-system,sans-serif}main{max-width:1280px;margin:auto;padding:54px 42px 64px}.eyebrow{font-size:11px;letter-spacing:.24em;color:#85def4;text-transform:uppercase}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #26304b;padding-bottom:22px}h1{font-size:27px;letter-spacing:-.04em;margin:5px 0;font-weight:650}button{cursor:pointer;background:#19223f;color:#c9f5ff;border:1px solid #536c9e;border-radius:20px;padding:8px 15px;font:inherit;font-size:12px}button:hover{background:#29365b}.tag{border:1px solid #314057;border-radius:30px;padding:7px 13px;color:#a9bdd3;font-size:11px}.stage{padding:52px 0 38px;background:radial-gradient(ellipse,#161a3f60,transparent 70%)}.stage img{width:100%;display:block}a{color:inherit}.stage a{display:block;transition:filter .2s,transform .2s}.stage a:hover{filter:brightness(1.12);transform:translateY(-2px)}a:focus-visible{outline:2px solid #70ffff;outline-offset:8px;border-radius:40px}.details{display:flex;gap:25px;font-size:12px;color:#8d9fbc;padding-bottom:35px}.details span:before{content:'✦';color:#8d78ff;margin-right:9px}.sizes{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{border:1px solid #26304b;border-radius:16px;padding:23px;min-height:181px}.card.light{background:#f0f3fb;color:#526077;border-color:#f0f3fb}.card p{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 22px;color:#8d9fbc}.card.light p{color:#526077}.card img{width:320px;max-width:100%;display:block;margin:auto}footer{margin-top:28px;color:#7688a6;font-size:12px}footer a{color:#a6bbda;text-underline-offset:4px}@media(max-width:700px){main{padding:28px 18px}.sizes{grid-template-columns:1fr}.details{flex-wrap:wrap;gap:8px 20px}.tag{display:none}}
+</style>
+</head>
+<body><main>
+<header><div><div class="eyebrow">Awesome AI Games / Motion study 01</div><h1>Neon Run</h1></div><div class="tag">SVG · Seamless loop · No dependencies</div></header>
+<section class="stage" aria-label="Full-size animated button"><a href="https://github.com/AwesomeClaude/.github/issues/new?title=Submit%20your%20game&amp;body=Paste%20one%20game%20URL%20per%20line%20below%3A%0A" target="_blank" rel="noopener"><img src="submit-your-game-neon-run.svg" alt="Submit your game — animated neon platformer"></a></section>
+<div class="details"><button id="motion" type="button" aria-pressed="false">Play animation</button><span>Live platformer background</span><span>Stationary vector lettering</span><span>Reduced-motion support</span></div>
+<section class="sizes" aria-label="README-size previews"><div class="card"><p>01 / Dark surface · 320 px</p><img src="submit-your-game-neon-run.svg" width="320" alt="Animated button on a dark background"></div><div class="card light"><p>02 / Light surface · 320 px</p><img src="submit-your-game-neon-run.svg" width="320" alt="Animated button on a light background"></div></section>
+<footer><a href="submit-your-game-neon-run.svg">Open standalone animated SVG ↗</a> &nbsp; · &nbsp; 1280 × 340 · Transparent corners · Production button unchanged</footer>
+</main><script>
+const motion=document.getElementById('motion');
+motion.addEventListener('click',()=>{const playing=motion.getAttribute('aria-pressed')!=='true';motion.setAttribute('aria-pressed',String(playing));motion.textContent=playing?'Use system motion preference':'Play animation';document.querySelectorAll('img').forEach(image=>{image.src='submit-your-game-neon-run.svg'+(playing?'#play':'');});});
+</script></body></html>
