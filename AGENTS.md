@@ -8,9 +8,7 @@ For SSH requests here, use the live AgentsWeb Actions runner and `~/.ssh/aiplay-
 
 Open a real test issue automatically after changing the issue catalog workflow. Post the banner, 10–30-minute estimate, and Actions link before analysis. Merge eligible catalog branches directly by default; create an open PR only when manual merge is enabled. Publish the commit, manual PR, or recovery branch and the issue report, including branch README links for added games, before the owner-only 30-minute SSH hold. Keep the same worker and tunnel alive during the hold, including after analysis or publication failure. Skip the hold for non-owner issues. During analysis, SSH into the issue worker; inspect OpenCode records, logs, and processes; and assess progress directly. Report publication and issue-comment links as soon as they appear. Do not wait for the idle period to finish.
 
-## OpenCode smoke command
-
-Run `opencode run -m opencode/muse-spark-1.3-contributor-free hi` to verify the Muse Spark 1.3 model.
+Use the [game discovery dataset](/Users/igor/Documents/Codex/2026-09-08/find-games-last-week-made-with/games.json) as a candidate-game reference. Verify entries before adding them to the catalog.
 
 ## OpenCode source
 
