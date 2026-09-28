@@ -1,6 +1,6 @@
 # Animate Awesome AI Games
 
-Open `awesome-ai-games.svg` in a browser as the self-contained autoplaying deliverable. Download it again after updates; replace any earlier static copy. Avoid relying on image viewers or thumbnails for animation playback. Keep all four embedded PNG assets inside the SVG when copying it. Treat the result as a hybrid SVG: retain the ImageGen raster artwork and edit the native vector typography, crystals, trails, sparks, and animation separately.
+Open `awesome-ai-games.svg` in a browser as the self-contained autoplaying deliverable. Download it again after updates; replace any earlier static copy. Avoid relying on image viewers or thumbnails for animation playback. Keep the embedded JPEG background and three transparent WebP sprites inside the SVG when copying it. Treat the result as a hybrid SVG: retain the ImageGen raster artwork and edit the native vector typography, crystals, trails, sparks, and animation separately.
 
 ## Preview
 
@@ -10,7 +10,7 @@ Move the pointer to compare depth. Use Pause motion, Pointer parallax, Depth, an
 
 ## Edit
 
-Edit `scene.template.svg`; keep the eight named `layer-*` groups separate. Replace artwork in `assets/` only when needed. Read `PROMPTS.md` to reproduce the four built-in ImageGen requests. Run `node svg/build.mjs` to embed the PNG files again and rebuild `awesome-ai-games.svg` without external packages.
+Edit `scene.template.svg`; keep the eight named `layer-*` groups separate. Keep the original PNGs in `assets/` as source artwork. Read `PROMPTS.md` to reproduce the four built-in ImageGen requests. Run `scripts/optimize-svg-assets.sh` after changing a PNG; preserve alpha in the three WebP sprites. Run `node svg/build.mjs` to embed the optimized files again without external packages.
 
 Use these depth planes, back to front:
 

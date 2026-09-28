@@ -1,12 +1,12 @@
 # Maintain the SVG parallax banner
 
-Use `svg/awesome-ai-games.svg` as the portable animation. Edit `svg/scene.template.svg`, then run `node svg/build.mjs`. Keep the original generated PNGs in `svg/assets/` and the exact built-in ImageGen prompt set in `svg/PROMPTS.md`. Preserve transparency rather than drawing opaque rectangles around characters.
+Use `svg/awesome-ai-games.svg` as the portable animation. Edit `svg/scene.template.svg`, then run `node svg/build.mjs`. Keep the original generated PNGs in `svg/assets/` as source artwork and the exact built-in ImageGen prompt set in `svg/PROMPTS.md`. Run `scripts/optimize-svg-assets.sh` to regenerate the embedded JPEG background and alpha WebP sprites. Preserve transparency rather than drawing opaque rectangles around characters.
 
 Run `PORT=8874 ./scripts/preview-svg.sh` for the real browser preview. Choose an available port; account for the occupied default port 8765 encountered during the initial run. Leave unrelated servers running.
 
 ## Preserve the rendering decisions
 
-Keep the reconstructed world behind separate adventurer, ship, and kart sprites. Avoid moving clipped pieces of the original flattened banner; expose the clean inpainted scenery when hiding a sprite. Keep text and simple effects as native SVG. Embed image data to avoid external fetches when distributing the SVG. Expect an approximately 9.3 MiB deliverable rather than a small all-vector illustration.
+Keep the reconstructed world behind separate adventurer, ship, and kart sprites. Avoid moving clipped pieces of the original flattened banner; expose the clean inpainted scenery when hiding a sprite. Keep text and simple effects as native SVG. Embed image data to avoid external fetches when distributing the SVG. Use JPEG for the opaque world and WebP with alpha for the three cutouts. Expect an approximately 1.4 MiB hybrid deliverable, not a small all-vector illustration.
 
 Apply pointer translation to outer depth groups and looping movement to inner groups so transforms compose. Overscan the background to prevent edge gaps. Autoplay the exported SVG by preserving `data-motion="enabled"` on its root and initializing pointer opt-in from that attribute. Keep the HTML preview paused under reduced motion until Play motion is selected. Keep the standalone root responsive to the browser viewport.
 
@@ -28,3 +28,5 @@ Use keyboard activation when browser automation's pointer hit targets are offset
 ## Verify standalone downloads
 
 Check the export separately from the HTML controls. Preserve explicit autoplay in the file; do not depend on a runtime-only preview opt-in. Download through the preview link and compare SHA-256 hashes against the build. Open the byte-identical standalone HTTP SVG and confirm twelve running tracks under reduced motion plus changing transforms across observations. Use this flow to reproduce the corrected 2026-09-28 download regression. Keep the preview paused under reduced motion. Treat local-file browser navigation as unverified when browser policy blocks it. Inspect `svg/standalone-preview.jpg` for the responsive standalone composition.
+
+Check the optimized 2026-09-28 build at 1,486,654 bytes against the previous 9,719,582-byte export; expect an 84.7% reduction. Inspect the actual standalone browser rendering: confirm the JPEG world and three WebP images load, the spaceship transform changes over time, and the kart and runner stay cut out against the world. Check each WebP with `webpmux -info` for its transparency feature. Regenerate all optimized assets with `scripts/optimize-svg-assets.sh` before rebuilding after source PNG edits.
