@@ -2,6 +2,8 @@
 
 Open `awesome-ai-games.svg` in a browser as the self-contained autoplaying deliverable. Download it again after updates; replace any earlier static copy. Avoid relying on image viewers or thumbnails for animation playback. Keep the embedded JPEG background and three transparent WebP sprites inside the SVG when copying it. Treat the result as a hybrid SVG: retain the ImageGen raster artwork and edit the native vector typography, crystals, trails, sparks, and animation separately.
 
+Click the SVG to open `https://omgithub.com/`. Keep the README image link pointed at the same URL.
+
 ## Preview
 
 Run `PORT=8874 ./scripts/preview-svg.sh` from the repository root. Open `http://127.0.0.1:8874/svg/`. Choose another port if it is occupied.

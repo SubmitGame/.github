@@ -2,6 +2,8 @@
 
 Use `svg/awesome-ai-games.svg` as the portable animation. Edit `svg/scene.template.svg`, then run `node svg/build.mjs`. Keep the original generated PNGs in `svg/assets/` as source artwork and the exact built-in ImageGen prompt set in `svg/PROMPTS.md`. Run `scripts/optimize-svg-assets.sh` to regenerate the embedded JPEG background and alpha WebP sprites. Preserve transparency rather than drawing opaque rectangles around characters.
 
+Wrap the SVG scene in a link to `https://omgithub.com/`. Keep the README image link pointed at the same URL. Verify clicks in both the standalone SVG and the README rendering.
+
 Run `PORT=8874 ./scripts/preview-svg.sh` for the real browser preview. Choose an available port; account for the occupied default port 8765 encountered during the initial run. Leave unrelated servers running.
 
 ## Preserve the rendering decisions

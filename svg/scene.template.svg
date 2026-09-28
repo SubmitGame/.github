@@ -13,6 +13,7 @@
   </defs>
   <style>
     .depth { transform:translate(var(--dx,0px),var(--dy,0px)); }
+    #scene-link { cursor:pointer; }
     .world { animation:world 20s ease-in-out infinite; }
     .stars { animation:twinkle 4s ease-in-out infinite alternate; }
     .ship { animation:ship 9s ease-in-out infinite; }
@@ -38,6 +39,7 @@
     [data-paused="true"] * { animation-play-state:paused !important; }
     @media (prefers-reduced-motion:reduce) { :root:not([data-motion="enabled"]) * { animation:none !important; } :root:not([data-motion="enabled"]) .depth { transform:none !important; } }
   </style>
+  <a id="scene-link" href="https://omgithub.com/" target="_top" aria-label="Open OmGithub">
   <!-- 01: Overscanned clean background plate. -->
   <g id="layer-world" class="depth" data-depth="0.12" data-label="World"><g class="world"><image width="1774" height="887" href="{{world}}"/></g></g>
   <!-- 02: Vector atmosphere. -->
@@ -69,6 +71,7 @@
     </g>
     <text x="81" y="511" font-family="Arial,Helvetica,sans-serif" font-size="34" fill="#d1ddff" textLength="640" lengthAdjust="spacingAndGlyphs">A curated field guide to AI-made games</text>
   </g>
+  </a>
   <script><![CDATA[
   (() => {
     const root = document.documentElement;
