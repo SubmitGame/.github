@@ -24,6 +24,7 @@ Copy every live OpenCode session URL printed by `scripts/test-oc.sh` immediately
 - Read [OpenCode batch testing](wiki/oc-batch-testing.md) before changing the batch runner.
 - Read [Submit-game button](wiki/submit-game-button.md) before changing the README call to action.
 - Read [SVG parallax banner](wiki/svg-parallax.md) before changing the animated banner.
+- Read [Issue-analysis animation](wiki/issue-analysis-animation.md) before changing the layered issue banner.
 
 ## Verification
 

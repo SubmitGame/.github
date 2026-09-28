@@ -1,0 +1,7 @@
+{
+  "world": "assets/world.jpg",
+  "robot": "assets/robot.webp",
+  "cards": "assets/cards.webp",
+  "controller": "assets/controller.webp",
+  "pixelFont": "assets/PressStart2P-Regular.ttf"
+}

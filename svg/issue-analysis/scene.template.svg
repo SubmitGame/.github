@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" width="2172" height="724" style="display:block;width:100%;height:auto;background:#051136" role="img" aria-labelledby="title description">
+<title id="title">I'm on it! — Animated game-link analysis</title>
+<desc id="description">A pixel-art robot investigates game links in a moonlit world. An independent robot, floating catalog cards and controller move over clean reconstructed scenery. An animated scan beam, starlight and data pixels add depth. Analyzing game links · 10–30 minutes. Move the pointer for parallax in interactive SVG mode. Respect reduced motion unless playback is explicitly enabled.</desc>
+<metadata id="font-license">Copyright 2012 The Press Start 2P Project Authors (cody@zone38.net), with Reserved Font Name "Press Start 2P".
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.</metadata>
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff5b8"/><stop offset=".45" stop-color="#ffdf58"/><stop offset=".46" stop-color="#ffca32"/><stop offset="1" stop-color="#f39726"/></linearGradient>
+  <linearGradient id="beam"><stop stop-color="#38cdff" stop-opacity="0"/><stop offset=".8" stop-color="#38cdff" stop-opacity=".12"/><stop offset="1" stop-color="#9cffff" stop-opacity=".3"/></linearGradient>
+  <linearGradient id="sweep"><stop stop-color="#64eaff" stop-opacity="0"/><stop offset=".5" stop-color="#bfffff" stop-opacity=".65"/><stop offset="1" stop-color="#64eaff" stop-opacity="0"/></linearGradient>
+  <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="4"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="headline-shadow" x="-10%" y="-15%" width="120%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="0" flood-color="#080b20"/></filter>
+  <clipPath id="pill-clip"><rect x="696" y="308" width="787" height="73" rx="32"/></clipPath>
+  <g id="star"><path d="M0-9V9M-9 0H9" stroke="#a5edff" stroke-width="2"/><rect x="-2" y="-2" width="4" height="4" fill="white"/></g>
+</defs>
+<style>
+@font-face{font-family:Pixel;src:url("{{pixelFont}}") format("truetype");font-weight:400 900;font-display:block;}
+.depth{transform:translate(var(--dx,0px),var(--dy,0px))}
+.world-loop{animation:world 22s ease-in-out infinite}
+.robot-loop{animation:robot 3.8s ease-in-out infinite;transform-origin:445px 508px}
+.cards-loop{animation:cards 7s ease-in-out infinite;transform-origin:1825px 236px}
+.controller-loop{animation:controller 5s ease-in-out infinite;transform-origin:1805px 627px}
+.twinkle{animation:twinkle 3.7s ease-in-out infinite alternate}.twinkle.late{animation-delay:-2.4s}
+.beam-loop{animation:beam 4.2s ease-in-out infinite}
+.data-pixel{animation:data 4s ease-in-out infinite}.data-pixel.p2{animation-delay:-1.3s}.data-pixel.p3{animation-delay:-2.6s}
+.sweep{animation:sweep 5s ease-in-out infinite}.signal{animation:signal 2.6s ease-in-out infinite}
+.meteor{animation:meteor 12s linear infinite}.ripples{animation:twinkle 4.4s ease-in-out infinite alternate}
+@keyframes world{0%,100%{transform:translate(-2px,0)}50%{transform:translate(3px,2px)}}
+@keyframes robot{0%,100%{transform:translate(0,0) rotate(-.6deg)}50%{transform:translate(5px,-10px) rotate(.8deg)}}
+@keyframes cards{0%,100%{transform:translate(0,5px) rotate(-.4deg)}50%{transform:translate(-7px,-7px) rotate(.5deg)}}
+@keyframes controller{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+@keyframes twinkle{from{opacity:.2}to{opacity:.95}}
+@keyframes beam{0%,100%{opacity:.45}50%{opacity:.9}}
+@keyframes data{0%{transform:translate(-20px,15px);opacity:0}25%{opacity:.9}80%{opacity:.75}100%{transform:translate(55px,-24px);opacity:0}}
+@keyframes sweep{0%,15%{transform:translateX(-160px);opacity:0}22%{opacity:.5}65%{opacity:.5}75%,100%{transform:translateX(880px);opacity:0}}
+@keyframes signal{0%,100%{opacity:.7}50%{opacity:1}}
+@keyframes meteor{0%,70%{transform:translate(0,0);opacity:0}72%{opacity:.9}82%{transform:translate(-270px,125px);opacity:0}100%{transform:translate(-270px,125px);opacity:0}}
+[data-paused="true"] *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){:root:not([data-motion="enabled"]) *{animation:none!important}:root:not([data-motion="enabled"]) .depth{transform:none!important}:root:not([data-motion="enabled"]) .meteor,:root:not([data-motion="enabled"]) .sweep{opacity:0}}
+</style>
+<g id="layer-world" class="depth" data-depth=".12" data-label="Clean world"><g class="world-loop"><image x="-16" y="-6" width="2204" height="736" preserveAspectRatio="none" href="{{world}}"/></g></g>
+<g id="layer-stars" class="depth" data-depth=".23" data-label="Starlight">
+ <g class="twinkle" filter="url(#glow)"><use href="#star" x="574" y="62"/><use href="#star" x="1000" y="85"/><use href="#star" x="2074" y="45"/></g>
+ <g class="twinkle late" filter="url(#glow)"><use href="#star" x="828" y="54"/><use href="#star" x="1450" y="65"/><use href="#star" x="384" y="54"/></g>
+ <path class="meteor" d="m1280 38 68-32" stroke="url(#sweep)" stroke-width="3" fill="none"/>
+ <g class="ripples" stroke="#ffe4ab" stroke-width="2" opacity=".6"><path d="M1170 590h35m-24 12h40m-61 13h38m-16 14h36m-48 13h26"/></g>
+</g>
+<g id="layer-beam" class="depth" data-depth=".38" data-label="Scan beam"><g class="beam-loop"><path d="M1472 339 1734 220 1711 442Z" fill="url(#beam)"/><path d="m1474 339 241-13" stroke="#75ebff" stroke-opacity=".25" stroke-width="2" stroke-dasharray="4 12"/></g></g>
+<g id="layer-cards" class="depth" data-depth=".58" data-label="Game cards"><g class="cards-loop"><image x="1535" y="13" width="608" height="450" preserveAspectRatio="none" href="{{cards}}"/></g></g>
+<g id="layer-robot" class="depth" data-depth=".86" data-label="Robot"><g class="robot-loop"><image x="259" y="188" width="402" height="331" preserveAspectRatio="none" href="{{robot}}"/></g></g>
+<g id="layer-controller" class="depth" data-depth="1.12" data-label="Controller"><g class="controller-loop"><image x="1696" y="519" width="217" height="145" href="{{controller}}"/></g></g>
+<g id="layer-pixels" class="depth" data-depth=".78" data-label="Data pixels" fill="none" stroke="#75f1ff" stroke-width="3" filter="url(#glow)">
+ <g class="data-pixel"><rect x="1558" y="193" width="15" height="15"/><rect x="1547" y="411" width="10" height="10"/></g>
+ <g class="data-pixel p2"><rect x="1621" y="161" width="9" height="9"/><rect x="1658" y="449" width="12" height="12"/></g>
+ <g class="data-pixel p3"><rect x="1530" y="270" width="7" height="7"/><rect x="1596" y="376" width="10" height="10"/></g>
+</g>
+<g id="layer-type" class="depth" data-depth=".06" data-label="Typography">
+ <g fill="url(#gold)" stroke="#ffe999" stroke-width="2" class="signal" filter="url(#glow)"><path d="m671 163 24 29-12 9-26-24Z m-37 53 43 6-1 15-42 1Z m35 65 21-28 12 10-22 28Z m823-120-24 29 12 9 26-24Z m34 54-43 6 1 15 42 1Z m-35 64-21-28-12 10 22 28Z"/></g>
+ <text x="1088" y="277" text-anchor="middle" textLength="701" lengthAdjust="spacingAndGlyphs" font-family="Pixel,monospace" font-size="153" font-weight="900" fill="url(#gold)" stroke="#0a0a16" stroke-width="12" stroke-linejoin="miter" paint-order="stroke fill" filter="url(#headline-shadow)">I’m on it!</text>
+ <rect x="696" y="308" width="787" height="73" rx="32" fill="#021d42" fill-opacity=".91" stroke="#30c9ff" stroke-width="3" filter="url(#glow)"/>
+ <g clip-path="url(#pill-clip)"><rect class="sweep" x="696" y="309" width="120" height="71" fill="url(#sweep)"/></g>
+ <text x="1089" y="357" text-anchor="middle" font-family="Pixel,monospace" font-size="29" font-weight="bold" fill="#ddfaff" textLength="710" lengthAdjust="spacingAndGlyphs">Analyzing game links · 10–30 minutes</text>
+</g>
+<script><![CDATA[
+(() => {
+ const root=document.documentElement, layers=[...root.querySelectorAll('.depth')], reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let x=0,y=0,tx=0,ty=0,raf=0,enabled=true,paused=false,strength=1;
+ const blocked=()=>reduced.matches && root.dataset.motion!=='enabled';
+ function reset(){if(raf)cancelAnimationFrame(raf);raf=0;x=y=tx=ty=0;layers.forEach(l=>{l.style.removeProperty('--dx');l.style.removeProperty('--dy');});}
+ function frame(){raf=0;if(paused||!enabled||blocked())return;x+=(tx-x)*.09;y+=(ty-y)*.09;layers.forEach(l=>{const d=Number(l.dataset.depth);l.style.setProperty('--dx',`${(x*d).toFixed(3)}px`);l.style.setProperty('--dy',`${(y*d).toFixed(3)}px`);});if(Math.abs(tx-x)+Math.abs(ty-y)>.02)raf=requestAnimationFrame(frame);}
+ function schedule(){if(!raf&&!paused&&enabled&&!blocked())raf=requestAnimationFrame(frame);}
+ root.addEventListener('pointermove',e=>{if(paused||!enabled||blocked())return;const r=root.getBoundingClientRect();tx=((e.clientX-r.left)/r.width-.5)*32*strength;ty=((e.clientY-r.top)/r.height-.5)*18*strength;schedule();});
+ root.addEventListener('pointerleave',()=>{tx=ty=0;schedule();});
+ reduced.addEventListener('change',()=>{delete root.dataset.motion;reset();});
+ window.sceneControls={
+  pause(value){paused=Boolean(value);root.dataset.paused=String(paused);if(paused){if(raf)cancelAnimationFrame(raf);raf=0;}else{root.dataset.motion='enabled';schedule();}},
+  parallax(value){enabled=Boolean(value);reset();},
+  strength(value){strength=Math.max(0,Math.min(2,Number(value)||0));reset();},
+  layer(id,visible){const layer=layers.find(l=>l.id===id);if(layer)layer.style.display=visible?'':'none';},
+  layers:layers.map(l=>({id:l.id,label:l.dataset.label,depth:Number(l.dataset.depth)}))
+ };
+})();
+]]></script>
+</svg>
