@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1774 887" width="1774" height="887" role="img" aria-labelledby="title description">
+  <title id="title">Awesome AI Games — animated parallax</title>
+  <desc id="description">A red-scarfed adventurer leaps between floating islands, a spaceship flies through purple space, and a robot races a neon kart. Eight independent depth layers. Move the pointer for parallax. Respect reduced motion preferences.</desc>
+  <defs>
+    <linearGradient id="white" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#f3f7ff"/><stop offset="1" stop-color="#b9d1ff"/></linearGradient>
+    <linearGradient id="titleColor"><stop stop-color="#00e9ff"/><stop offset=".23" stop-color="#39c7ff"/><stop offset=".43" stop-color="#9970ff"/><stop offset=".75" stop-color="#e16eff"/><stop offset="1" stop-color="#f799ff"/></linearGradient>
+    <linearGradient id="exhaust"><stop stop-color="#237aff" stop-opacity="0"/><stop offset=".7" stop-color="#00bfff" stop-opacity=".55"/><stop offset="1" stop-color="#aaffff"/></linearGradient>
+    <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#fffbb2"/><stop offset=".5" stop-color="#ffd326"/><stop offset="1" stop-color="#ff7c13"/></linearGradient>
+    <linearGradient id="shade"><stop stop-color="#020820" stop-opacity=".22"/><stop offset=".43" stop-color="#020820" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="textGlow" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="4"/><feComponentTransfer><feFuncA type="linear" slope=".65"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g id="gem"><path d="M0 -32 19 0 0 34 -19 0Z" fill="url(#gold)" stroke="#ffffb0" stroke-width="2"/><path d="M0 -32 0 34M-19 0 0 7 19 0" fill="none" stroke="#fff9b9" stroke-width="1.8"/><path d="M0 -32 -19 0 0 7Z" fill="#fff3a0" opacity=".65"/></g>
+  </defs>
+  <style>
+    .depth { transform:translate(var(--dx,0px),var(--dy,0px)); }
+    .world { animation:world 20s ease-in-out infinite; }
+    .stars { animation:twinkle 4s ease-in-out infinite alternate; }
+    .ship { animation:ship 9s ease-in-out infinite; }
+    .runner { animation:jump 4.8s ease-in-out infinite; }
+    .crystal { animation:float 3s ease-in-out infinite; }
+    .crystal.second { animation-delay:-1.5s; }
+    .kart { animation:drift 6s ease-in-out infinite; }
+    .engine { animation:engine .65s ease-in-out infinite alternate; }
+    .chevrons { animation:pulse 1.2s ease-in-out infinite; }
+    .spark { animation:spark 1.1s linear infinite; }
+    .spark.s2 { animation-delay:-.3s; }
+    .spark.s3 { animation-delay:-.7s; }
+    @keyframes world { 0%,100% { transform:translate(-3px,-2px) scale(1.009); } 50% { transform:translate(-9px,-5px) scale(1.013); } }
+    @keyframes ship { 0%,100% { transform:translate(-9px,5px); } 50% { transform:translate(10px,-7px); } }
+    @keyframes jump { 0%,100% { transform:translate(-3px,7px) rotate(-1deg); } 50% { transform:translate(5px,-12px) rotate(1deg); } }
+    @keyframes float { 0%,100% { transform:translateY(5px); } 50% { transform:translateY(-8px); } }
+    @keyframes drift { 0%,100% { transform:translate(-8px,-2px) rotate(-.5deg); } 50% { transform:translate(12px,5px) rotate(.5deg); } }
+    @keyframes engine { from { opacity:.65; } to { opacity:1; } }
+    @keyframes twinkle { from { opacity:.35; } to { opacity:.95; } }
+    @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } }
+    @keyframes spark { from { transform:translate(0,0); opacity:.95; } to { transform:translate(-150px,-45px); opacity:0; } }
+    .runner { transform-origin:1000px 265px; } .kart { transform-origin:1160px 720px; }
+    [data-paused="true"] * { animation-play-state:paused !important; }
+    @media (prefers-reduced-motion:reduce) { :root:not([data-motion="enabled"]) * { animation:none !important; } :root:not([data-motion="enabled"]) .depth { transform:none !important; } }
+  </style>
+  <!-- 01: Overscanned clean background plate. -->
+  <g id="layer-world" class="depth" data-depth="0.12" data-label="World"><g class="world"><image width="1774" height="887" href="{{world}}"/></g></g>
+  <!-- 02: Vector atmosphere. -->
+  <g id="layer-stars" class="depth" data-depth="0.2" data-label="Starlight" pointer-events="none">
+    <g class="stars" fill="#c2caff" filter="url(#glow)"><path d="M1420 47v14m-7-7h14M1680 325v16m-8-8h16M1324 116v10m-5-5h10M1578 43v8m-4-4h8" stroke="#c0d6ff"/><circle cx="1457" cy="340" r="2"/><circle cx="1620" cy="65" r="2"/><circle cx="1730" cy="202" r="1.7"/></g>
+  </g>
+  <!-- 03: Ship and paired engine trails move together. -->
+  <g id="layer-spaceship" class="depth" data-depth="0.4" data-label="Spaceship"><g class="ship">
+    <g class="engine" filter="url(#glow)"><path d="M1240 325 1495 170" stroke="url(#exhaust)" stroke-width="8"/><path d="M1280 377 1521 226" stroke="url(#exhaust)" stroke-width="7"/></g>
+    <image x="1404" y="80" width="354" height="236" href="{{spaceship}}"/>
+  </g></g>
+  <!-- 04: Independent adventurer cutout. -->
+  <g id="layer-runner" class="depth" data-depth="0.6" data-label="Adventurer"><g class="runner"><image x="856" y="135" width="279" height="234.34" href="{{runner}}"/></g></g>
+  <!-- 05: Editable SVG collectible crystals. -->
+  <g id="layer-crystals" class="depth" data-depth="0.7" data-label="Crystals" filter="url(#glow)"><g transform="translate(866 313)"><g class="crystal"><use href="#gem"/></g></g><g transform="translate(1162 310)"><g class="crystal second"><use href="#gem"/></g></g></g>
+  <!-- 06: Road speed cues behind the kart. -->
+  <g id="layer-speed" class="depth" data-depth="0.85" data-label="Speed FX">
+    <g transform="translate(769 551) rotate(18)" fill="url(#gold)" stroke="#fffca8" stroke-width="1.3" filter="url(#glow)"><g class="chevrons"><path d="m0 -29 24 0 32 29-32 29H0L31 0Z"/><path d="m69 -29 24 0 32 29-32 29H69L100 0Z"/><path d="m138 -29 24 0 32 29-32 29H138L169 0Z"/></g></g>
+    <g stroke-linecap="round" filter="url(#glow)"><g class="spark" stroke="#ffbc42" stroke-width="3"><path d="m945 721-86-36m83 25-48-50m434 89 48 15"/></g><g class="spark s2" stroke="#ffe5a0" stroke-width="2"><path d="m987 746-97-33m66 5-34-30m370 95 85 25"/></g><g class="spark s3" stroke="#ff862e" stroke-width="4"><path d="m941 707-75-23m129 45-64-30"/></g></g>
+  </g>
+  <!-- 07: Foreground kart has the greatest pointer displacement. -->
+  <g id="layer-kart" class="depth" data-depth="1.15" data-label="Racing kart"><g class="kart"><image x="864" y="432" width="590" height="393.33" href="{{kart}}"/></g></g>
+  <!-- 08: Keep the original copy as crisp selectable vector text. -->
+  <g id="layer-type" class="depth" data-depth="0.07" data-label="Typography">
+    <rect width="1774" height="887" fill="url(#shade)" pointer-events="none"/>
+    <g font-family="Arial,Helvetica,sans-serif" font-weight="900" filter="url(#textGlow)">
+      <text x="80" y="334" font-size="115" textLength="617" lengthAdjust="spacingAndGlyphs" fill="url(#white)">AWESOME</text>
+      <text x="80" y="458" font-size="131" textLength="650" lengthAdjust="spacingAndGlyphs" fill="url(#titleColor)">AI GAMES</text>
+    </g>
+    <text x="81" y="511" font-family="Arial,Helvetica,sans-serif" font-size="34" fill="#d1ddff" textLength="640" lengthAdjust="spacingAndGlyphs">A curated field guide to AI-made games</text>
+  </g>
+  <script><![CDATA[
+  (() => {
+    const root = document.documentElement;
+    const layers = [...root.querySelectorAll('.depth')];
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let targetX=0, targetY=0, x=0, y=0, raf=0, enabled=true, strength=1, paused=false, optedIn=false;
+    const motionBlocked=()=>reduced.matches && !optedIn;
+    function render() {
+      raf=0;
+      if (motionBlocked() || paused || !enabled) return;
+      x+=(targetX-x)*.085; y+=(targetY-y)*.085;
+      layers.forEach(layer => {
+        const d=Number(layer.dataset.depth);
+        layer.style.setProperty('--dx',`${(x*d).toFixed(3)}px`);
+        layer.style.setProperty('--dy',`${(y*d).toFixed(3)}px`);
+      });
+      if (Math.abs(targetX-x)+Math.abs(targetY-y)>.02) raf=requestAnimationFrame(render);
+    }
+    function schedule(){ if(!raf && !paused && enabled && !motionBlocked()) raf=requestAnimationFrame(render); }
+    function reset(){ targetX=targetY=x=y=0; layers.forEach(l=>{l.style.removeProperty('--dx');l.style.removeProperty('--dy');}); }
+    root.addEventListener('pointermove',e=>{
+      if(!enabled || paused || motionBlocked()) return;
+      const r=root.getBoundingClientRect();
+      targetX=((e.clientX-r.left)/r.width-.5)*42*strength;
+      targetY=((e.clientY-r.top)/r.height-.5)*28*strength;
+      schedule();
+    });
+    root.addEventListener('pointerleave',()=>{targetX=targetY=0;schedule();});
+    reduced.addEventListener('change',()=>{optedIn=false;delete root.dataset.motion;reset();});
+    window.sceneControls={
+      pause(value){paused=Boolean(value);if(!paused && reduced.matches){optedIn=true;root.dataset.motion="enabled";}root.dataset.paused=String(paused);if(!paused)schedule();},
+      parallax(value){enabled=Boolean(value);reset();},
+      strength(value){strength=Math.max(0,Math.min(2,Number(value)||0));reset();},
+      layer(id,visible){const layer=layers.find(l=>l.id===id);if(layer)layer.style.display=visible?'':'none';},
+      layers:layers.map(l=>({id:l.id,label:l.dataset.label,depth:Number(l.dataset.depth)}))
+    };
+  })();
+  ]]></script>
+</svg>
