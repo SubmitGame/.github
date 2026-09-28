@@ -1,6 +1,6 @@
 # Animate Awesome AI Games
 
-Open `awesome-ai-games.svg` as the self-contained deliverable. Keep all four embedded PNG assets inside the SVG when copying it. Treat the result as a hybrid SVG: retain the ImageGen raster artwork and edit the native vector typography, crystals, trails, sparks, and animation separately.
+Open `awesome-ai-games.svg` in a browser as the self-contained autoplaying deliverable. Download it again after updates; replace any earlier static copy. Avoid relying on image viewers or thumbnails for animation playback. Keep all four embedded PNG assets inside the SVG when copying it. Treat the result as a hybrid SVG: retain the ImageGen raster artwork and edit the native vector typography, crystals, trails, sparks, and animation separately.
 
 ## Preview
 

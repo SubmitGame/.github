@@ -8,7 +8,7 @@ Run `PORT=8874 ./scripts/preview-svg.sh` for the real browser preview. Choose an
 
 Keep the reconstructed world behind separate adventurer, ship, and kart sprites. Avoid moving clipped pieces of the original flattened banner; expose the clean inpainted scenery when hiding a sprite. Keep text and simple effects as native SVG. Embed image data to avoid external fetches when distributing the SVG. Expect an approximately 9.3 MiB deliverable rather than a small all-vector illustration.
 
-Apply pointer translation to outer depth groups and looping movement to inner groups so transforms compose. Overscan the background to prevent edge gaps. Respect reduced motion by default, and enable motion only through the preview's explicit Play motion control when that preference is active.
+Apply pointer translation to outer depth groups and looping movement to inner groups so transforms compose. Overscan the background to prevent edge gaps. Autoplay the exported SVG by preserving `data-motion="enabled"` on its root and initializing pointer opt-in from that attribute. Keep the HTML preview paused under reduced motion until Play motion is selected. Keep the standalone root responsive to the browser viewport.
 
 ## Repeat the verified flow
 
@@ -24,3 +24,7 @@ Use the 2026-09-28 real in-app browser run as the baseline:
 - Restore temporary browser emulation settings and retain the finished preview tab.
 
 Use keyboard activation when browser automation's pointer hit targets are offset by display scaling. Preserve `svg/preview.jpg` as the captured final composition. Do not mistake a screenshot for animation verification; inspect live movement and track state as above.
+
+## Verify standalone downloads
+
+Check the export separately from the HTML controls. Preserve explicit autoplay in the file; do not depend on a runtime-only preview opt-in. Download through the preview link and compare SHA-256 hashes against the build. Open the byte-identical standalone HTTP SVG and confirm twelve running tracks under reduced motion plus changing transforms across observations. Use this flow to reproduce the corrected 2026-09-28 download regression. Keep the preview paused under reduced motion. Treat local-file browser navigation as unverified when browser policy blocks it. Inspect `svg/standalone-preview.jpg` for the responsive standalone composition.

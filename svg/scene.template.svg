@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1774 887" width="1774" height="887" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1774 887" width="1774" height="887" style="display:block;width:100%;height:auto" role="img" data-motion="enabled" aria-labelledby="title description">
   <title id="title">Awesome AI Games — animated parallax</title>
-  <desc id="description">A red-scarfed adventurer leaps between floating islands, a spaceship flies through purple space, and a robot races a neon kart. Eight independent depth layers. Move the pointer for parallax. Respect reduced motion preferences.</desc>
+  <desc id="description">A red-scarfed adventurer leaps between floating islands, a spaceship flies through purple space, and a robot races a neon kart. Eight independent depth layers. Move the pointer for parallax. Autoplay the exported animation; use the preview controls to pause.</desc>
   <defs>
     <linearGradient id="white" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#f3f7ff"/><stop offset="1" stop-color="#b9d1ff"/></linearGradient>
     <linearGradient id="titleColor"><stop stop-color="#00e9ff"/><stop offset=".23" stop-color="#39c7ff"/><stop offset=".43" stop-color="#9970ff"/><stop offset=".75" stop-color="#e16eff"/><stop offset="1" stop-color="#f799ff"/></linearGradient>
@@ -74,7 +74,7 @@
     const root = document.documentElement;
     const layers = [...root.querySelectorAll('.depth')];
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-    let targetX=0, targetY=0, x=0, y=0, raf=0, enabled=true, strength=1, paused=false, optedIn=false;
+    let targetX=0, targetY=0, x=0, y=0, raf=0, enabled=true, strength=1, paused=false, optedIn=root.dataset.motion==="enabled";
     const motionBlocked=()=>reduced.matches && !optedIn;
     function render() {
       raf=0;
@@ -97,7 +97,7 @@
       schedule();
     });
     root.addEventListener('pointerleave',()=>{targetX=targetY=0;schedule();});
-    reduced.addEventListener('change',()=>{optedIn=false;delete root.dataset.motion;reset();});
+    reduced.addEventListener('change',reset);
     window.sceneControls={
       pause(value){paused=Boolean(value);if(!paused && reduced.matches){optedIn=true;root.dataset.motion="enabled";}root.dataset.paused=String(paused);if(!paused)schedule();},
       parallax(value){enabled=Boolean(value);reset();},
