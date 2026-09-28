@@ -27,4 +27,4 @@ Embed with `<object type="image/svg+xml" data="awesome-ai-games.svg"></object>` 
 
 ## Verify
 
-Repeat the real browser flow after edits: load the preview, inspect all layers, move the pointer, pause/resume, hide/restore the kart, disable/re-enable parallax, and inspect a narrow viewport. Check both reduced motion and explicit playback. Read `../wiki/svg-parallax.md` for the recorded end-to-end evidence. View `preview.png` for the captured browser result.
+Repeat the real browser flow after edits: load the preview, inspect all layers, move the pointer, pause/resume, hide/restore the kart, disable/re-enable parallax, and inspect a narrow viewport. Check both reduced motion and explicit playback. Read `../wiki/svg-parallax.md` for the recorded end-to-end evidence. View `preview.jpg` for the captured browser result.

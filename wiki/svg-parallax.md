@@ -23,4 +23,4 @@ Use the 2026-09-28 real in-app browser run as the baseline:
 - Confirm reduced motion produces a still scene; select Play motion and confirm twelve running tracks without changing the system preference.
 - Restore temporary browser emulation settings and retain the finished preview tab.
 
-Use keyboard activation when browser automation's pointer hit targets are offset by display scaling. Preserve `svg/preview.png` as the captured final composition. Do not mistake a screenshot for animation verification; inspect live movement and track state as above.
+Use keyboard activation when browser automation's pointer hit targets are offset by display scaling. Preserve `svg/preview.jpg` as the captured final composition. Do not mistake a screenshot for animation verification; inspect live movement and track state as above.
