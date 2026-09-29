@@ -33,8 +33,8 @@ jobs:
           log_url="${job_url:-$run_url}"
           echo "ISSUE_CATALOG_RUN_URL=$log_url" >> "$GITHUB_ENV"
           banner="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_SHA/assets/issue-analysis-banner.svg"
-          printf '![I’m on it! Analyzing game links — 10–30 minutes.](%s)\n\nI’m on it. Analyzing the links may take 10–30 minutes.\n\n[Follow the Actions run](%s).\n' \
-            "$banner" "$log_url" > "$RUNNER_TEMP/issue-started.md"
+          printf '[![I’m on it! Analyzing game links — 10–30 minutes.](%s)](%s)\n\nI’m on it. Analyzing the links may take 10–30 minutes.\n\n[Follow the Actions run](%s).\n' \
+            "$banner" "$run_url" "$log_url" > "$RUNNER_TEMP/issue-started.md"
           comment_id="$(gh api --method POST "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" \
             -f body="$(cat "$RUNNER_TEMP/issue-started.md")" --jq '.id')"
           echo "ISSUE_START_COMMENT_ID=$comment_id" >> "$GITHUB_ENV"

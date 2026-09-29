@@ -1,6 +1,6 @@
 # Submit-game button
 
-Edit the self-contained vector artwork at `assets/submit-your-game.svg`. Regenerate both the root and organization-profile READMEs with `./scripts/games.sh`. Render the button at 320 pixels wide. Preserve transparent corners, rounded edges, stationary pixel lettering, and the prefilled AwesomeClaude issue link.
+Edit the self-contained vector artwork at `assets/submit-your-game.svg`. Regenerate both the root and organization-profile READMEs with `./scripts/games.sh`. Render the button at 320 pixels wide. Preserve transparent corners, rounded edges, stationary pixel lettering, and the prefilled SubmitGame issue link.
 
 Coordinate the eight-second energy sequence: charge the controller, expand the ripple, illuminate crystalline edges, and send runners around the border. Drift distant particles slowly and foreground sparks quickly. Contract choreographed node pairs while brightening their cyan connections. Keep the central label dark and readable.
 

@@ -2,7 +2,7 @@
 
 Treat the issue, PR, comment, and Actions numbers below as private predecessor records. Do not look them up under the new organization: Git migration preserves commits, not GitHub discussions or runs. Inspect the committed game analysis records for public evidence.
 
-Post the animated `assets/issue-analysis-banner.svg` and “I’m on it. Analyzing the links may take 10–30 minutes.” as the first job step. Link to the current attempt’s analysis job; use the run URL if job lookup fails. Pin the SVG URL to the workflow commit. Keep the issue body unchanged.
+Post the animated `assets/issue-analysis-banner.svg` and “I’m on it. Analyzing the links may take 10–30 minutes.” as the first job step. Link the banner to the Actions run. Link the text to the current attempt’s analysis job; use the run URL if job lookup fails. Pin the SVG URL to the workflow commit. Keep the issue body unchanged.
 
 Start every submitted game concurrently after preparing its session. Allocate one analysis worker per submitted link. Apply the per-game deadline independently. Budget runner memory and provider capacity for the entire batch. Publish after all analyses finish.
 

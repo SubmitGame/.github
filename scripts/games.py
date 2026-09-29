@@ -322,9 +322,12 @@ def log(message):
 
 
 def catalog_readme(entries, link_prefix=''):
-    out = ['# Game catalog', '', 'Browse the rated games. Open each game page for evidence and play instructions.',
+    out = ['# Game catalog', '']
+    if not link_prefix:
+        out += ['<a href="https://omgithub.com/"><img src="svg/awesome-ai-games.svg" alt="Awesome AI Games animated banner — open OmGithub" width="1774"></a>', '']
+    out += ['Browse the rated games. Open each game page for evidence and play instructions.',
            'Browse games with or without public source code in the same ranking and screenshot gallery.', '',
-           '<a href="https://github.com/AwesomeClaude/.github/issues/new?title=Submit%20your%20game&amp;body=Paste%20one%20game%20URL%20per%20line%20below%3A%0A">'
+           '<a href="https://github.com/SubmitGame/.github/issues/new?title=Submit%20your%20game&amp;body=Paste%20one%20game%20URL%20per%20line%20below%3A%0A">'
            f'<img src="{link_prefix}assets/submit-your-game.svg" width="320" alt="Submit your game"></a>', '',
            'Add games with `./scripts/games.sh <game-url> [more-urls...]` or '
            '`./scripts/games.sh --file links.txt`. Rebuild every page and this index with '
