@@ -1,0 +1,164 @@
+{
+  "catalog_slug": null,
+  "creation_models": [
+    {
+      "evidence_url": "https://bioneural.de/",
+      "name": "Opus 5.5"
+    }
+  ],
+  "technologies": [
+    {
+      "category": "rendering",
+      "evidence_url": "https://bioneural.de/",
+      "name": "Three.js",
+      "version": "0.169.0"
+    },
+    {
+      "category": "language",
+      "evidence_url": "https://bioneural.de/",
+      "name": "JavaScript",
+      "version": null
+    }
+  ],
+  "source_url": "https://bioneural.de/",
+  "repository_url": null,
+  "title": "BIONEURAL",
+  "source_analysis": [
+    {
+      "finding": "Page title and tagline identify BIONEURAL as a multiplayer city shooter with rooftops, subways and back alleys; menu offers PLAY OFFLINE, PLAY COMPETITIVE 5v5 DUST, PLAY WITH FRIENDS party link, spectate, settings and how-to-play.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "How-to-play documents free-for-all first to 25 kills or best score after 5 minutes, 20 bots, 9 rotating maps plus competitive DUST, destructible buildings, jump pads, heal/Overcharge pickups, airstrike and 5-kill-streak nuke, knockback, persistent stats/leaderboards.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Maps section lists 10 playable maps: TSUNAMI, NEON CITY, DUNE, SKYREACH, CASTLE, ZOO, SAKURA, VOLCANO, BIONEURAL HQ in rotation plus competitive de_dust2-style DUST with thumbnails and per-map rules for waves/sharks/boats, trains/cars/sandworm/zeppelins, Leviathan/sky cannons, siege/chandeliers and more.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Competitive 5v5 documents Counter-Strike 1.6-style rules: 5v5, one life per round, 15s freeze plus 1:45 rounds, MR8 first to 9, side switch, bomb plant/defuse, economy, buy menu, dropped guns, flashbangs and vote-kick.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Keyboard and mouse controls documented: WASD move, mouse aim, left-click fire, Space double-jump, Shift/C dash, 1-6 weapons, R reload, right-click railgun zoom, E drive/helm, G airstrike, N nuke, V voice, Enter chat, Tab scoreboard, Esc menu; left-handed IJKL/arrows variant.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Phone/tablet touch controls documented with dual-thumb move/look, FIRE, JUMP/DASH, reload, next weapon, airstrike, drive, voice, chat, scoreboard and menu buttons; page advertises Phone/Tablet platforms and turn-sideways hint.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Controller support documented: left/right sticks, RT fire, LT scope/dash, A jump, B dash, X reload, Y/RB next weapon, LB previous, airstrike/nuke buttons; Xbox, PlayStation and Switch Pro plug-in-and-play stated.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Multiplayer structure: same-lobby up to 30 players with bots filling empty slots, offline solo-vs-bots mode, 5v5 competitive with bots filling empty places, party links for friends on same side, proximity voice, spectate mode and friends invites.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Import map pins Three.js 0.169.0 from jsdelivr and game boots from js/main.js ES module; manifest.json defines installable fullscreen landscape PWA named BIONEURAL.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Credits line attributes game to CrazyDude made with Opus 5.5 with contact game@bioneural.de; no public GitHub source repository link found on page and gh api could not be used because no GH_TOKEN is available in this environment.",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "finding": "Six-weapon arsenal documented: Pulse Rifle, Scattergun, Rocket Launcher with rocket-jump, cookable Dynamite, wall-penetrating Railgun, 18-second Smoke grenade, plus drivable cars/boats and map vehicles.",
+      "url": "https://bioneural.de/"
+    }
+  ],
+  "screenshots": [
+    {
+      "observation": "Aerial low-poly city map with apartment blocks, streets, cars, trees, park pond and orange explosion effects mid-frame; broad readable shooter arena layout with flat-shaded buildings and foggy distance.",
+      "url": "https://bioneural.de/assets/maps/city.jpg"
+    },
+    {
+      "observation": "Floating sky islands connected by bridges with towers, windmill, trees, glowing central spire beam and explosion flash; low-poly stylized 3D with washed-out cloudy background.",
+      "url": "https://bioneural.de/assets/maps/sky.jpg"
+    },
+    {
+      "observation": "Desert town and road/rail network viewed from behind large zeppelins/airships with bridge, river, palms, cars and buildings below; hazy lighting and simple flat textures.",
+      "url": "https://bioneural.de/assets/maps/sinai.jpg"
+    },
+    {
+      "observation": "Dense sandstone Middle-Eastern town of flat-roofed blocks and alleys recreating de_dust2 layout with faint projectile tracer; blocky low-detail geometry, flat lighting, no HUD visible.",
+      "url": "https://bioneural.de/assets/maps/d2.jpg"
+    }
+  ],
+  "screenshot_based_score": {
+    "reason": "Four inspected map renders are the game's own low-poly 3D output with coherent stylized art, large readable arenas and effects (explosions, beams, airships). Below moorestech 76, Long Wind 74 and Arkenfall 78 which show denser detail, richer lighting and characters/HUDs, and near OSRS Tower Defense 65 / GunBros 68 tier but capped because frames are HUD-less aerial map previews with flat textures, heavy fog and no visible players, weapons or combat UI; stills prove nothing about motion or feel.",
+    "score": 60
+  },
+  "reconstructed_prompt": "Build a free browser multiplayer city FPS called BIONEURAL with Three.js: FFA to 25 kills in 5 minutes plus CS-style 5v5 Dust mode, 10 destructible maps with vehicles/animals/events, 6 weapons plus airstrike/nuke, bots, 30-player lobbies, parties, voice, leaderboards, touch/gamepad/keyboard controls and low-poly stylized 3D.",
+  "controls": {
+    "mobile_controls": "supported",
+    "motion_controls": "unknown",
+    "gamepad": "supported",
+    "keyboard_mouse": "supported"
+  },
+  "player_modes": {
+    "human_players": "1-30",
+    "modes": [
+      "single-player",
+      "online-multiplayer"
+    ]
+  },
+  "play_game_url": "https://bioneural.de/",
+  "how_to_play": [
+    "Open https://bioneural.de/ in a JavaScript-enabled desktop, laptop, phone, tablet, TV or console browser, enter pilot name, color and country.",
+    "Press PLAY for online free-for-all, PLAY OFFLINE for solo vs bots with map and difficulty choice, PLAY COMPETITIVE 5v5 for Dust, or create a party link and ready up with friends.",
+    "Move with WASD, aim with mouse, fire left-click, Space to jump/double-jump, Shift/C to dash, 1-6 or wheel for weapons, R reload, E drive/pilot, G airstrike, N nuke, V talk, Tab scoreboard, Esc pause.",
+    "On touch hold phone sideways: left thumb move, right thumb aim, FIRE/JUMP/DASH/reload/weapon/airstrike buttons; on controller use left/right sticks, RT fire, A jump, B dash, X reload, Y/RB/LB weapons.",
+    "Win FFA by reaching 25 kills or leading after 5:00; win 5v5 Dust rounds by elimination, bomb explosion/defuse or timeout per side rules across MR8 first to 9."
+  ],
+  "mechanics": [
+    "Free-for-all arena shooter with kill target and round timer",
+    "Competitive 5v5 bomb plant/defuse economy mode on Dust",
+    "Fully destructible buildings, bridges, rides and vegetation",
+    "Six-weapon arsenal with headshots, splash, rocket-jump, cookable dynamite, wall-penetrating railgun and smoke cover",
+    "Airstrike and 5-kill-streak nuke with targeting",
+    "Health and Overcharge damage pickups, jump pads, knockback and fall kills",
+    "Drivable cars, boats, cable cars and trains plus ridable creatures/elements",
+    "Bot-filled lobbies up to 30 players, offline practice, parties, spectating, proximity voice and persistent levels/leaderboards"
+  ],
+  "tags": [
+    "fps",
+    "arena-shooter",
+    "multiplayer",
+    "competitive",
+    "destructible",
+    "low-poly",
+    "browser",
+    "vehicles"
+  ],
+  "rating": {
+    "reason": "Excluding itself, closest comparators are moorestech 64 (catalog top with verified co-op/mods/years of systems), Long Wind 62 (broad polished scope), Meridian Wake 60 (playable 3D browser game with full HUDs), Arkenfall 58 (large open world but unverified playability) and P(DOOM) 57 / GunBros 57 (complete FPS systems but one level or no playable build). BIONEURAL shows the widest verified playable scope in the catalog: live browser FPS with 10 maps, FFA plus full CS-economy 5v5, destructibility, vehicles, 6 weapons, airstrike/nuke, 30-player lobbies, parties, voice and leaderboards with touch+gamepad+keyboard support, placing it at Meridian Wake level above Arkenfall/P(DOOM)/GunBros. Below moorestech and Long Wind because low-poly visuals are simpler, no source repo or commit history could be verified, and stills/docs cannot prove performance, balance or netcode. Far below AAA on fidelity, content volume, cinematics and live-ops proof; evidence gaps on audio implementation, physics engine and sustained multiplayer performance.",
+    "score": 60
+  },
+  "fictional_reviews": [
+    {
+      "rating": 85,
+      "text": "Dropped into Neon City, blew a tower's supports out and rode the collapse onto a rooftop — nothing else in the catalog does Brittle-City FFA plus a full Dust economy in one browser tab."
+    },
+    {
+      "rating": 60,
+      "text": "Fun loop and huge map rotation, but the low-poly towns blur into fog and the aerial previews oversell the on-foot gunfeel."
+    },
+    {
+      "rating": 100,
+      "text": "Thirty pilots, zeppelins overhead, sandworm rumbling, nuke siren wailing — peak lunchtime chaos with friends on one link."
+    }
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://bioneural.de/"
+    },
+    {
+      "label": "Play the game",
+      "url": "https://bioneural.de/"
+    }
+  ]
+}
