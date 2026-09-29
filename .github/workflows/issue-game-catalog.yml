@@ -32,7 +32,7 @@ jobs:
             --jq '.jobs[] | select(.name == "analyze-and-publish") | .html_url' 2>/dev/null || true)"
           log_url="${job_url:-$run_url}"
           echo "ISSUE_CATALOG_RUN_URL=$log_url" >> "$GITHUB_ENV"
-          banner="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_SHA/assets/issue-analysis-banner.png"
+          banner="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_SHA/assets/issue-analysis-banner.svg"
           printf '![I’m on it! Analyzing game links — 10–30 minutes.](%s)\n\nI’m on it. Analyzing the links may take 10–30 minutes.\n\n[Follow the Actions run](%s).\n' \
             "$banner" "$log_url" > "$RUNNER_TEMP/issue-started.md"
           comment_id="$(gh api --method POST "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" \

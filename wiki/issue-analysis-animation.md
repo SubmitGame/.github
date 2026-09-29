@@ -1,6 +1,6 @@
 # Maintain the issue-analysis animation
 
-Use `assets/issue-analysis-banner.svg` as the self-contained hybrid SVG. Preserve `assets/issue-analysis-banner.png` and the unrelated main banner. Keep issue-workflow publication unchanged unless separately requested.
+Use `assets/issue-analysis-banner.svg` as the self-contained hybrid SVG and the commit-pinned image in the startup issue comment. Preserve `assets/issue-analysis-banner.png` and the unrelated main banner. Keep the alternate detective concept separate.
 
 Edit `svg/issue-analysis/scene.template.svg`. Preserve the four ImageGen PNG masters in `svg/issue-analysis/assets/`; reuse the exact built-in edit prompts in `svg/issue-analysis/PROMPTS.md`. Retain genuine alpha on robot, cards, and controller. Keep the reconstructed world opaque. Keep lettering and effects editable in SVG.
 
