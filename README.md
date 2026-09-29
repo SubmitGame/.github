@@ -1,5 +1,7 @@
 # Game catalog
 
+<a href="https://omgithub.com/"><img src="svg/awesome-ai-games.svg" alt="Awesome AI Games animated banner — open OmGithub" width="1774"></a>
+
 Browse the rated games. Open each game page for evidence and play instructions.
 Browse games with or without public source code in the same ranking and screenshot gallery.
 
