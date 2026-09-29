@@ -1,0 +1,144 @@
+{
+  "catalog_slug": "no-source/kettuvellam-com--4d48a0d77bd4",
+  "creation_models": [],
+  "technologies": [
+    {
+      "name": "Next.js",
+      "version": null,
+      "category": "framework",
+      "evidence_url": "https://kettuvellam.com"
+    },
+    {
+      "name": "v0.app",
+      "version": null,
+      "category": "build",
+      "evidence_url": "https://kettuvellam.com"
+    }
+  ],
+  "source_url": "https://kettuvellam.com",
+  "repository_url": null,
+  "title": "Kettu-Vellam",
+  "source_analysis": [
+    {
+      "finding": "Page title and headers identify Kettu-Vellam as a Kerala snake boat (chundan vallam) racing game",
+      "url": "https://kettuvellam.com"
+    },
+    {
+      "finding": "Meta description describes a free 3D browser boat racing game: race chundan vallam snake boats through Punnamada Lake, Kuttanad canals, and a monsoon storm on Vembanad, with rival crews, live leaderboards, crowd atmosphere and rhythmic vanchipattu",
+      "url": "https://kettuvellam.com"
+    },
+    {
+      "finding": "Embedded JSON-LD types the page as schema.org VideoGame named Kettu-Vellam, genres Racing and Sports, gamePlatform Web browser, applicationCategory Game, playMode SinglePlayer, free offer",
+      "url": "https://kettuvellam.com"
+    },
+    {
+      "finding": "Root page renders a GameLoader client component with a 'Launching onto the backwaters' loading screen, showing the root URL is the playable game entry, not just a promotional page",
+      "url": "https://kettuvellam.com"
+    },
+    {
+      "finding": "Web manifest sets name Kettu-Vellam, display fullscreen, orientation landscape, start_url /, categories games/sports/entertainment, confirming an installable browser game shell",
+      "url": "https://kettuvellam.com/manifest.webmanifest"
+    },
+    {
+      "finding": "HTML head declares generator v0.app and Next.js/Turbopack _next/static chunks, establishing the site framework and build tool",
+      "url": "https://kettuvellam.com"
+    },
+    {
+      "finding": "Public GitHub repository search for kettuvellam returns zero results, so no verified related source repository is established; an unrelated HTML5 Canvas vallam-kali-browser-game exists but shares no verified identity, playable URL, or project reference with this site",
+      "url": "https://api.github.com/search/repositories?q=kettuvellam"
+    },
+    {
+      "finding": "The only inspectable image (og-image.jpg) is a cinematic golden-hour photo of a snake boat crew with crowds and palms, presented as og:image/social banner, not as labeled in-engine gameplay",
+      "url": "https://kettuvellam.com/og-image.jpg"
+    },
+    {
+      "finding": "Sitemap contains only the root URL, last modified 2026-09-26, with no separate play, docs, or screenshot gallery pages found",
+      "url": "https://kettuvellam.com/sitemap.xml"
+    },
+    {
+      "finding": "No explicit keyboard/mouse, touch joystick, gamepad, or motion-control documentation was found in the inspected static page, manifest, or metadata; viewport and fullscreen PWA settings alone do not establish touch controls",
+      "url": "https://kettuvellam.com"
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "https://kettuvellam.com/og-image.jpg",
+      "observation": "Inspected 1200x630 social banner: photorealistic/cinematic side view of a black chundan vallam with gold prow ornament carrying a long crew of rowers mid-stroke, water spray, palm trees, sunset clouds, and bank crowds. Curated promotional reference image, not verifiable in-game 3D runtime output; no HUD, boat physics, or gameplay state visible.",
+      "local_path": "screenshots/9c8a18c0be19079ab22cc1dd3d820622f9aa5c274966596dcf1147e7908686d0.jpg",
+      "sha256": "9c8a18c0be19079ab22cc1dd3d820622f9aa5c274966596dcf1147e7908686d0",
+      "downloaded_at": "2026-09-29T03:30:22.875253+00:00"
+    }
+  ],
+  "screenshot_based_score": null,
+  "reconstructed_prompt": "Build Kettu-Vellam, a free 3D browser snake-boat racing game about Kerala vallam kali: race chundan vallam boats across Punnamada Lake, narrow Kuttanad canals, and a Vembanad monsoon-storm course, with rival crews, live leaderboards, bank crowds, and rhythmic vanchipattu music, as a fullscreen landscape Next.js web app with a GameLoader entry.",
+  "controls": {
+    "mobile_controls": "unknown",
+    "motion_controls": "unknown",
+    "gamepad": "unknown",
+    "keyboard_mouse": "unknown"
+  },
+  "player_modes": {
+    "human_players": 1,
+    "modes": [
+      "single-player"
+    ]
+  },
+  "play_game_url": "https://kettuvellam.com",
+  "how_to_play": [
+    "Open https://kettuvellam.com in a web browser and wait past the Launching onto the backwaters loader into the GameLoader client",
+    "Select a race course when offered: Punnamada Lake, Kuttanad canals, or the Vembanad monsoon-storm course",
+    "Race a chundan vallam snake boat against rival crews to the finish line",
+    "Check the live leaderboard for race results"
+  ],
+  "mechanics": [
+    "Chundan vallam snake-boat racing on Kerala backwater courses",
+    "Three advertised locales: Punnamada Lake, Kuttanad canals, Vembanad monsoon storm",
+    "Rival crew racing field",
+    "Live leaderboards",
+    "Crowd atmosphere and rhythmic vanchipattu presentation"
+  ],
+  "tags": [
+    "racing",
+    "sports",
+    "boat-racing",
+    "3d",
+    "browser-game",
+    "single-player",
+    "kerala",
+    "vallam-kali"
+  ],
+  "rating": {
+    "score": 46,
+    "reason": "Excluding the target, closest comparators are Kart Royale (50, complete browser 3D racer with verified kart physics, AI field, and two inspected gameplay frames), Turbo Kart Rally (40, browser kart racer with inspected 3D frames), Sakura Rally (56, deeper rally package with custom physics and campaign but no web play), and Infinite Craft (52, no-source browser game with inspected UI). Kettu-Vellam has a live fullscreen browser game entry, PWA shell, three advertised courses, rival crews, and leaderboards, which suggests broader racing scope than single-track demos, but with zero inspectable in-engine gameplay screenshots, no verified repository, no documented controls, and no verifiable physics, audio, performance, or balance evidence, it cannot match Sakura Rally or Kart Royale on verified technical execution and sits just below Infinite Craft/Kart Royale, above arcade-minimal catalog entries."
+  },
+  "fictional_reviews": [
+    {
+      "rating": 78,
+      "text": "Fictional illustrative review: racing a full chundan vallam down Punnamada with the drums going and the banks packed sounds like a festival I would load up every Onam season."
+    },
+    {
+      "rating": 55,
+      "text": "Fictional illustrative review: the idea of canals versus open lake versus monsoon storm is strong, but I need to see real handling, the leaderboard, and how the crew rhythm actually plays."
+    },
+    {
+      "rating": 95,
+      "text": "Fictional illustrative review: a golden-hour snake-boat charge with a hundred oars moving as one would be pure cinema if the race feel matches the banner."
+    }
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://kettuvellam.com"
+    }
+  ],
+  "repository_created_at": null,
+  "analysis": {
+    "analyzed_at": "2026-09-29T03:30:16.019680+00:00",
+    "model": "opencode/muse-spark-1.3-contributor-free",
+    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36516951301/job/109241266183",
+    "session_id": "ses_f14ce68a4ffeEV1QfSmwGGbqWh",
+    "prompt_sha256": "723a81f862bcb13a325c2de27c43975fc3ca06ec0922f2db88e405a9732bea10"
+  },
+  "catalog_added_at": "2026-09-29T03:30:16.019680+00:00",
+  "catalog_updated_at": "2026-09-29T03:30:16.019680+00:00"
+}

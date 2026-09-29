@@ -1,0 +1,108 @@
+# Mini Moto — Pine Ridge Park
+
+[Play the game](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site) · [View original submission](https://x.com/chrisjdimarco/status/2103874824569344327)
+
+No verified source repository.
+
+| Overall rating | Screenshot score |
+| :---: | :---: |
+| **51/100** | **Not scored** |
+
+<details>
+<summary>Read the scoring rationale</summary>
+
+### Overall rating
+
+Excluding itself, closest comparators are Turbo Kart Rally (40: complete single-circuit kart loop with items/AI), Kart Royale (50: polished 3D loop, single track), DRIFTWING (52: infinite seeded terrain, ambient flight, no fail state), Sakura Rally (56: two stages plus open world, campaign, replays, garage), and moorestech (64: broadest catalog systems scope, catalog top). Mini Moto sits above Turbo Kart Rally on scope (race sim plus rider/team management plus terrain editor plus up to 25 connectable park tiles, combat mode, many cameras) with a verified live browser build, near DRIFTWING/Kart Royale on technical execution, but below Sakura Rally and moorestech on verified gameplay depth since physics, AI quality, audio, balancing, and performance are unverified and no source repository or inspectable screenshots exist. Evidence gaps: no playable performance/balance proof beyond page text, no multiplayer documentation, no source code inspected.
+
+### Screenshot score
+
+No inspectable gameplay screenshot.
+
+</details>
+
+## At a glance
+
+| Detail | Value |
+| --- | --- |
+| Added to catalog | 29 Sep 2026 · 03:27 UTC |
+| Last updated | 29 Sep 2026 · 03:27 UTC |
+| Documented creation models | [GPT-6 Astra](https://x.com/chrisjdimarco/status/2103874824569344327) |
+
+## Play
+
+- Open the play URL in a desktop browser and let the paddock load the course, bikes and riders
+- Use Race tab cameras: park view, top-down map, follow pack, or action camera, plus the rider roster and live standings
+- Toggle Road Rash combat mode or camera shake for a fresh race, and pause, orbit, change sim speed, or mute sound from the playback bar
+- Open the Build tab, pick Sculpt, Dirt, Mud, Gravel, Jump, or Loop, then click the track (hold Shift while sculpting to lower ground)
+- Extend the circuit via dotted tiles around the park up to 25 connected maps, then Save park, Undo edits, or Restart the 8-lap race
+
+## Mechanics
+
+- 8-lap miniature motocross park race at Pine Ridge with live standings and lap clock
+- Rider roster and team management panel alongside race viewing
+- Multiple watch-your-way cameras: park view, top-down map, follow pack, action camera, orbit camera
+- Road Rash combat mode toggle that starts a fresh race
+- Camera-shake toggle, pause, simulation speed control, FPS counter, sound toggle
+- Terrain shaping tools: sculpt, dirt, mud, gravel, jump, loop with Shift-to-lower
+- Expandable park up to 25 connected map tiles with dotted-tile extension
+- Local device park saving, undo edit, and race restart
+
+## Tags
+
+- racing
+- motocross
+- race-management
+- track-editor
+- 3d
+- browser
+- single-player
+- building
+
+## Controls
+
+- Mobile controls: Not established
+- Motion controls: Not established
+- Gamepad: Not established
+- Keyboard/mouse: Supported
+
+## Player modes
+
+- Human players: 1
+- Modes: single-player
+
+## Technologies
+
+- **Next.js** — framework ([evidence](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- **JavaScript** — language ([evidence](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- **HTML Canvas** — rendering ([evidence](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+
+## Reconstructed prompt
+
+Build Mini Moto, a browser 3D miniature motocross park game: live 8-lap races at Pine Ridge with rider roster and standings, watch-your-way cameras (park, top-down, follow pack, action, orbit), Road Rash combat mode, rider/team management, terrain tools (sculpt, dirt, mud, gravel, jump, loop), expandable park up to 25 connected tiles, local save/undo/restart, pause, sim speed, FPS meter, and sound toggle.
+
+## Source evidence
+
+- X post is a portfolio list by Christopher J. DiMarco; its first Games entry is Mini Moto with a live browser link, followed by Skip a Stone, Pool Sumo, Neon Tunnel Pinball, ARK/22, Highrise Dynasty, AKHET and others; post states most was built with GPT-6 Astra in Codex. ([source](https://x.com/chrisjdimarco/status/2103874824569344327))
+- Mini Moto page title and description: 'Mini Moto — Pine Ridge Park' and 'Race, manage your riders and shape a living miniature motocross park.' ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- Playable game verified open: canvas race shell with LAP 1/8 clock, MINIMOTO live-race dock, Race/Riders/Build tabs, standings leaderboard, Road Rash mode, camera shake, park tile actions, FPS/pause/orbit/speed/sound bar, and loading state 'Opening the paddock: Loading the course, bikes and riders'. ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- Race viewing depth: cameras and roster controls list Rider roster, Park view, Top-down map, Follow pack automatic camera, Highest-action camera, and How to play. ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- Build depth: terrain tools Sculpt, Dirt, Mud, Gravel, Jump, Loop with note 'Choose a tool, then click the track. Hold Shift while sculpting to lower the ground.' Park shows 1 tile, Undo edit, Save park on device, Restart race, and up to 25 connected maps via dotted extension tiles. ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- Mouse controls established: canvas aria-label 'Drag to orbit, scroll to zoom, or use the controls to manage riders and terrain' plus click-the-track sculpting; no touch joystick, accelerometer/gyroscope, or gamepad bindings documented, so those remain unknown. ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- Single-player inferred from single-park race management (rider roster/team management, one saved park per device) with AI-race framing and no multiplayer, co-op, versus, or online modes documented. ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+- Only GitHub URL in the submission is Apify Scraper Studio, described as an 'open source Mac app', not the Mini Moto game source; no verified game repository established. gh CLI unavailable in runner (requires GH\_TOKEN), so no gh api repository evidence could be pulled. ([source](https://x.com/chrisjdimarco/status/2103874824569344327))
+- No catalog match: full-text catalog search for mini moto, pool sumo, akhet, highrise, chipchauncey, and dimarco across games/ found nothing; no prior game shares this verified repository, playable URL, or explicit project reference. ([source](https://x.com/chrisjdimarco/status/2103874824569344327))
+- No inspectable gameplay screenshot available: game renders in a live WebGL/canvas with no static screenshot, og:image, or docs render found in inspected page source; stills cannot be scored without inventing findings. ([source](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site))
+
+## Fictional reviews
+
+Treat these as illustrative, not real user reviews.
+
+- 82/100: Fictional take: I came to watch one moto and stayed to reshape the whole park — the follow-pack camera plus a fresh jump I sculpted myself made lap eight feel earned.
+- 58/100: Fictional take: neat little race-park toy with real ambition, but I wanted to actually ride the bikes myself and see more than the loading paddock before I judged the handling.
+- 100/100: Fictional take: a perfect diorama racer — eight laps, a rider roster, Road Rash mode, and twenty-five connectable track tiles in a browser tab is absurd in the best way.
+
+## Links
+
+- [Original submission](https://x.com/chrisjdimarco/status/2103874824569344327)
+- [Play the game](https://mini-moto-park.chipchaunceytheonlyone.chatgpt.site)

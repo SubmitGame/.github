@@ -1,0 +1,125 @@
+{
+  "catalog_slug": null,
+  "controls": {
+    "gamepad": "unknown",
+    "keyboard_mouse": "unknown",
+    "mobile_controls": "supported",
+    "motion_controls": "unknown"
+  },
+  "creation_models": [],
+  "how_to_play": [
+    "Board the Hearthwing fairy tram and drive it across sky tracks through five towns above the clouds",
+    "Balance the tram's wings to keep the ride smooth and comfortable for travelers",
+    "Stop to collect travelers and deliver them toward the sea while earning comfort-based tips",
+    "Avoid losing all three rescue lanterns across the journey",
+    "Collect tickets along the route and spend progress on unlockable decorations",
+    "Replay towns in day and night scenery to complete the trip to the sea"
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107"
+    },
+    {
+      "label": "Crayon platform",
+      "url": "https://usecrayon.ai/"
+    }
+  ],
+  "mechanics": [
+    "Fairy-tram driving along elevated tracks through five towns",
+    "Wing-balancing comfort system affecting tips",
+    "Traveler pickup and delivery passengers",
+    "Comfort-based tipping economy",
+    "Three rescue lanterns as lives or safety buffer",
+    "Collectible tickets",
+    "Unlockable decorations",
+    "Day and night scenery variation",
+    "One-hand phone control scheme"
+  ],
+  "player_modes": {
+    "human_players": 1,
+    "modes": [
+      "single-player"
+    ]
+  },
+  "play_game_url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107",
+  "rating": {
+    "reason": "Described scope is a cozy single-route driving loop across five towns with balancing, tips, 3 lantern lives, tickets, decorations, and day/night variants. That is broader than single-loop no-source Infinite Craft (52) in variety but narrower and less technically evidenced than Pet Island (56, photo-driven pets, quests, AI dialogue, live deploy), Emberwake (53, complete survivors loop with HUD-verified combat), and Uplift/Windborne (53, custom WebGL2 flight tech). No public source, config, or repository was established, and no in-game HUD or controls were inspectable, so depth, performance, and balance are unverified. It sits below Meridian Wake (60) and moorestech (64), which have far larger verified systems, and above low-end single-loop catalog entries such as 2048 (38) and Taipo (35).",
+    "score": 49
+  },
+  "reconstructed_prompt": "Create a cozy 3D fairy-tram driving game called Last Train to the Sea where the player drives Hearthwing through five lively sky towns above the clouds, balances its wings for passenger comfort, picks up travelers, earns tips, survives with three rescue lanterns, collects tickets, unlocks decorations, shows day and night scenery, and supports one-hand mobile controls.",
+  "repository_url": null,
+  "screenshots": [
+    {
+      "observation": "Inspected 1672x941 WebP cover/ticket image: Ghibli-style yellow fairy tram with leaf roof and rear wings carrying passengers across a vine-covered sky bridge over turquoise sea, crowded cliffside towns, clock tower, lighthouse, sailboats, and onlookers. Rich coherent palette and dense detail, but no HUD, controls, tickets, lanterns, day/night UI, or gameplay text are visible, so it reads as curated cover art rather than verified in-game output.",
+      "url": "https://gamebuilderapi-thumbnailbucket3bc05c46-njaxbgcn5duh.s3.ap-south-1.amazonaws.com/bda1b910-b840-48cb-bb4c-28d0cde29107/hearthwing-e42752a34305/assets/runtime-v16/full/ticket-v1-hearthwing.webp"
+    }
+  ],
+  "screenshot_based_score": null,
+  "source_analysis": [
+    {
+      "finding": "Page title and share card identify the game as Last Train to the Sea on Crayon.",
+      "url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107"
+    },
+    {
+      "finding": "Game description: drive Hearthwing fairy tram through five lively towns above the clouds, balance wings, collect travelers, earn comfort tips, three rescue lanterns, day/night scenery, collectible tickets, unlockable decorations, one-hand phone controls.",
+      "url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107"
+    },
+    {
+      "finding": "Crayon gallery lists Last Train to the Sea as a playable arcade entry with thousands of plays and the same description, confirming the /play/ URL is the playable game rather than only a promo page.",
+      "url": "https://usecrayon.ai/"
+    },
+    {
+      "finding": "Cover asset filename is ticket-v1-hearthwing.webp under runtime-v16/full, indicating curated ticket/cover art rather than a verified gameplay capture with HUD.",
+      "url": "https://gamebuilderapi-thumbnailbucket3bc05c46-njaxbgcn5duh.s3.ap-south-1.amazonaws.com/bda1b910-b840-48cb-bb4c-28d0cde29107/hearthwing-e42752a34305/assets/runtime-v16/full/ticket-v1-hearthwing.webp"
+    },
+    {
+      "finding": "Mobile touch support established by explicit one-hand phone controls in the official description; no explicit keyboard/mouse, gamepad, or motion support stated.",
+      "url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107"
+    },
+    {
+      "finding": "Single-player inferred from solo tram-driving, wing-balancing, traveler-collection, and tip-earning journey with no multiplayer claim; travelers read as AI passengers, not human players.",
+      "url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107"
+    },
+    {
+      "finding": "No verified related GitHub source URL established; catalog grep for crayon/hearthwing/last-train found no match and web search surfaced only Crayon play and platform pages. gh api could not be used because GH_TOKEN was unavailable in this environment.",
+      "url": "https://usecrayon.ai/"
+    }
+  ],
+  "source_url": "https://app.usecrayon.ai/play/bda1b910-b840-48cb-bb4c-28d0cde29107",
+  "tags": [
+    "cozy",
+    "driving",
+    "tram",
+    "balance",
+    "collection",
+    "single-player",
+    "casual",
+    "fantasy",
+    "browser"
+  ],
+  "technologies": [],
+  "title": "Last Train to the Sea",
+  "fictional_reviews": [
+    {
+      "rating": 72,
+      "text": "A gentle sky-bound tram ride with a lovely comfort-tipping idea; I want to master smooth wing-balancing across all five towns."
+    },
+    {
+      "rating": 55,
+      "text": "Charming premise and decorations to chase, but one comfortable route can only carry the balancing-and-delivery loop so far."
+    },
+    {
+      "rating": 88,
+      "text": "The most wistful little farewell journey by rail and wing, lanterns lit all the way to the sea."
+    }
+  ],
+  "repository_created_at": null,
+  "analysis": {
+    "analyzed_at": "2026-09-29T03:30:16.711674+00:00",
+    "model": "opencode/muse-spark-1.3-contributor-free",
+    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36516951301/job/109241266183",
+    "session_id": "ses_f14ce6762ffex4Q1x9dWQ4v0T9",
+    "prompt_sha256": "4d1eb4d650839b6ba8edf0477af4d32d0a6c52a19a6b8f87495828af271755f8"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "status": "not_game",
+  "reason": "The submitted URL https://github.com/SubmitGame/.github/issues/4 is a cross-catalog suggestion issue titled 'Top 10 high-rated games missing from VibeFin/awesome-opus-5.5-games', not a single playable game. Its body lists 10 distinct games with separate play URLs (Meridian Wake, LUMENRIFT, Tempora, Forja Abisal, Pet Island, KAIJU DOKAN!, OUT OF THE BOX, Radikal Riders, Lethal Company: Opus Edition, DRIFTWING) and reports 0 play/source URL overlaps between the SubmitGame catalog and VibeFin/awesome-opus-5.5-games. Evidence: https://github.com/SubmitGame/.github/issues/4 and https://api.github.com/repos/SubmitGame/.github/issues/4. No single game, playable URL, gameplay, or screenshots can be attributed to the issue page itself."
+}

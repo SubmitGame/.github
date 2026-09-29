@@ -1,0 +1,171 @@
+{
+  "catalog_slug": "no-source/pool-sumo-chipchaunceytheonlyone-chatgpt-site--7a9a9cc859e7",
+  "creation_models": [],
+  "controls": {
+    "gamepad": "unknown",
+    "keyboard_mouse": "supported",
+    "mobile_controls": "supported",
+    "motion_controls": "unknown"
+  },
+  "how_to_play": [
+    "Select one of your three red marbles (click/tap it, press 1/2/3, or use the hint button)",
+    "Drag away from your target to set direction and power (or use Left/Right to aim and Up/Down for power), then release or press Space to lock your shot",
+    "Both your shot and the computer rival's secret shot fire together; after balls settle, the closest marble inside the center circle scores",
+    "Fallen marbles rest beside the table and return at their home edge next round; first to 5 points wins"
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/"
+    }
+  ],
+  "mechanics": [
+    "Simultaneous secret-shot selection for player and AI rival",
+    "Drag-to-aim slingshot with direction and power, plus full keyboard aiming",
+    "Custom marble physics with collisions, knock-outs, floor bounces, and settling detection",
+    "Closest-in-center scoring with tie tolerance and first-to-5 match structure",
+    "AI rival that simulates candidate shots with lookahead physics rollouts",
+    "Knocked-out marble respawn at home-edge positions each round",
+    "Timed planning phase with countdown, pause, restart, sound toggle, and match-result flow"
+  ],
+  "player_modes": {
+    "human_players": 1,
+    "modes": [
+      "single-player"
+    ]
+  },
+  "play_game_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/",
+  "rating": {
+    "reason": "Excluding the target itself, most relevant comparators are The Nine Lives of Ash (47), Survive Coders (46), HEX DANMAKU (48), Kart Royale (50), Arkanoid Neon (42), chess rot (30), and TypeScript-Blackjack (28). Pool Sumo is a complete single-table 3D physics duel with custom collision/knockout physics, lookahead AI, PBR/VSM/ACES presentation, sound, HUD, pause/restart, and responsive accessible UI, placing it above single-mechanic flat games (chess, Blackjack) and near polished single-loop mid-catalog games, but well below broader systems games (Kart Royale one-track racer with items/drift at 50, Emberwake/Driftwing at 52-53, moorestech at 64). Single mode, one table, six marbles, and no progression, multiplayer, or levels cap scope. Evidence gaps: no public source repository could be verified (gh api unavailable in this environment: no GH_TOKEN, and the page exposes no GitHub link), no inspected gameplay screenshots, and code/static evidence cannot prove playability balance, performance, or feel; score reflects available code and page evidence only.",
+    "score": 47
+  },
+  "reconstructed_prompt": "Build a browser 3D tabletop duel called Pool Sumo: a round wooden pool table with 3 red player marbles vs 3 blue AI marbles, simultaneous secret shots, drag-to-aim with keyboard fallback, custom physics with knock-outs and respawns, closest-in-center scoring, first to 5 wins, Three.js PBR rendering, HUD scoreboard with countdown, how-to-play and result dialogs, sound toggle, and responsive mobile layout.",
+  "repository_url": null,
+  "screenshot_based_score": null,
+  "screenshots": [],
+  "source_analysis": [
+    {
+      "finding": "Page title and description present it as a playable browser duel: 'Pool Sumo — Own the center' with 'Play Pool Sumo in your browser' and rules 'Both players secretly choose one marble, then shoot together... First to five wins'.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "Playable game confirmed by canvas element, HUD (YOU/RIVAL scores, ROUND, countdown clock, center status), power meter, toast, loading, and How-to-play / Match-complete / Restart dialogs.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "Keyboard controls explicitly documented: '1 / 2 / 3 select a red marble. Left / right aim. Up / down change power. Space locks your shot. Escape pauses.' Implemented in main.js keydown handler.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/main.js?v=10"
+    },
+    {
+      "finding": "Mouse/pointer aiming implemented via canvas pointerdown/move/up with drag-to-aim, lockShot on release, and setPointerCapture.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/main.js?v=10"
+    },
+    {
+      "finding": "Touch supported via Pointer Events plus 'touch-action:none' on canvas, pointer capture, responsive breakpoints, and safe-area footer layout for small screens.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/styles.css?v=10"
+    },
+    {
+      "finding": "Single-player vs computer confirmed by 'Play against the computer', 'RIVAL / COMPUTER' badge, YOU vs RIVAL scores, and chooseRival AI that simulates candidate shots against a public board snapshot.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/physics.js?v=10"
+    },
+    {
+      "finding": "No gamepad or device-motion controls are referenced anywhere in the inspected HTML, main.js input handlers, or help dialog; support is unestablished, not explicitly ruled out.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/main.js?v=10"
+    },
+    {
+      "finding": "Three.js engine used: scene.js imports './vendor/three.module.js' and creates WebGLRenderer with shadows, ACES tone mapping, PMREM environment, PBR marble/table materials.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/scene.js?v=10"
+    },
+    {
+      "finding": "Vendored Three.js revision is 186 (REVISION = '186' in three.core.js header).",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/vendor/three.core.js"
+    },
+    {
+      "finding": "Rendering is WebGL via Three.js WebGLRenderer with antialias, shadow maps (VSM), and orthographic camera; no separate rendering framework detected.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/scene.js?v=10"
+    },
+    {
+      "finding": "Game logic is JavaScript ES modules (script type=module importing scene.js and physics.js); audio is Web Audio API oscillators via AudioContext with hit/score/floor/out sounds.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/main.js?v=10"
+    },
+    {
+      "finding": "Physics is a custom module (BOARD/RADIUS/TOP/CENTER constants, shoot/step/settled/leader/respawn/chooseRival) with no third-party physics library import.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/physics.js?v=10"
+    },
+    {
+      "finding": "No GitHub repository link appears in inspected page HTML, JS, or CSS; no verified related GitHub source URL established. gh api could not be used here (no GH_TOKEN in environment). Local catalog search of all 66 games/*/readme.json found no pool/sumo/chipchauncey match, so catalog_slug is null.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "No static gameplay screenshots, <img> captures, or photo elements exist on the page; visuals render live on a WebGL canvas, so no gameplay screenshot could be opened or inspected and no AI creation-model attribution was found in inspected sources.",
+      "url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/"
+    }
+  ],
+  "source_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/",
+  "tags": [
+    "pool",
+    "physics",
+    "tabletop",
+    "duel",
+    "strategy",
+    "3d",
+    "browser"
+  ],
+  "technologies": [
+    {
+      "category": "engine",
+      "evidence_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/scene.js?v=10",
+      "name": "Three.js",
+      "version": "186"
+    },
+    {
+      "category": "language",
+      "evidence_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/main.js?v=10",
+      "name": "JavaScript",
+      "version": null
+    },
+    {
+      "category": "rendering",
+      "evidence_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/scene.js?v=10",
+      "name": "WebGL",
+      "version": null
+    },
+    {
+      "category": "physics",
+      "evidence_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/physics.js?v=10",
+      "name": "Custom marble physics",
+      "version": null
+    },
+    {
+      "category": "audio",
+      "evidence_url": "https://pool-sumo.chipchaunceytheonlyone.chatgpt.site/main.js?v=10",
+      "name": "Web Audio API",
+      "version": null
+    }
+  ],
+  "title": "Pool Sumo — Own the center",
+  "fictional_reviews": [
+    {
+      "rating": 85,
+      "text": "Fictional review: the simultaneous secret shots make every round feel like pool crossed with rock-paper-scissors, and knocking the rival off the table never gets old."
+    },
+    {
+      "rating": 62,
+      "text": "Fictional review: slick little table and smart computer opponent, but one table and one mode mean short sessions before it feels solved."
+    },
+    {
+      "rating": 100,
+      "text": "Fictional review: a perfect coffee-break duel — pick a marble, pull back, and hold the center against the sneakiest pretend physics rival around."
+    }
+  ],
+  "repository_created_at": null,
+  "analysis": {
+    "analyzed_at": "2026-09-29T03:30:15.997703+00:00",
+    "model": "opencode/muse-spark-1.3-contributor-free",
+    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36516951301/job/109241266183",
+    "session_id": "ses_f14ce68d8ffeKdd8jqc0BhyTwZ",
+    "prompt_sha256": "17cc1781cace9c5533f3154039149bf7b9b97f61167cdc7b6c7d9d00fa3eef81"
+  },
+  "catalog_added_at": "2026-09-29T03:30:15.997703+00:00",
+  "catalog_updated_at": "2026-09-29T03:30:15.997703+00:00"
+}

@@ -1,0 +1,197 @@
+{
+  "catalog_slug": null,
+  "creation_models": [
+    {
+      "name": "Claude Opus 5.5",
+      "evidence_url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "name": "Tripo AI",
+      "evidence_url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/CREDITS.md"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "three.js",
+      "version": "^0.186.0",
+      "category": "engine",
+      "evidence_url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/package.json"
+    },
+    {
+      "name": "JavaScript",
+      "version": null,
+      "category": "language",
+      "evidence_url": "https://api.github.com/repos/jbang2004/long-wind"
+    },
+    {
+      "name": "WebGL",
+      "version": null,
+      "category": "rendering",
+      "evidence_url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/index.html"
+    },
+    {
+      "name": "WebAudio",
+      "version": null,
+      "category": "audio",
+      "evidence_url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/CREDITS.md"
+    },
+    {
+      "name": "Vite",
+      "version": "^8.3.0",
+      "category": "build",
+      "evidence_url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/package.json"
+    }
+  ],
+  "source_url": "https://jbang2004.github.io/long-wind/",
+  "repository_url": "https://github.com/jbang2004/long-wind",
+  "title": "\u957f\u98ce \u00b7 Long Wind",
+  "source_analysis": [
+    {
+      "finding": "GitHub API identifies jbang2004/long-wind as a public repo described as a real-time wuxia action game in the browser (three.js), with homepage https://jbang2004.github.io/long-wind/, primary language JavaScript, default branch main. gh CLI was unusable in this runner (no GH_TOKEN), so unauthenticated public REST/raw endpoints were used for the same GitHub evidence.",
+      "url": "https://api.github.com/repos/jbang2004/long-wind"
+    },
+    {
+      "finding": "Repository page confirms the same game identity: long-wind, wuxia action game, Play-in-browser link to the submission URL, three chapter screenshots, and full Chinese/English documentation.",
+      "url": "https://github.com/jbang2004/long-wind"
+    },
+    {
+      "finding": "README defines the game: a lone swordsman across 3 chapters (steppe at golden hour vs \u65ad\u5200\u5ba2, bamboo night-rain vs assassin \u591c\u67ad, lantern canal town vs \u5bd2\u5c71\u5ba2), pure three.js/WebGL, no install, open the page and play.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "README documents combat depth: light/heavy combos, block and perfect parry, dodge i-frames, posture break and executions, sword qi, launches/knockdowns, lock-on, and five enemy types (archer/shieldman/spearman/assassin/bandit) plus bosses, with procedural terrain/grass/town/weather/townsfolk and zero audio files (all WebAudio synthesized).",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "README controls table establishes keyboard+mouse support: WASD move, mouse look, left-click slash (hold for heavy), right-click block (timed parry), Space dodge, Shift sprint, Q/Tab lock, E sword qi, F draw/sheathe, Esc pause with quality/chapter switching.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "README touch section establishes mobile touch support: auto-shown ink-style virtual controls, floating left thumb-stick (push past rim to sprint), right-side drag to look, buttons for strike/dodge/block/qi/lock/draw, pause; landscape recommended; ?touch=1 forces, ?touch=0 hides.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "No gamepad or device-motion controls are documented; index and README mention only keyboard/mouse and touch, so both remain unknown rather than ruled out.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "Game is single-player: third-person lone swordsman vs AI enemies/bosses and scattering townsfolk AI; no multiplayer lobby, second-player input, or network play is documented anywhere.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "package.json pins runtime dependency three ^0.186.0 with Vite ^8.3.0 build tooling, headless gameplay tests, and static dist build; vite.config.js uses relative base for GitHub Pages.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/package.json"
+    },
+    {
+      "finding": "CREDITS attributes engine to three.js (MIT), character models to Tripo AI generation, motion capture to Adobe Mixamo (converted/retargeted by agent tools), textures/rocks to Poly Haven CC0, and states all music/sfx/voices are procedurally synthesized with no audio files.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/CREDITS.md"
+    },
+    {
+      "finding": "README explicitly attributes creation: every line of code written by Claude Opus 5.5, first playable in about a day (~28h wall clock, ~19h agent time), coordinating parallel sub-agents via CONTRACTS.md and docs/BIBLE.md; character models generated with Tripo AI.",
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/README.md"
+    },
+    {
+      "finding": "Submission URL serves the playable game shell (not just a repo or promo page): canvas#c with touch-action none, #hud overlay, brush-stroke loader, meta description 'A lone swordsman on a golden-hour grassland. Real-time three.js.', and three.js module bundles under ./assets/.",
+      "url": "https://jbang2004.github.io/long-wind/"
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/docs/media/steppe.jpg",
+      "observation": "Inspected 1280x720 runtime frame: golden-hour steppe with dense wind-blown grass, low sun with haze, lone tree and mountains, three swordsmen mid-combat (one lunging, one fallen). Strong cinematic backlight and depth; best gameplay shot, placed first."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/docs/media/town.jpg",
+      "observation": "Inspected 1280x720 runtime frame: lantern-lit canal-town plaza at dusk with paifang gate, strings of red/white lanterns, stone paving, four robed figures around a swordsman whose blade flash/parry spark is frozen mid-swing. Coherent architecture and crowd staging."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jbang2004/long-wind/main/docs/media/bamboo.jpg",
+      "observation": "Inspected 1280x720 runtime frame: night rainstorm bamboo forest with moonlit mist, stone lanterns with glowing reflections on wet ground, two distant figures and a foreground combatant; heavy rain streaks and fog soften detail."
+    }
+  ],
+  "screenshot_based_score": {
+    "score": 78,
+    "reason": "All three inspected frames are the game's own WebGL output with coherent stylized-realistic art, cinematic lighting, and real combat staging across three distinct biomes. Above DRIFTWING (72, two atmospheric stills but one biome and no visible combat/UI) and Emberwake/Kart Royale/Turbo Kart Rally (70, dense but single-loop scenes) on variety, vegetation density, weather, and light work; above moorestech (76, catalog screenshot top with dense HUD-heavy factory views) on atmosphere and composition, though below true AAA on character close-up fidelity and HUD richness. Bamboo rain softness and lack of visible HUD slightly cap the score. Stills prove nothing about motion, performance, or feel."
+  },
+  "reconstructed_prompt": "Build a real-time third-person wuxia action game in three.js/WebGL with Vite: a lone jian swordsman across 3 chapters (golden-hour grassland, rainy night bamboo forest, lantern canal town with reactive townsfolk), light/heavy combos, block/perfect-parry, dodge i-frames, posture-break executions, sword qi, launches/knockdowns, lock-on, 5 enemy types plus 3 bosses, Mixamo mocap retargeted with IK fixes, procedural terrain/vegetation/weather/architecture, fully synthesized WebAudio music and sfx, quality tiers with TAA upscaling, touch joystick controls, demo auto-play and record-mode URL params, ~38k lines single three.js dependency, headless gameplay tests.",
+  "controls": {
+    "mobile_controls": "supported",
+    "motion_controls": "unknown",
+    "gamepad": "unknown",
+    "keyboard_mouse": "supported"
+  },
+  "player_modes": {
+    "human_players": 1,
+    "modes": [
+      "single-player"
+    ]
+  },
+  "play_game_url": "https://jbang2004.github.io/long-wind/",
+  "how_to_play": [
+    "Open https://jbang2004.github.io/long-wind/ in desktop Chrome/Edge (discrete GPU best); use ?level=steppe|bamboo|town to jump chapters, ?q=low|med|high for quality.",
+    "Move with WASD, look with mouse, sprint with Shift, dodge with Space (i-frames), lock with Q/Tab.",
+    "Attack with left-click (hold for heavy), block with right-click (time it at impact for a perfect parry), fire sword qi with E, draw/sheathe with F.",
+    "Break enemy posture for executions; use launches/knockdowns and lock-on against archers, shieldmen, spearmen, assassins and chapter bosses.",
+    "Pause with Esc to change quality or chapter; on phone/tablet play landscape with the auto-shown ink touch stick (left) and strike/dodge/block/qi/lock/draw buttons (right)."
+  ],
+  "mechanics": [
+    "Third-person wuxia swordplay across 3 chapters and 3 bosses",
+    "Light/heavy combo chains with charged heavy slash",
+    "Block with timed perfect parry/\u5f39\u53cd",
+    "Dodge with invincibility frames plus sprint",
+    "Posture-break and execution system",
+    "Sword-qi projectile and launch/knockdown crowd control",
+    "Target lock-on and enemy variety (bandit, archer, shieldman, spearman, assassin)",
+    "Reactive townsfolk AI that scatters from drawn swords",
+    "Procedural grass-wind, rain/lightning with wet reflections, lantern towns, synthesized WebAudio",
+    "Quality tiers, demo auto-play, record/orbit/slow-mo modes"
+  ],
+  "tags": [
+    "wuxia",
+    "action",
+    "third-person",
+    "swordplay",
+    "3d",
+    "three-js",
+    "webgl",
+    "single-player",
+    "boss-fight",
+    "procedural"
+  ],
+  "rating": {
+    "score": 62,
+    "reason": "Excluding the target, closest comparators are moorestech (64 overall, catalog top with years-long multiplayer factory systems and densest HUDs), Meridian Wake (60, playable 3-frame build with documented end-to-end systems and touch+gamepad), Emberwake (53/70, complete survivors loop with boss), DRIFTWING (52/72, ambient infinite 3D terrain tech with no fail state), and Wind & Rain (51, deep RTS loop but no verified playable host). Long Wind sits above Emberwake/DRIFTWING on gameplay depth (parry/dodge/posture/execution/lock-on, 5 enemy types, 3 bosses, 3 full biomes, townsfolk AI, 30 headless tests, ~38k lines) and above Meridian Wake on combat richness and visual variety, but just below moorestech on systems breadth, multiplayer/live-ops scale, and iteration history. Evidence gaps: judged from page HTML, README/CREDITS/package docs and 3 stills only; no interactive playthrough, so playability, balance, pacing, and sustained performance are unverified and not proven by code or screenshots."
+  },
+  "fictional_reviews": [
+    {
+      "rating": 85,
+      "text": "The steppe at sundown stopped me mid-fight \u2014 grass hissing in the wind, then a perfect parry rang out like a struck bell. Three chapters, three duels, zero downloads."
+    },
+    {
+      "rating": 62,
+      "text": "Gorgeous ink-and-gold arena with real martial snap, but the lock-on wanders in crowds and the rain chapter turns muddy. A dazzling sketch awaiting balance and a fiercer final boss."
+    },
+    {
+      "rating": 100,
+      "text": "I sheathed my sword in the lantern town just to watch the crowd breathe again. A wuxia poem you can parry in \u2014 I have never seen a browser hold a sunset like this."
+    }
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://jbang2004.github.io/long-wind/"
+    },
+    {
+      "label": "Source repository",
+      "url": "https://github.com/jbang2004/long-wind"
+    }
+  ],
+  "repository_created_at": null,
+  "analysis": {
+    "analyzed_at": "2026-09-29T03:30:15.897318+00:00",
+    "model": "opencode/muse-spark-1.3-contributor-free",
+    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36516951301/job/109241266183",
+    "session_id": "ses_f14ce6941ffeh80A5E6Byjuaw6",
+    "prompt_sha256": "d6eb3f9d63dff5422b44c8e054badddae17ab3e14e05672607f75bdd0a0dfa74"
+  }
+}

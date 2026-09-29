@@ -1,0 +1,11 @@
+{
+  "run": "run-005",
+  "directory": "/home/runner/work/.github/.github/work/game-batches/36516951301-1/run-005",
+  "status": "finished",
+  "session_id": "ses_f14ce6a8fffeHpCwnSC0gkeiBj",
+  "live_url": "https://hostels-dash-continuity-harbor.trycloudflare.com/L2hvbWUvcnVubmVyL3dvcmsvLmdpdGh1Yi8uZ2l0aHViL3dvcmsvZ2FtZS1iYXRjaGVzLzM2NTE2OTUxMzAxLTEvcnVuLTAwNQ/session/ses_f14ce6a8fffeHpCwnSC0gkeiBj",
+  "prompt_sha256": "c74e80a7c72e0aaa845dc30e148fe08090941334ef8bf337f3086b5c7c785c49",
+  "cli_pid": 3108,
+  "exit_code": 0,
+  "elapsed_seconds": 249.06
+}

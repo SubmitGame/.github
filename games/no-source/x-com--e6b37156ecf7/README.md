@@ -1,0 +1,115 @@
+# DERELICT
+
+[Play the game](https://derelict-game.vercel.app) · [View original submission](https://x.com/mariohercules/status/2104619803801731353)
+
+No verified source repository.
+
+| Overall rating | Screenshot score |
+| :---: | :---: |
+| **50/100** | **62/100** |
+
+<details>
+<summary>Read the scoring rationale</summary>
+
+### Overall rating
+
+Far from AAA: no multiplayer, voice acting, cinematics beyond stills, or live-ops scale, and balance/performance are unverified from stills and bundles. Excluding itself, closest comparators are Pet Island (56, single-site narrative exploration with quests and a verified 3D host), Deep Dive (50, explorable 3D station plus lab systems with inspected frames), Dead Signal (47, single-mission structure with no playable screenshots), and THORNMERE (46, text-heavy systems RPG at 60 screenshots). DERELICT sits at 50 alongside Deep Dive/Kart Royale: it has a verified playable host, a coherent multi-room ship with real puzzle systems (power budget, patch bay, diagnostics, star fix), and strong art direction, exceeding Dead Signal and THORNMERE on verified presentation, but its moment-to-moment play is menu/text-driven rather than real-time 3D, so it trails Pet Island and the systems-heavy 70-screenshot tier.
+
+### Screenshot score
+
+One inspected frame: the game's own title/menu output showing a photorealistic cryo pod with condensation, grime, warm practical lights, and clean DERELICT typography plus menu items. Composition and lighting are far above retro-tier catalog art and match the mood of Emberwake/Kart Royale (70), but it is a title card, not in-engine interactive gameplay with a HUD, so it is discounted below the 70 tier and level with Forja Abisal (62) and above THORNMERE/HEX DANMAKU (60). Still images prove nothing about motion or feel.
+
+</details>
+
+## At a glance
+
+| Detail | Value |
+| --- | --- |
+| Added to catalog | 29 Sep 2026 · 03:30 UTC |
+| Last updated | 29 Sep 2026 · 03:30 UTC |
+| Documented creation models | Not established |
+
+## Screenshots
+
+![DERELICT gameplay](screenshots/9dce76bb81cd5cf09784823887c5010a44fbd6dad11d92a5df70e9be84090938.jpg)
+
+Inspected the downloaded X media frame (1200x629 JPEG): dark sci-fi title screen for ISV CORMORANT / DERELICT with tagline 'You see the ship. Your AI runs it.', menu items CONTINUE JOURNEY, HOW TO PLAY, FLIGHT RECORD, NEW JOURNEY, footer 'AUXILIARY LINK ACTIVE' and 'Two crewmates. One way forward.', and a detailed frosted cryo-pod still on the right. No gameplay HUD or controls visible; it is a menu/title card, not active gameplay.
+
+[Original screenshot](https://pbs.twimg.com/media/HTUcT1_XAAIBBk7?format=jpg&name=large)
+
+## Play
+
+- Open https://derelict-game.vercel.app in a browser (ChatGPT app browser or Chrome 149+ exposes WebMCP so an AI agent can reach the ship; without it you walk alone).
+- From the DERELICT title menu choose CONTINUE JOURNEY, HOW TO PLAY, FLIGHT RECORD, or NEW JOURNEY.
+- Explore the ISV Cormorant compartment by compartment: cryo bay, engineering, bridge, medbay, crew quarters, hydroponics, cargo bay, reactor room, core vault, and comms array.
+- Read bulletins, manifests, and gauges; run subsystem diagnostics, manage the 40u reactor power scheme and patch-bay lines, and unlock doors in progression.
+- Solve ship rituals such as the three-symbol star fix, the hull-plate digits, and the launch authorization phrase, then decide together with your agent whether to leave.
+
+## Mechanics
+
+- First-person narrative exploration of a derelict ship (ISV Cormorant) across at least ten compartments
+- Human-plus-AI-agent co-play through WebMCP tools: the agent can ping subsystems, read the status board, run diagnostics, and access manifests
+- Reactor power allocation puzzle with a 40u capacity and auxiliary patch-bay routing
+- Progressive door-unlock and subsystem diagnostic checks with plain-language fault reports
+- Symbol, code, and phrase rituals: three-constellation star fix, hull-plate digits, launch authorization phrase
+- Crew-manifest and flight-record lore, emergency bulletins, analog-gauge reading, New Game+ epilogue branch
+
+## Tags
+
+- narrative
+- sci-fi
+- horror
+- exploration
+- puzzle
+- text-driven
+- single-player
+- ai-companion
+- webmcp
+
+## Controls
+
+- Mobile controls: Not established
+- Motion controls: Not established
+- Gamepad: Not established
+- Keyboard/mouse: Supported
+
+## Player modes
+
+- Human players: 1
+- Modes: single-player
+
+## Technologies
+
+- **React** — framework ([evidence](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- **Vite** — build ([evidence](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- **WebMCP** — framework ([evidence](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+
+## Reconstructed prompt
+
+Build a cinematic sci-fi narrative game called DERELICT set aboard the ship ISV Cormorant. Title menu with Continue Journey, How to Play, Flight Record, New Journey over a cryo-pod still. Ten explorable compartments, reactor power-budget and patch-bay puzzles, subsystem diagnostics, door progression, a three-symbol star-fix ritual, hull digits, and a launch phrase, plus a New Game+ epilogue. Playable solo or together with an AI agent via WebMCP tools (status board, diagnostics, manifests), in English and Portuguese, as a Vite + React web app deployed on Vercel.
+
+## Source evidence
+
+- X post by @mariohercules describes a WebMCP game 'Made by Astra' with a play link to derelict-game.vercel.app and a DERELICT title image. ([source](https://x.com/mariohercules/status/2104619803801731353))
+- Playable site serves a page titled DERELICT mounting a client app, confirming it opens the game rather than a repo or promo page. ([source](https://derelict-game.vercel.app))
+- Inspected title frame shows ISV CORMORANT branding, tagline 'You see the ship. Your AI runs it.', and clickable menu items CONTINUE JOURNEY / HOW TO PLAY / FLIGHT RECORD / NEW JOURNEY, evidencing mouse-driven menu controls and single-human plus AI-agent play ('Two crewmates. One way forward.'). ([source](https://pbs.twimg.com/media/HTUcT1_XAAIBBk7?format=jpg&name=large))
+- Game bundle states 'DERELICT is played together with your AI agent', requires a WebMCP-exposing browser (ChatGPT app browser or Chrome 149+), and notes 'You can still walk the ship alone', evidencing single-human play with an AI companion that is not a human player. ([source](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- Bundle registers WebMCP tools via document.modelContext.registerTool and exposes ship tools such as status board, power allocation, door locks, subsystem ping/diagnostics, manifests, and rituals, evidencing the human-agent mechanic. ([source](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- Bundle chunk map lists room modules CryoBay, Engineering, Bridge, Medbay, CrewQuarters, Hydroponics, CargoBay, ReactorRoom, CoreVault, CommsArray plus OpeningPanel, FlightRecord, and Epilogue, evidencing multi-compartment scope. ([source](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- Bundle strings evidence power-budget ('reactor: 40u'), patch-bay routing, analog gauges, three-symbol star fix, hull-plate digits, and launch authorization phrase mechanics in English and Portuguese. ([source](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- Bundle uses React JSX runtime and Vite modulepreload/mapDeps chunking, and the page loads /assets/index and /assets/jsx-runtime chunks, evidencing React framework and Vite build. ([source](https://derelict-game.vercel.app/assets/index-B1FViqo1.js))
+- No verified GitHub source repository was established: unauthenticated gh api calls failed and web searches surfaced only unrelated Derelict titles; repository\_url is therefore null and no engine version or creation model is claimed. ([source](https://x.com/mariohercules/status/2104619803801731353))
+- The WebMCP Challenge on Devpost confirms the context: a hackathon for apps where humans and agents collaborate via WebMCP, judged on usefulness, originality, execution, and human-agent experience. ([source](https://webmcp.devpost.com/))
+
+## Fictional reviews
+
+Treat these as illustrative, not real user reviews.
+
+- 82/100: Woke up in the cryo bay with my agent reading the emergency bulletin back to me and got chills. Rerouting the reactor with only 40u of power felt like defusing the ship itself.
+- 64/100: Gorgeous haunted-ship mood and clever human-plus-agent puzzles, but I wanted more rooms that react physically instead of through text choices.
+- 95/100: The star-fix ritual with three constellation symbols broke my brain in the best way. Play it with the AI link on — walking the Cormorant alone is very quiet.
+
+## Links
+
+- [Original submission](https://x.com/mariohercules/status/2104619803801731353)
+- [Play the game](https://derelict-game.vercel.app)

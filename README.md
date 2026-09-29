@@ -13,7 +13,12 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 
 <table>
 <tr>
+<td align="center" width="33%"><a href="games/no-source/www-arkenfall-site--72ddebfc4a3e/README.md"><img src="games/no-source/www-arkenfall-site--72ddebfc4a3e/screenshots/bebf14c6d33023860cb5a6395c3f68a2c6e382c5706ddf97a1954f9d1616950a.webp" alt="Arkenfall gameplay" height="180"></a><br><a href="games/no-source/www-arkenfall-site--72ddebfc4a3e/README.md"><strong>Arkenfall</strong></a> · 📸 7.8/10</td>
 <td align="center" width="33%"><a href="games/moorestech--moorestech/README.md"><img src="games/moorestech--moorestech/screenshots/b8ef860054cc365de1862d2ddd95dc2a5d06428c2a96fb8b637e3dfad0ae3086.webp" alt="moorestech gameplay" height="180"></a><br><a href="games/moorestech--moorestech/README.md"><strong>moorestech</strong></a> · 📸 7.6/10</td>
+<td align="center" width="33%"><a href="games/jbang2004--long-wind/README.md"><img src="games/jbang2004--long-wind/screenshots/aa8b96a87f1d0da100a92c30bd62d8078bc12c04e738292911e80bf61d891b3a.jpg" alt="长风 · Long Wind gameplay" height="180"></a><br><a href="games/jbang2004--long-wind/README.md"><strong>长风 · Long Wind</strong></a> · 📸 7.4/10</td>
+</tr>
+<tr>
+<td align="center" width="33%"><a href="games/no-source/derelict-game-vercel-app--b0d74135965a/README.md"><img src="games/no-source/derelict-game-vercel-app--b0d74135965a/screenshots/df04dfada0be06a40c014d29497819bfa27e4898306b5fcb8179d1bea0a857e9.webp" alt="DERELICT gameplay" height="180"></a><br><a href="games/no-source/derelict-game-vercel-app--b0d74135965a/README.md"><strong>DERELICT</strong></a> · 📸 7.2/10</td>
 <td align="center" width="33%"><a href="games/KyleBuildsAI--driftwing/README.md"><img src="games/KyleBuildsAI--driftwing/screenshots/19e1980fbc01b3b82335a13685bfa95fa3591374bc20653598f703d4508c43e8.jpg" alt="DRIFTWING gameplay" height="180"></a><br><a href="games/KyleBuildsAI--driftwing/README.md"><strong>DRIFTWING</strong></a> · 📸 7.2/10</td>
 <td align="center" width="33%"><a href="games/mogita--emberwake/README.md"><img src="games/mogita--emberwake/screenshots/25638c155a6402e967b94943fe3760eefb32cbcd900442ee1389d5cff1640853.jpg" alt="Emberwake gameplay" height="180"></a><br><a href="games/mogita--emberwake/README.md"><strong>Emberwake</strong></a> · 📸 7.0/10</td>
 </tr>
@@ -23,18 +28,28 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 <td align="center" width="33%"><a href="games/bridge-mind--turbo-kart-rally/README.md"><img src="games/bridge-mind--turbo-kart-rally/screenshots/afd51ac75299a5054255a6ede677b6f7aa4bbc4c77c04e0fc76b6a83e5cf52ee.jpg" alt="Turbo Kart Rally gameplay" height="180"></a><br><a href="games/bridge-mind--turbo-kart-rally/README.md"><strong>Turbo Kart Rally</strong></a> · 📸 7.0/10</td>
 </tr>
 <tr>
+<td align="center" width="33%"><a href="games/no-source/x-com--49aa5a2f58d9/README.md"><img src="games/no-source/x-com--49aa5a2f58d9/screenshots/63b3d2c07904fce577d7ec1c8a9eacbb676907dc8ca3374864b6a583bc941f47.jpg" alt="Arkenfall gameplay" height="180"></a><br><a href="games/no-source/x-com--49aa5a2f58d9/README.md"><strong>Arkenfall</strong></a> · 📸 6.8/10</td>
 <td align="center" width="33%"><a href="games/skelzer--gunbros-public/README.md"><img src="games/skelzer--gunbros-public/screenshots/9c2b7da8d78a0e52613f5c85f058f6d0ca410cc39a72ce310fc0718feac84fb7.png" alt="GunBros gameplay" height="180"></a><br><a href="games/skelzer--gunbros-public/README.md"><strong>GunBros</strong></a> · 📸 6.8/10</td>
-<td align="center" width="33%"><a href="games/WhiteBlackGoose--Lumenrift/README.md"><img src="games/WhiteBlackGoose--Lumenrift/screenshots/70e1b525397725388603b2d0b319c80678524a755610eabb43936c683b439cba.jpg" alt="LUMENRIFT gameplay" height="180"></a><br><a href="games/WhiteBlackGoose--Lumenrift/README.md"><strong>LUMENRIFT</strong></a> · 📸 6.8/10</td>
-<td align="center" width="33%"><a href="games/michaelcrosato--meridian-wake-g6a/README.md"><img src="games/michaelcrosato--meridian-wake-g6a/screenshots/795097682ba47d658140230b7de03ab869161480a83f27c5fc028b2b368a24cb.png" alt="Meridian Wake gameplay" height="180"></a><br><a href="games/michaelcrosato--meridian-wake-g6a/README.md"><strong>Meridian Wake</strong></a> · 📸 6.8/10</td>
+<td align="center" width="33%"><a href="games/BurakErdemci--kagit-kart/README.md"><img src="games/BurakErdemci--kagit-kart/screenshots/ad934f1b378cfdb0a85254e09a45adfc1d1935a7cbc997df9cff52a20d3a5f6c.jpg" alt="Kâğıt Kart gameplay" height="180"></a><br><a href="games/BurakErdemci--kagit-kart/README.md"><strong>Kâğıt Kart</strong></a> · 📸 6.8/10</td>
 </tr>
 <tr>
+<td align="center" width="33%"><a href="games/WhiteBlackGoose--Lumenrift/README.md"><img src="games/WhiteBlackGoose--Lumenrift/screenshots/70e1b525397725388603b2d0b319c80678524a755610eabb43936c683b439cba.jpg" alt="LUMENRIFT gameplay" height="180"></a><br><a href="games/WhiteBlackGoose--Lumenrift/README.md"><strong>LUMENRIFT</strong></a> · 📸 6.8/10</td>
+<td align="center" width="33%"><a href="games/michaelcrosato--meridian-wake-g6a/README.md"><img src="games/michaelcrosato--meridian-wake-g6a/screenshots/795097682ba47d658140230b7de03ab869161480a83f27c5fc028b2b368a24cb.png" alt="Meridian Wake gameplay" height="180"></a><br><a href="games/michaelcrosato--meridian-wake-g6a/README.md"><strong>Meridian Wake</strong></a> · 📸 6.8/10</td>
 <td align="center" width="33%"><a href="games/tanuu5--out-of-the-box/README.md"><img src="games/tanuu5--out-of-the-box/screenshots/127bada6fb2868405c3a5ec7d0c543fc5fb62d80779e8fdc32412c7f90d4a35d.jpg" alt="OUT OF THE BOX gameplay" height="180"></a><br><a href="games/tanuu5--out-of-the-box/README.md"><strong>OUT OF THE BOX</strong></a> · 📸 6.8/10</td>
+</tr>
+<tr>
 <td align="center" width="33%"><a href="games/SummerEngine--sakura-rally/README.md"><img src="games/SummerEngine--sakura-rally/screenshots/b17064b057a69f5bc3ab3a3a3313d552f8c2889a37721cc052537d5c0f40ff4a.jpg" alt="Sakura Rally gameplay" height="180"></a><br><a href="games/SummerEngine--sakura-rally/README.md"><strong>Sakura Rally</strong></a> · 📸 6.8/10</td>
 <td align="center" width="33%"><a href="games/tanuu5--kaiju-dokan/README.md"><img src="games/tanuu5--kaiju-dokan/screenshots/819d6707e0d41ce373891a8680f18527697a94ed7d0d7e2a00d62bbd42ee5fcf.jpg" alt="怪獣ドカン！ KAIJU DOKAN! gameplay" height="180"></a><br><a href="games/tanuu5--kaiju-dokan/README.md"><strong>怪獣ドカン！ KAIJU DOKAN!</strong></a> · 📸 6.8/10</td>
+<td align="center" width="33%"><a href="games/no-source/x-com--1c95a51bfde9/README.md"><img src="games/no-source/x-com--1c95a51bfde9/screenshots/0ad2bb29f5378be8e58278660f9420665f638117c2818e15a83eabaaff46e8f5.jpg" alt="Kettu-Vellam — Kerala Snake Boat Racing Game gameplay" height="180"></a><br><a href="games/no-source/x-com--1c95a51bfde9/README.md"><strong>Kettu-Vellam — Kerala Snake Boat Racing Game</strong></a> · 📸 6.7/10</td>
 </tr>
 <tr>
 <td align="center" width="33%"><a href="games/hamilton-junior--osrs-tower-defense/README.md"><img src="games/hamilton-junior--osrs-tower-defense/screenshots/b0bea442fdee6f5c8ff72a89438505c0937e0caf8f5395d4b92c59f664e97521.png" alt="OSRS Tower Defense gameplay" height="180"></a><br><a href="games/hamilton-junior--osrs-tower-defense/README.md"><strong>OSRS Tower Defense</strong></a> · 📸 6.5/10</td>
+<td align="center" width="33%"><a href="games/no-source/x-com--e6b37156ecf7/README.md"><img src="games/no-source/x-com--e6b37156ecf7/screenshots/9dce76bb81cd5cf09784823887c5010a44fbd6dad11d92a5df70e9be84090938.jpg" alt="DERELICT gameplay" height="180"></a><br><a href="games/no-source/x-com--e6b37156ecf7/README.md"><strong>DERELICT</strong></a> · 📸 6.2/10</td>
 <td align="center" width="33%"><a href="games/Carte1972--forja-abisal/README.md"><img src="games/Carte1972--forja-abisal/screenshots/1196f9d936a5939ecbcc61ae110f215ae532259776c6d67971b59d63879bfd67.jpg" alt="Forja Abisal gameplay" height="180"></a><br><a href="games/Carte1972--forja-abisal/README.md"><strong>Forja Abisal</strong></a> · 📸 6.2/10</td>
+</tr>
+<tr>
+<td align="center" width="33%"><a href="games/MiaAI-Lab--Claude-Opus-5.5-100-HTML-Files/README.md"><img src="games/MiaAI-Lab--Claude-Opus-5.5-100-HTML-Files/screenshots/a96d4b672a193f85699d70d235547d9ff13dce1ac2b5165c09e87f05027199b6.jpg" alt="HYPERBRICK gameplay" height="180"></a><br><a href="games/MiaAI-Lab--Claude-Opus-5.5-100-HTML-Files/README.md"><strong>HYPERBRICK</strong></a> · 📸 6.2/10</td>
+<td align="center" width="33%"><a href="games/no-source/app-usecrayon-ai--d539e7dea52f/README.md"><img src="games/no-source/app-usecrayon-ai--d539e7dea52f/screenshots/7048d178049d0b9ecd489537b45ab8a79c83b211bd15001f82b0163fa8481234.webp" alt="Last Train to the Sea gameplay" height="180"></a><br><a href="games/no-source/app-usecrayon-ai--d539e7dea52f/README.md"><strong>Last Train to the Sea</strong></a> · 📸 6.2/10</td>
 <td align="center" width="33%"><a href="games/binRick--scumm-game/README.md"><img src="games/binRick--scumm-game/screenshots/c38f898c5c2da016e18d3a570df9c805b643ed926a3b90c22af4be4316d9c735.png" alt="scumm-game gameplay" height="180"></a><br><a href="games/binRick--scumm-game/README.md"><strong>scumm-game</strong></a> · 📸 6.2/10</td>
 </tr>
 <tr>
@@ -78,17 +93,24 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 ## Games
 
 - [moorestech](games/moorestech--moorestech/README.md) — overall 64/100; screenshots 76/100
+- [长风 · Long Wind](games/jbang2004--long-wind/README.md) — overall 62/100; screenshots 74/100
 - [Meridian Wake](games/michaelcrosato--meridian-wake-g6a/README.md) — overall 60/100; screenshots 68/100
+- [Arkenfall](games/no-source/www-arkenfall-site--72ddebfc4a3e/README.md) — overall 58/100; screenshots 78/100; no verified source repository
+- [Arkenfall](games/no-source/x-com--49aa5a2f58d9/README.md) — overall 58/100; screenshots 68/100; no verified source repository
 - [LUCID SKY](games/MI3312--Fable5.1/README.md) — overall 58/100; screenshots not scored
 - [LUMENRIFT](games/WhiteBlackGoose--Lumenrift/README.md) — overall 58/100; screenshots 68/100
+- [DERELICT](games/no-source/derelict-game-vercel-app--b0d74135965a/README.md) — overall 57/100; screenshots 72/100; no verified source repository
 - [GunBros](games/skelzer--gunbros-public/README.md) — overall 57/100; screenshots 68/100
+- [Kâğıt Kart](games/BurakErdemci--kagit-kart/README.md) — overall 57/100; screenshots 68/100
 - [Tempora](games/Mofferato--tempora/README.md) — overall 57/100; screenshots 48/100
 - [Forja Abisal](games/Carte1972--forja-abisal/README.md) — overall 56/100; screenshots 62/100
+- [Kettu-Vellam — Kerala Snake Boat Racing Game](games/no-source/x-com--1c95a51bfde9/README.md) — overall 56/100; screenshots 67/100; no verified source repository
 - [Pet Island](games/tahcin--pet-island/README.md) — overall 56/100; screenshots not scored
 - [Sakura Rally](games/SummerEngine--sakura-rally/README.md) — overall 56/100; screenshots 68/100
 - [Ashlands](games/PeterBlenessy--ashlands/README.md) — overall 55/100; screenshots not scored
 - [Gale Kart](games/fants--Gale-kart/README.md) — overall 54/100; screenshots not scored
 - [Lethal Company: Opus Edition](games/TESTYEE-09--opus5.5Lethal/README.md) — overall 54/100; screenshots not scored
+- [LUMINA — Bloom of the Cosmos](games/no-source/lumina-cosmic-garden-vercel-app--623afeadea79/README.md) — overall 54/100; screenshots not scored; no verified source repository
 - [OUT OF THE BOX](games/tanuu5--out-of-the-box/README.md) — overall 54/100; screenshots 68/100
 - [OxCity](games/exdal--opus5.5-test/README.md) — overall 54/100; screenshots 48/100
 - [Radikal Riders](games/javichur--radikal-bikers/README.md) — overall 54/100; screenshots 55/100
@@ -98,9 +120,12 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 - [Uplift (Windborne)](games/Starwaves1--Uplift/README.md) — overall 53/100; screenshots not scored
 - [DRIFTWING](games/KyleBuildsAI--driftwing/README.md) — overall 52/100; screenshots 72/100
 - [Infinite Craft](games/no-source/neal-fun--be5898efdb64/README.md) — overall 52/100; screenshots 32/100; no verified source repository
+- [Last Train to the Sea](games/no-source/app-usecrayon-ai--d539e7dea52f/README.md) — overall 52/100; screenshots 62/100; no verified source repository
 - [OSRS Tower Defense](games/hamilton-junior--osrs-tower-defense/README.md) — overall 52/100; screenshots 65/100
+- [Mini Moto — Pine Ridge Park](games/no-source/x-com--0bed74daa5b4/README.md) — overall 51/100; screenshots not scored; no verified source repository
 - [Wind & Rain](games/michalbe--viatr-and-deshch/README.md) — overall 51/100; screenshots 58/100
 - [Deep Dive](games/chichiroxursox-droid--deep-dive/README.md) — overall 50/100; screenshots 55/100
+- [DERELICT](games/no-source/x-com--e6b37156ecf7/README.md) — overall 50/100; screenshots 62/100; no verified source repository
 - [Kart Royale](games/ryancampbell--kart-royale/README.md) — overall 50/100; screenshots 70/100
 - [PirateSeas](games/AndreiBesliu--PirateSeas/README.md) — overall 50/100; screenshots not scored
 - [ZOMBIES LAN](games/mitotkp--ZOMBIES-LAN/README.md) — overall 50/100; screenshots not scored
@@ -109,11 +134,15 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 - [HEX DANMAKU](games/macjoocan--hex-danmaku/README.md) — overall 48/100; screenshots 60/100
 - [Neon Arena](games/B-Blarr--Arena-Game/README.md) — overall 48/100; screenshots not scored
 - [Dead Signal: Exclusion Zone](games/bridge-mind--claude-opus-5.5-zombies-game/README.md) — overall 47/100; screenshots not scored
+- [Pool Sumo — Own the center](games/no-source/pool-sumo-chipchaunceytheonlyone-chatgpt-site--7a9a9cc859e7/README.md) — overall 47/100; screenshots not scored; no verified source repository
 - [The Nine Lives of Ash](games/phirogue--SparkyGames/README.md) — overall 47/100; screenshots 50/100
+- [Kettu-Vellam](games/no-source/kettuvellam-com--4d48a0d77bd4/README.md) — overall 46/100; screenshots not scored; no verified source repository
 - [Survive Coders](games/travisstephenfraser--survive-coders/README.md) — overall 46/100; screenshots 60/100
 - [THORNMERE — The Founding Song](games/dgahagan--THORNMERE/README.md) — overall 46/100; screenshots 60/100
 - [neverquest](games/kitnato--neverquest/README.md) — overall 45/100; screenshots 30/100
 - [Shallow Steel](games/adamholter--shallow-steel/README.md) — overall 45/100; screenshots not scored
+- [Skip a stone.](games/no-source/skip-a-stone-chipchaunceytheonlyone-chatgpt-site--0808dadf1c33/README.md) — overall 45/100; screenshots not scored; no verified source repository
+- [HYPERBRICK](games/MiaAI-Lab--Claude-Opus-5.5-100-HTML-Files/README.md) — overall 44/100; screenshots 62/100
 - [Pizza Chef](games/PizzaDAO--pizza-chef/README.md) — overall 44/100; screenshots not scored
 - [Véspera — O Último Sino](games/BrunoRS17--vespera-game-experiment-gpt6/README.md) — overall 44/100; screenshots not scored
 - [Wilderness](games/lortkipa--minecraft-astra/README.md) — overall 44/100; screenshots not scored

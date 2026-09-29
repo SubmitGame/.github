@@ -1,0 +1,153 @@
+{
+  "catalog_slug": null,
+  "controls": {
+    "gamepad": "unknown",
+    "keyboard_mouse": "supported",
+    "mobile_controls": "supported",
+    "motion_controls": "unknown"
+  },
+  "creation_models": [],
+  "how_to_play": [
+    "Choose one of 7 stones (keys 1-7) and press Prepare throw (or Space, or click the launch marker).",
+    "Drag the launch marker to aim and pull back for power, or use arrow keys: left/right aim, up/down power.",
+    "Hold the pull while the automatic ANGLE and BODY needles sweep; release (Space, Release stone, or release the drag) when both markers sit in the green windows.",
+    "Watch the stone fly, count skips, and hit moving toy boats for 100-300 bonus points; results show skips, distance, and boat points.",
+    "Chase your per-stone, per-timing best saved on the device, throw again, or copy a challenge link so a friend can play your exact throw as a ghost."
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    }
+  ],
+  "mechanics": [
+    "Slingshot-style aim and pull-back power throw with heading clamp and power-scaled timing windows",
+    "Dual automatic timing gauges (angle + body release alignment) with green sweet spots that shrink at higher power",
+    "7 selectable stones with distinct traits (Flat forgiving, Thin more skips, Heavy distance, Jade control, Quartz bounces, Obsidian precision, Granite steady pace) plus 3D stone inspector preview",
+    "Deterministic throw simulation with skip counting, distance measurement, and ghost/best-throw comparison",
+    "Moving toy-boat bonus targets worth 100, 150, 200, or 300 points with splash and chime feedback",
+    "Asynchronous friend challenges encoded in the URL hash: matching stone, timing mode, and ghost replay with no account",
+    "Per-stone and per-timing-mode personal bests persisted in localStorage with new-best detection",
+    "Assist modes and settings: calm mode, flight-path guide toggle, stay-on-shore camera, standard/relaxed timing pace, master volume"
+  ],
+  "player_modes": {
+    "human_players": 1,
+    "modes": [
+      "single-player"
+    ]
+  },
+  "play_game_url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/",
+  "rating": {
+    "reason": "Narrow single-throw scope but complete and polished: 7 stones, dual timing gauges, boat bonuses, ghost bests, async challenges, 3D inspector, and full settings/menu/result loop with Three.js lake scene and WebAudio. Closest comparators: Beachy Beachy Ball! (25/100) is the nearest single-mechanic 3D physics toy, and this sits clearly above it on systems depth (stones, timing, boats, challenges) and presentation; Arkanoid Neon (42/100) and 2048 (38/100) are single-loop arcade games at a similar scope tier, and this matches or slightly exceeds them on polish and options. Far below Meridian Wake (60/100) and Wind & Rain (51/100), which have vastly larger multi-system scope (trading/story, RTS economy/armies). Evidence gaps: judged from inspected DOM, CSS, and game script text only; no static gameplay stills, no playthrough, no performance/balance data, so code and markup alone do not prove playability, frame rate, or difficulty balance.",
+    "score": 45
+  },
+  "reconstructed_prompt": "Build a polished 3D stone-skipping browser game called Skip a stone: an alpine lake rendered with Three.js, slingshot drag to aim and set power, dual auto-sweeping angle/body timing meters with green release windows, 7 stones with distinct traits and a 3D preview dialog, skip counting, distance readout, moving toy boats for bonus points, ghost best-throw comparison, shareable async friend-challenge links, localStorage bests per stone and timing mode, calm mode, flight-path guide, shore camera option, relaxed timing pace, volume controls, keyboard shortcuts, ambient radio plus WebAudio splash/chime effects, and a responsive touch-friendly layout.",
+  "repository_url": null,
+  "screenshot_based_score": null,
+  "screenshots": [],
+  "source_analysis": [
+    {
+      "finding": "Page titles the game 'Skip a stone.' with tagline 'One more throw' and describes picking a stone, finding a release, and skipping across an alpine lake with friend challenges.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "Game is directly playable at the submitted URL: it renders a WebGL lake view with launch marker, 7-stone selector, timing meters, Prepare throw button, flight HUD, and result panel, not a repo or promo page.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "Import map maps 'three' to ./vendor/three.module.js and the page loads main.js as a module, establishing Three.js as the engine; version is not stated.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "main.js imports scene, simulation, rocks, rock-inspector, radio, and wind modules and drives the loop with lake.render, lake.renderer WebGL info, and webglcontextlost handling, establishing JavaScript, WebGL rendering, and Web Audio (AudioContext, gain nodes, splash/chime synthesis) usage.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/main.js"
+    },
+    {
+      "finding": "Keyboard and mouse controls are explicitly documented in the How to play panel: stones 1-7, left/right aim, up/down power, Space prepares then throws, Esc cancels or pauses; launch marker uses pointer drag with aim readout.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "Touch/mouse drag input is implemented via pointerdown/pointermove/pointerup with setPointerCapture on the launch marker, and CSS sets touch-action:none on the launch control and 3D stone viewport with a touch-tuned mobile layout, establishing touch support.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/main.js"
+    },
+    {
+      "finding": "No accelerometer, gyroscope, tilt, or gamepad references appear in the inspected page markup, styles, or game script, so motion and gamepad support are unestablished.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/main.js"
+    },
+    {
+      "finding": "Play is single-player against own bests or an async challenge ghost: bests are saved per stone and timing mode on the device, and the share dialog says 'Your friend sees your actual throw beside theirs. No account needed.' There is no real-time human opponent or AI opponent counted as a player.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "No GitHub repository link appears in the inspected page; the chatgpt.site host exposes style.css, main.js, and asset paths but no source repository, and gh api was unavailable in this environment (no token), so no verified repository URL is established.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    },
+    {
+      "finding": "No static gameplay screenshots, og:image, or screenshot gallery is exposed; gameplay renders in a live WebGL canvas, so no gameplay still could be opened and inspected and no screenshot score is given.",
+      "url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/"
+    }
+  ],
+  "source_url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/",
+  "tags": [
+    "stone-skipping",
+    "physics",
+    "timing",
+    "3d",
+    "threejs",
+    "webgl",
+    "single-player",
+    "casual",
+    "high-score",
+    "asynchronous-challenge",
+    "browser-game"
+  ],
+  "technologies": [
+    {
+      "category": "engine",
+      "evidence_url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/",
+      "name": "Three.js",
+      "version": null
+    },
+    {
+      "category": "language",
+      "evidence_url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/main.js",
+      "name": "JavaScript",
+      "version": null
+    },
+    {
+      "category": "rendering",
+      "evidence_url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/main.js",
+      "name": "WebGL",
+      "version": null
+    },
+    {
+      "category": "audio",
+      "evidence_url": "https://skip-a-stone.chipchaunceytheonlyone.chatgpt.site/main.js",
+      "name": "Web Audio API",
+      "version": null
+    }
+  ],
+  "title": "Skip a stone.",
+  "fictional_reviews": [
+    {
+      "rating": 78,
+      "text": "[Fictional review] One-more-throw perfection: waiting for both needles to hit green and then skimming past a toy boat for +200 never gets old, and beating my own Thin-stone ghost is weirdly tense."
+    },
+    {
+      "rating": 55,
+      "text": "[Fictional review] Made-up casual take: lovely calm lake and smart timing twist on a pull-back throw, but it is the same single skip repeated, so sessions stay short."
+    },
+    {
+      "rating": 92,
+      "text": "[Fictional review] Invented timing-game fan note: the power-versus-window tradeoff, per-stone bests, and shareable challenge links make every release feel earned, even with only one lake to play on."
+    }
+  ],
+  "repository_created_at": null,
+  "analysis": {
+    "analyzed_at": "2026-09-29T03:27:14.861519+00:00",
+    "model": "opencode/muse-spark-1.3-contributor-free",
+    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36516951301/job/109241266183",
+    "session_id": "ses_f14ce6b17ffeWlaML3S7ckexh3",
+    "prompt_sha256": "f4ef902bcdb021b49a9b65502b6f62321db64144fe4aba50c31bea6ee4cd50da"
+  }
+}

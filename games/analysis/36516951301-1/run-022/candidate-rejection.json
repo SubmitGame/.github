@@ -1,0 +1,4 @@
+{
+  "status": "not_game",
+  "reason": "The submitted URL https://github.com/VibeFin/awesome-opus-5.5-games/blob/main/data/grokgames.json is a JSON dataset file (1881 lines, ~105-107KB per GitHub blob page and api.github.com contents response), not a single playable game. Its parsed content has top-level keys updated_at/scoring_rubric/games with 125 entries (e.g. pelican-bicycle-adventure, transport-ship, qq-speed-3d-racing), each with its own play_url/source_url. Evidence: https://github.com/VibeFin/awesome-opus-5.5-games/blob/main/data/grokgames.json and https://raw.githubusercontent.com/VibeFin/awesome-opus-5.5-games/main/data/grokgames.json and https://api.github.com/repos/VibeFin/awesome-opus-5.5-games/contents/data/grokgames.json. No single game, playable URL, or gameplay/screenshots can be attributed to the JSON file itself."
+}
