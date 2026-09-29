@@ -1,6 +1,6 @@
 # Infinite Craft
 
-[Play the game](https://neal.fun/infinite-craft/) · [View original submission](https://neal.fun/infinite-craft/) · [Previous report](https://github.com/SubmitGame/.github/blob/70721f73031ad5c55996fc438eb674a2c79244ff/games/no-source/neal-fun--be5898efdb64/README.md)
+[Play the game](https://neal.fun/infinite-craft/) · [View original submission](https://neal.fun/infinite-craft/) · [Previous report](https://github.com/SubmitGame/.github/blob/4746606c3279f0248cb9819cfb81d7db76a2671a/games/no-source/neal-fun--be5898efdb64/README.md)
 
 No verified source repository.
 
@@ -26,7 +26,7 @@ One inspected gameplay frame only, judged from stills without inferring motion. 
 | Detail | Value |
 | --- | --- |
 | Added to catalog | 27 Sep 2026 · 01:22 UTC |
-| Last updated | 29 Sep 2026 · 01:41 UTC |
+| Last updated | 29 Sep 2026 · 01:46 UTC |
 | Documented creation models | Not established |
 
 ## Screenshots
@@ -87,15 +87,15 @@ Build Infinite Craft, a browser sandbox crafting game: blank infinite canvas plu
 
 ## Source evidence
 
-- Infinite Craft is a 2024 sandbox game developed by Neal Agarwal; platforms Web, iOS, Android; releases Web Jan 31 2024, iOS Apr 27/30 2024, Android May 21 2024; Genre Sandbox, Mode Single-player ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
-- Official neal.fun blurb: a crafting game where you can make anything, start with Water, Fire, Wind and Earth and branch out to the rest of the universe ([source](https://neal.fun/infinite-craft))
+- Infinite Craft is a 2024 sandbox game developed by Neal Agarwal; platforms Web, iOS, Android; releases Web Jan 31 2024, iOS Apr 30 2024, Android May 21 2024; Genre Sandbox, Mode Single-player ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
+- Official neal.fun blurb: a crafting game where you can make anything, start with Water, Fire, Wind and Earth and branch out; neal.fun index links the /infinite-craft/ tile ([source](https://neal.fun/infinite-craft))
 - Gameplay: player starts with water, fire, wind and earth and combines two elements to form new ones; all crafted elements saved to sidebar with search by name; no defined goal, infinite possible elements ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
 - Uses Llama 2 and Llama 3.1 to create new elements and assign emojis; unseen pairs go to generative AI then saved to database so the same pair always outputs the same result; first finder gets First Discovery label; content filter with occasional incoherent results ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
-- Layout has infinite workspace plus element list with Discoveries and sorting; all you need is a working mouse to click and drag elements onto the canvas to combine them; left-click selects, double-click copies, right-click deletes ([source](https://www.ign.com/wikis/infinite-craft/How_to_Play_Infinite_Craft))
-- Official app listing: the official Infinite Craft app from neal.fun, start with Water, Fire, Earth and Wind, over 100 million combinations, be first to discover new items; tagged Puzzle, Merge, Casual, Single player, Stylized; 5M+ downloads, 4.8 stars; new features save files, infinite canvas, importing/exporting saves, better searching/sorting ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
-- Mobile/touch support: browser version works on desktop, laptop, tablet or mobile; on PC drag elements, on mobile tap one element then another to merge; official Android/iOS apps ship the same loop for touch devices ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
-- GitHub API search returns only third-party clones, scrapers and reconstructions (lia-07/infinite-crafter-cracked, finiteCraft/finiteCraft scraper, functorism/world-graph reconstruction, quantumbagel/InfiniteScrape, microbrewerGM/infinite-craft explorer); no official Neal Agarwal source repository, so no verified repository\_url ([source](https://api.github.com/search/repositories?q=infinite-craft+neal+agarwal&per_page=5))
-- Direct fetch of the playable page returns Cloudflare 403 challenge, so live DOM was corroborated via search excerpts, Wikipedia, IGN guide and store listings; source code was not cloned and no engine or code findings are claimed ([source](https://neal.fun/infinite-craft/))
+- Layout has infinite workspace plus element list with Discoveries and sorting; all you need is a working mouse to click and drag elements onto the canvas to combine them; left-click selects, double-click copies, right-click deletes; broom clears workspace, moon toggles night mode, trashcan deletes items ([source](https://www.ign.com/wikis/infinite-craft/How_to_Play_Infinite_Craft))
+- Official app listing: the official Infinite Craft app from neal.fun, start with Water, Fire, Earth and Wind, over 100 million combinations, be first to discover new items; tagged Puzzle, Merge, Casual, Single player, Stylized; 5M+ downloads; new features save files, infinite canvas, importing/exporting saves, better searching/sorting ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
+- Mobile/touch support: official Android/iOS apps ship the same combine loop for touch devices and the browser game is described as playable on mobile; keyboard/mouse support established by IGN click-and-drag plus shortcut documentation ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
+- GitHub API search returns only third-party clones, scrapers and reconstructions (lia-07/infinite-crafter-cracked, finiteCraft/finiteCraft scraper, functorism/world-graph reconstruction, quantumbagel/InfiniteScrape, microbrewerGM/infinite-craft explorer); no official Neal Agarwal source repository, so no verified repository\_url; gh CLI had no auth in this environment so evidence was verified via unauthenticated api.github.com plus curl ([source](https://api.github.com/search/repositories?q=infinite-craft+neal+agarwal&per_page=5))
+- Direct fetch of the playable page returns Cloudflare 403 challenge (curl HTTP 403), so live DOM was corroborated via search excerpts, Wikipedia, IGN guide, neal.fun index and store listings; source code was not cloned and no engine or code findings are claimed ([source](https://neal.fun/infinite-craft/))
 - Existing catalog already contains this exact game at games/no-source/neal-fun--be5898efdb64 (overall 52, screenshots 32, no verified source repository), matched by identical playable URL https://neal.fun/infinite-craft/, not by title alone; existing slug is reused ([source](https://github.com/AwesomeClaude/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md))
 
 ## Fictional reviews

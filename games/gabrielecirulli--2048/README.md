@@ -1,6 +1,6 @@
 # 2048
 
-[Play the game](https://gabrielecirulli.github.io/2048/) · [View source](https://github.com/gabrielecirulli/2048) · [Previous report](https://github.com/SubmitGame/.github/blob/70721f73031ad5c55996fc438eb674a2c79244ff/games/gabrielecirulli--2048/README.md)
+[Play the game](https://gabrielecirulli.github.io/2048/) · [View source](https://github.com/gabrielecirulli/2048) · [Previous report](https://github.com/SubmitGame/.github/blob/4746606c3279f0248cb9819cfb81d7db76a2671a/games/gabrielecirulli--2048/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,7 +11,7 @@
 
 ### Overall rating
 
-Exact reanalysis match of catalog game gabrielecirulli--2048, submitted via its repository URL. One flawless 4x4 sliding-merge loop shipped on web plus iOS/Android, with ~13415 stars and ~17580 forks evidencing mass validation. Excluding the target itself, it sits above flat single-screen casuals such as TypeScript-Blackjack (28), chess rot (30) and Top-10 Tension (32) on tuning and proven appeal, roughly alongside Taipo (35), T-Rex Runner (35) and Wouf Kart (38) as complete but narrow in scope, and trails Turbo Kart Rally (40), THORNMERE (46) and catalog-top moorestech (64) enormously on scope, depth and audiovisual richness. Nowhere near AAA: no 3D scene, audio design, narrative or progression. Evidence gaps: gh CLI had no auth so GitHub evidence was verified via unauthenticated api.github.com endpoints plus curl; no live playthrough instrumented, so animations, feel, performance and spawn balance are unmeasured; inspected docs and game\_manager.js confirm the rules but do not prove balance or performance.
+Reanalysis matches catalog game gabrielecirulli--2048 via verified repository URL. One polished 4x4 sliding-merge loop on web plus iOS/Android, with ~13415 stars and ~17580 forks evidencing mass validation. Excluding the target itself, it sits above flat single-screen casuals such as TypeScript-Blackjack (28), chess rot (30) and Top-10 Tension (32) on tuning and proven appeal, roughly alongside Taipo (35), T-Rex Runner (35) and Wouf Kart (38) as complete but narrow in scope, and trails Turbo Kart Rally (40), THORNMERE (46) and catalog-top moorestech (64) enormously on scope, depth and audiovisual richness. Nowhere near AAA: no 3D scene, audio design, narrative or progression. Evidence gaps: gh CLI had no auth in this environment so GitHub evidence was verified via unauthenticated api.github.com endpoints plus curl; no live playthrough instrumented, so animations, feel, performance and spawn balance are unmeasured; inspected docs and game\_manager.js confirm the rules but do not prove balance or performance.
 
 ### Screenshot score
 
@@ -25,7 +25,7 @@ First image is the game's own full-board output: clean cream board, readable col
 | --- | --- |
 | Repository created | 05 Mar 2014 · 16:03 UTC |
 | Added to catalog | 27 Sep 2026 · 01:22 UTC |
-| Last updated | 29 Sep 2026 · 01:41 UTC |
+| Last updated | 29 Sep 2026 · 01:46 UTC |
 | Documented creation models | Not established |
 
 ## Screenshots
@@ -38,13 +38,13 @@ Inspected 584x728 PNG of the game's own runtime output: cream page with 2048 mas
 
 ![2048 gameplay](screenshots/bd9f3bef2985fc2ecbc88541cf9b8d696a12cae07b85511a853e0322fa4cba72.jpg)
 
-Inspected 1200x630 JPEG promotional crop from play2048.co: angled close-up of beveled tiles showing 8, 64, 4, glowing 256, 2, 16, 32 with soft shadows on a taupe tray. Only a partial board is visible with no score, masthead or full grid; curated reference imagery rather than a full gameplay frame.
+Inspected 1200x630 JPEG promotional crop: angled close-up of beveled tiles showing 8, 64, 4, glowing 256, 2, 16, 32 with soft shadows on a taupe tray. Only a partial board is visible with no score, masthead or full grid; curated reference imagery rather than a full gameplay frame.
 
 [Original screenshot](https://play2048.co/ogImage.jpg)
 
 ## Play
 
-- Open the playable game at https://gabrielecirulli.github.io/2048/ (canonical homepage https://play2048.co/) in a browser with JavaScript enabled
+- Open the playable game at https://gabrielecirulli.github.io/2048/ in a browser with JavaScript enabled
 - Slide all tiles at once with arrow keys (or WASD) or swipe on touch screens
 - When two tiles with the same number touch they merge into their sum
 - A new 2 or 4 tile spawns after each move, so avoid filling the 4x4 grid
@@ -102,7 +102,6 @@ Build a minimal single-page web sliding-tile puzzle on a 4x4 grid: arrow keys an
 - index.html sets mobile web-app capable viewport with HandheldFriendly/MobileOptimized tags and apple-touch icons, and the how-to-play text documents arrow-key keyboard play; together with the swipe handler this establishes touch and keyboard support ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/index.html))
 - game\_manager.js implements the full loop: 2 starting tiles, move/restart/keepPlaying events, setup with saved-state reload, win/game-over termination checks and endless continuation after winning ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/js/game_manager.js))
 - gabrielecirulli.github.io/2048 returns the full game DOM (scores, game-intro 'Join the numbers and get to the 2048 tile!', New Game button, game-container grid), confirming it is a playable mirror ([source](https://gabrielecirulli.github.io/2048/))
-- play2048.co is the repo homepage and canonical playable shell; fetch shows '2048 - Play the Free Online Game' JS shell with the same game identity ([source](https://play2048.co/))
 - No multiplayer, turn-passing, or networking is mentioned in the repo README, playable pages, or API topics; scoring is solo score plus best-score storage, establishing single-player with one human player ([source](https://github.com/gabrielecirulli/2048))
 
 ## Fictional reviews

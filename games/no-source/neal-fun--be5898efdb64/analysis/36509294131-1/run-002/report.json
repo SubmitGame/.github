@@ -44,10 +44,6 @@
     },
     {
       "label": "Related link",
-      "url": "https://dotesports.com/general/news/how-to-play-infinite-craft-from-neal-fun"
-    },
-    {
-      "label": "Related link",
       "url": "https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en"
     }
   ],
@@ -81,10 +77,7 @@
   "screenshots": [
     {
       "observation": "Inspected gameplay frame, the game's own runtime output: white infinite canvas with small pill-shaped text nodes such as Peter Griffin, Mickey Mouse, Sea Unicorn, Head-first, Ghost, Aquarium, Red Dragon, Mountain Range and Donald Trump linked by thin grey lines; right sidebar lists Discoveries with emoji rows; top bars show NEAL.FUN and Infinite Craft logos. Flat DOM text, clean and readable, no lighting, texture, environment or composed scene.",
-      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/Gameplay_screenshot_of_Infinite_Craft%2C_2024.png",
-      "local_path": "screenshots/e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730.png",
-      "sha256": "e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730",
-      "downloaded_at": "2026-09-28T04:46:51.178414+00:00"
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/Gameplay_screenshot_of_Infinite_Craft%2C_2024.png"
     }
   ],
   "source_analysis": [
@@ -150,8 +143,5 @@
     "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36509294131/job/109217657410",
     "session_id": "ses_f1529ba02ffeIHRIqXZFstmFgE",
     "prompt_sha256": "4452c976c1c8887bdb87cfe6fba9d10d23142b0ecb6cd0011f7ccbafcc1e25c1"
-  },
-  "catalog_added_at": "2026-09-27T01:22:14Z",
-  "catalog_updated_at": "2026-09-29T01:46:23.474552+00:00",
-  "previous_report_url": "https://github.com/SubmitGame/.github/blob/4746606c3279f0248cb9819cfb81d7db76a2671a/games/no-source/neal-fun--be5898efdb64/README.md"
+  }
 }
