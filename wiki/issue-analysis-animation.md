@@ -13,9 +13,15 @@ Run `python3 -m http.server 8876 --bind 127.0.0.1` from the repository root. Ope
 - Confirm four embedded images, eight depth groups, and fourteen running CSS tracks after enabling motion.
 - Observe changing robot and card transforms across time. Check progressively larger pointer displacement; use the observed 1.231 px world and 11.493 px controller offsets as a reference, not fixed requirements.
 - Pause all fourteen tracks; resume them. Hide the robot, inspect the reconstructed scenery, and restore it. Disable parallax and confirm every pointer offset clears.
-- Check reduced motion before opting in; expect zero animation tracks. Emulate no preference only for verification, then restore the browser preference.
+- Check the interactive preview under reduced motion; expect it to pause until Play motion is selected. Restore browser emulation after verification.
 - Check the 390 px layout; confirm document width stays 390 px without overflow.
 - Expand image-mode playback; inspect transparency and pixel typography. Compare two image-only frames across time to confirm autonomous motion.
-- Open the standalone export; confirm fourteen running tracks under no-preference and zero under reduced motion.
+- Open the standalone export; confirm autonomous CSS motion under both no-preference and reduced-motion settings. Confirm the robot transform changes over time. Expect pointer parallax to require an interactive SVG context.
 - Download through the preview control. Compare SHA-256 hashes with the built export using Node crypto; avoid the host's failing Perl `shasum` locale path.
 - Preserve `svg/issue-analysis/preview.png` and the live preview as deliverables. Keep browser-renderer caveats separate from actual failures.
+
+## Reuse the live GitHub evidence
+
+Inspect [issue #2](https://github.com/SubmitGame/.github/issues/2), its [startup comment](https://github.com/SubmitGame/.github/issues/2#issuecomment-5882047879), [Actions job](https://github.com/SubmitGame/.github/actions/runs/36509294131/job/109217657410), and [final report](https://github.com/SubmitGame/.github/issues/2#issuecomment-5882068833). Confirm the startup comment pins the SVG to workflow commit `3acbb128d17484b78d925cef16a85a245dd8f77a`, shows the estimate and direct job link, and changes image frames in the real GitHub issue under reduced motion. Confirm that direct raw SVG playback changes the robot transform even when its inline script is blocked by GitHub's sandbox. Treat the earlier immutable `4c53398` raw URL and issue #1 startup comment as old still versions; do not expect a later repository commit to update their pinned content.
+
+Check the published catalog commit `1961aacd2fb9ca4784bdb57d39dc781d0d011497` and both 2048 and Infinite Craft report links from the final comment. Inspect the same worker's OpenCode records, server, and tunnels during analysis; keep it alive in the owner-only hold without waiting through the idle period. Do not infer that standalone pointer parallax works in GitHub's image context; only the autonomous CSS motion was verified there.
