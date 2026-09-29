@@ -1,6 +1,6 @@
 # 怪獣ドカン！ KAIJU DOKAN!
 
-[Play the game](https://tanuu5.github.io/kaiju-dokan/) · [View source](https://github.com/tanuu5/kaiju-dokan)
+[Play the game](https://tanuu5.github.io/kaiju-dokan/) · [View source](https://github.com/tanuu5/kaiju-dokan) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/tanuu5--kaiju-dokan/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,7 +11,7 @@
 
 ### Overall rating
 
-Excluding the target itself, closest comparators are Kart Royale (50 overall / 70 screenshots: complete polished 3D loop but single-track racer), OSRS Tower Defense (52/65: deep wave/tower systems with dense HUD), Ashlands (55/no scorable screenshots: broadest systems scope but no inspectable visuals), Turbo Kart Rally (40/70: polished 3D racer, thinner evidenced systems), and moorestech (64/76: far broader factory/sim scope with denser UI). Kaiju Dokan shows a complete verified playable loop (destruction physics, combos, energy/breath, AI waves, HP/regen, ranks, minimap, settings, headless balance sim) plus three coherent stylized 3D screenshots and three verified input schemes, placing it above the single-loop kart racers and near OSRS/Ashlands, but below moorestech on scope and proven depth. Capped well below AAA: single stage (stage 2 pending), no verified performance/balance data, and stills cannot prove feel, difficulty, or long-term variety.
+Excluding the target itself, closest comparators are OUT OF THE BOX (54 overall / 68 screenshots: same author, similar stylized 3D toy, single focused loop), Kart Royale (50/70: complete polished 3D loop but single-track racer), OSRS Tower Defense (52/65: deep wave/tower systems with dense HUD), and moorestech (64/76: far broader factory/sim scope with denser systems). Kaiju Dokan shows a complete verified playable loop (block destruction physics, combos, energy/breath, AI waves, HP/regen, ranks, minimap, settings, headless balance sim) plus two coherent stylized 3D gameplay frames and three verified input schemes, placing it above single-loop kart racers and near OSRS Tower Defense, level with its prior 54 rating. Capped well below AAA: single stage (stage 2 pending), no verified performance/balance data, and stills cannot prove feel, difficulty, or long-term variety.
 
 ### Screenshot score
 
@@ -25,26 +25,26 @@ Two inspected gameplay frames show coherent stylized sunset-city 3D with dense l
 | --- | --- |
 | Repository created | 26 Sep 2026 · 09:20 UTC |
 | Added to catalog | 27 Sep 2026 · 06:24 UTC |
-| Last updated | 27 Sep 2026 · 06:24 UTC |
+| Last updated | 29 Sep 2026 · 03:16 UTC |
 | Documented creation models | [Claude Opus 5.5](https://github.com/tanuu5/kaiju-dokan) |
 
 ## Screenshots
 
 ![怪獣ドカン！ KAIJU DOKAN! gameplay](screenshots/819d6707e0d41ce373891a8680f18527697a94ed7d0d7e2a00d62bbd42ee5fcf.jpg)
 
-Inspected 1280x720 gameplay frame: third-person view of dark kaiju silhouette stomping through a dense sunset city of lit-window blocks, manga impact text and +1,470 score popup, full HUD (Dokagon HP/energy bars, 3:36 timer, 4% destruction vs 40% goal, score 17,753, 14 toppled buildings, 26 combo x3.5, minimap, WASD/gamepad control hints). Clearly the game's own runtime output; densest gameplay evidence.
+Inspected gameplay frame: third-person view of a dark kaiju stomping through a dense sunset city of lit-window blocks, manga impact text with +1,470 score popup, full HUD with Dokagon HP/energy bars, 3:36 timer, 4% destruction vs 40% goal, score 17,753, 26 combo x3.5, minimap, and control hints. Clearly the game's own runtime output; densest gameplay evidence, listed first.
 
 [Original screenshot](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/docs/images/gameplay.jpg)
 
 ![怪獣ドカン！ KAIJU DOKAN! gameplay](screenshots/f1bedb1770a21bd477a793d990dbfae9c179992e5c8fd09a1965c9011bb14764.jpg)
 
-Inspected 1280x720 gameplay close-up: kaiju firing a bright magma breath beam into city blocks with flying debris cubes, dust, glowing dorsal plates, sunset skyline and lit windows behind, score popups (+849/+1,440/+200). No HUD visible but clearly the game's own runtime output; shows breath attack and destruction effects.
+Inspected gameplay close-up: kaiju firing a bright magma breath beam into city blocks with flying debris cubes, dust, glowing dorsal plates, sunset skyline and lit windows behind, score popups (+849/+1,440/+200). No HUD visible but clearly the game's own runtime output; shows breath attack and destruction effects.
 
 [Original screenshot](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/docs/images/breath.jpg)
 
 ![怪獣ドカン！ KAIJU DOKAN! gameplay](screenshots/2184597523c108288298fd14a7748e2bc97bda5c6634946a2c9667072077eebb.jpg)
 
-Inspected 1280x720 title card: KAIJU DOKAN! logo and Stage 1 bayside-city text over the same sunset procedural city, orange game-start button, mission text (40% destruction goal, defense-force warning) and control summary. Menu/title presentation of the game's own output, discounted as non-gameplay.
+Inspected title card: KAIJU DOKAN! logo and Stage 1 bayside-city text over the same sunset procedural city, orange game-start button, mission text (40% destruction goal, defense-force warning) and control summary. Menu/title presentation of the game's own output, discounted as non-gameplay and listed last.
 
 [Original screenshot](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/docs/images/title.jpg)
 
@@ -97,10 +97,10 @@ Inspected 1280x720 title card: KAIJU DOKAN! logo and Stage 1 bayside-city text o
 
 ## Technologies
 
-- **Three.js ^0.186.1** — engine ([evidence](https://api.github.com/repos/tanuu5/kaiju-dokan/contents/package.json?ref=main))
-- **TypeScript ^7.0.2** — language ([evidence](https://api.github.com/repos/tanuu5/kaiju-dokan/contents/package.json?ref=main))
+- **Three.js ^0.186.1** — engine ([evidence](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/package.json))
+- **TypeScript ^7.0.2** — language ([evidence](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/package.json))
 - **Vite ^8.3.1** — build ([evidence](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/vite.config.ts))
-- **Vitest ^4.1.11** — build ([evidence](https://api.github.com/repos/tanuu5/kaiju-dokan/contents/package.json?ref=main))
+- **Vitest ^4.1.11** — build ([evidence](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/package.json))
 - **WebGL2** — rendering ([evidence](https://github.com/tanuu5/kaiju-dokan))
 - **Web Audio API** — audio ([evidence](https://github.com/tanuu5/kaiju-dokan))
 
@@ -110,27 +110,28 @@ Build KAIJU DOKAN, a 3D browser kaiju-destruction game in Three.js + TypeScript:
 
 ## Source evidence
 
-- Repository is an actual game: description (via API) is a 3D browser game where you control a giant kaiju to smash a city, built with Three.js + TypeScript; public repo, language TypeScript, homepage set to the GitHub Pages build, has\_pages true. ([source](https://api.github.com/repos/tanuu5/kaiju-dokan))
+- Live URL opens the actual playable game: HUD with Dokagon HP/energy, 4:00 timer, destruction rate vs goal, score, toppled-building count, control help (WASD/Shift/mouse/clicks/E/Space/breath/roar plus gamepad mapping), touch buttons, pause, settings, and stage-clear result — not just a repo or promo page. ([source](https://tanuu5.github.io/kaiju-dokan/))
+- Repository is an actual game: repo title describes a 3D browser game where you control a giant kaiju to smash a city, built with Three.js + TypeScript; file listing shows src/, tests/, index.html, package.json, vite.config.ts, docs/images. ([source](https://github.com/tanuu5/kaiju-dokan))
 - README identifies the game as controlling giant kaiju Dokagon to destroy a sunset bayside city, with all graphics, sound effects, and BGM generated in code and no external image/audio files. ([source](https://github.com/tanuu5/kaiju-dokan))
-- README documents the win/lose loop: 4-minute limit, reach 40% destruction (live build shows 50% goal text) to clear the stage, keep rampaging for score after clearing, combo multiplier up to x5, energy charges magma breath, tanks and attack helicopters attack over time, HP reaches 0 for game over with regen rules. ([source](https://github.com/tanuu5/kaiju-dokan))
-- README documents keyboard+mouse controls (WASD, mouse camera, clicks, Space, E, Q, F, etc.), keyboard-only alternatives, and full gamepad mapping including menu navigation; the live index.html confirms the same bindings plus HUD, minimap, pause, settings, and result screens. ([source](https://github.com/tanuu5/kaiju-dokan))
-- README documents smartphone/tablet touch controls: left-side drag spawns a virtual stick (push to edge to dash), right-side drag for camera, lower-right buttons for punch/tail/jump/breath/roar, pause button; index.html contains the touch UI layer with the same buttons. ([source](https://github.com/tanuu5/kaiju-dokan))
+- README documents the win/lose loop: 4-minute limit, reach 40% destruction to clear the stage, keep rampaging for score after clearing, combo multiplier up to x5, energy charges magma breath, tanks and attack helicopters attack over time, HP reaches 0 for game over with regen rules. ([source](https://github.com/tanuu5/kaiju-dokan))
+- README documents keyboard+mouse controls (WASD, mouse camera, clicks, Space, E, Q, F), keyboard-only alternatives (J/K/L/I/arrows), and full gamepad mapping (sticks, X/B/A/RT/Y/START, menu navigation); live page confirms the same bindings. ([source](https://github.com/tanuu5/kaiju-dokan))
+- README documents smartphone/tablet touch controls: left-side drag spawns a virtual stick (push to edge to dash), right-side drag for camera, lower-right buttons for punch/tail/jump/breath/roar, pause button; live page shows the touch UI layer with the same buttons. ([source](https://github.com/tanuu5/kaiju-dokan))
 - No source mentions accelerometer/gyroscope motion controls, so motion support is unknown rather than ruled out. ([source](https://github.com/tanuu5/kaiju-dokan))
 - No multiplayer is documented; the game describes one player as the kaiju against AI defense forces (tanks, helicopters), so single-player with 1 human player. ([source](https://github.com/tanuu5/kaiju-dokan))
-- Live URL opens the actual playable game (title screen, HUD with HP/energy/timer/destruction/score/combo/minimap, touch buttons, pause, settings, stage-clear result), not just a repo or promo page. ([source](https://tanuu5.github.io/kaiju-dokan/))
 - README attributes development to AI coding tool Claude Code with model Claude Opus 5.5. ([source](https://github.com/tanuu5/kaiju-dokan))
-- package.json declares three ^0.186.1 dependency with TypeScript ^7.0.2, vite ^8.3.1, vitest ^4.1.11 dev dependencies; vite.config.ts confirms a Vite build targeting es2022 with relative base for GitHub Pages. ([source](https://api.github.com/repos/tanuu5/kaiju-dokan/contents/package.json?ref=main))
-- Languages endpoint is TypeScript-dominant with CSS and HTML, matching a TypeScript browser game with custom CSS UI. ([source](https://api.github.com/repos/tanuu5/kaiju-dokan/languages))
-- README technical section documents InstancedMesh block-based buildings with CPU destruction/support/toppling simulation, procedural shader windows/roads/sky/sea, sunset lighting with bloom, stencil see-through kaiju silhouette, and Web Audio synthesized footsteps/explosions/roars/drum-and-bass BGM loop. ([source](https://github.com/tanuu5/kaiju-dokan))
-- No existing catalog entry matches this repository or playable URL; grep over games/ and README.md found no kaiju-dokan or tanuu5 reference, so no slug is reused. ([source](https://github.com/tanuu5/kaiju-dokan))
+- package.json declares three ^0.186.1 dependency with TypeScript ^7.0.2, vite ^8.3.1, vitest ^4.1.11 dev dependencies. ([source](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/package.json))
+- vite.config.ts confirms a Vite build targeting es2022 with relative base for GitHub Pages. ([source](https://raw.githubusercontent.com/tanuu5/kaiju-dokan/main/vite.config.ts))
+- README technical section documents InstancedMesh block-based buildings with CPU destruction/support/toppling simulation, procedural shader windows/roads/sky/sea, sunset lighting with bloom, stencil see-through kaiju silhouette, and Web Audio synthesized SFX and drum-and-bass BGM loop. ([source](https://github.com/tanuu5/kaiju-dokan))
+- README operating-environment section requires a WebGL2-capable browser, establishing WebGL2 rendering. ([source](https://github.com/tanuu5/kaiju-dokan))
+- Existing catalog entry games/tanuu5--kaiju-dokan/README.md matches this repository and playable URL, so its slug is reused. ([source](https://github.com/tanuu5/kaiju-dokan))
 
 ## Fictional reviews
 
 Treat these as illustrative, not real user reviews.
 
-- 85/100: Fictional illustrative review: stomping a tower's foundation and watching it keel into the next block while the combo ticks up is pure joy, and the sunset city looks great for code-only art.
-- 60/100: Fictional illustrative review: fun four-minute rampage with a lot of buttons to learn; I spent my first run fumbling breath charges while helicopters chipped my HP away.
-- 100/100: Fictional illustrative review: procedural everything, touch stick plus gamepad plus keyboard, manga impact text over a burning skyline — the most complete giant-monster toy in this catalog.
+- 85/100: Fictional illustrative review: toppling a tower into its neighbor while the combo multiplier climbs is pure kaiju joy, and the sunset city looks great for fully code-generated art.
+- 60/100: Fictional illustrative review: a fun four-minute rampage with a lot to learn; my first run was spent fumbling breath charges while tanks chipped away at my HP.
+- 100/100: Fictional illustrative review: procedural city, manga impact text, breath beam over a burning skyline, plus touch stick, gamepad, and keyboard support — the most complete monster toy in the catalog.
 
 ## Links
 

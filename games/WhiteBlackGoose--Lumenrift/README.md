@@ -1,6 +1,6 @@
 # LUMENRIFT
 
-[Play the game](https://lumenrift.wbg.gg/) · [View source](https://github.com/WhiteBlackGoose/Lumenrift)
+[Play the game](https://lumenrift.wbg.gg/) · [View source](https://github.com/WhiteBlackGoose/Lumenrift) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/WhiteBlackGoose--Lumenrift/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,7 +11,7 @@
 
 ### Overall rating
 
-Lumenrift sits above the catalog's closest tower-defense peer OSRS Tower Defense (52) on systems depth: real mazing via dual flow fields, a 13-structure/5-tier economy with Beacon ascension, 9 enemy types with hard counters, procedural maps, sim-validated balance, synthesized adaptive audio, mobile support, and 8 languages, all verified playable in the browser. It also edges past Ashlands (55) on completeness and verified playability despite being 2D rather than 3D open-world. It stays below moorestech (64), whose 3D world, co-op multiplayer, and modding scope exceed a single-screen canvas TD. Evidence gaps: gh CLI had no auth so GitHub REST was queried unauthenticated until rate-limited (src tree and workflow files uninspected); screenshots and docs cannot prove performance, balance, or feel, so the score credits documented systems and inspected polish, not playtested quality.
+Lumenrift sits above the catalog's closest tower-defense peer OSRS Tower Defense (52) on systems depth: real mazing via dual flow fields, a 13-structure/5-tier economy with Beacon ascension, 9 enemy types with hard counters, procedural maps, sim-validated balance, synthesized adaptive audio, mobile support, and 8 languages, all verified playable in the browser. It also edges past Ashlands (55) on completeness and verified playability despite being 2D rather than 3D open-world. It stays below moorestech (64), whose 3D world, co-op multiplayer, and modding scope exceed a single-screen canvas TD. Evidence gaps: gh CLI had no auth so GitHub API evidence came from page fetches instead (git history and workflow files uninspected); screenshots and docs cannot prove performance, balance, or feel, so the score credits documented systems and inspected polish, not playtested quality.
 
 ### Screenshot score
 
@@ -25,7 +25,7 @@ All seven inspected frames are the game's own runtime output with a coherent dar
 | --- | --- |
 | Repository created | 26 Sep 2026 · 06:37 UTC |
 | Added to catalog | 27 Sep 2026 · 06:07 UTC |
-| Last updated | 27 Sep 2026 · 06:07 UTC |
+| Last updated | 29 Sep 2026 · 03:15 UTC |
 | Documented creation models | [Claude](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/README.md) |
 
 ## Screenshots
@@ -128,12 +128,12 @@ Make a polished browser tower-defense game in TypeScript with no engine: a centr
 
 ## Source evidence
 
-- Repository WhiteBlackGoose/Lumenrift is public, not a fork, described as 'Single-prompt game made by Opus', primary language TypeScript, homepage https://lumenrift.wbg.gg/, created 2026-09-26. ([source](https://github.com/WhiteBlackGoose/Lumenrift))
-- README describes a tower defense game: defend the central Beacon through 30 nights plus endless mode, with procedural maps, flow-field mazing with a visible path trail, 13 structures in 5 tiers x 3 upgrade levels, 9 shadow kinds plus 2 bosses, dynamic lighting, procedural audio, 8 languages, and a Play link to lumenrift.wbg.gg. ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/README.md))
-- README controls table documents desktop keyboard+mouse (hotkeys 1..=, U/X/T, V/B, N/Space/F/M, wheel zoom, drag pan) and touch controls (tap-to-place with confirm, panel buttons, pinch-zoom), plus a 'Desktop and mobile' statement. No gamepad or motion controls mentioned; no multiplayer mentioned anywhere. ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/README.md))
+- Play URL https://lumenrift.wbg.gg/ returns a page titled 'LUMENRIFT — Hold the Light' with meta description 'a tower defense game. Keep the Beacon alight through thirty nights of shadow', a game canvas element plus UI overlay, and a PWA manifest; it is the playable game, not a repo or promo page. ([source](https://lumenrift.wbg.gg/))
+- Repository WhiteBlackGoose/Lumenrift is public, not a fork, described as 'Single-prompt game made by Opus', with homepage https://lumenrift.wbg.gg/ matching the submitted link, 15 commits, and src/public/scripts/docs/img directories with Vite+TypeScript config files. ([source](https://github.com/WhiteBlackGoose/Lumenrift))
+- README describes a tower defense game: defend the central Beacon through 30 nights plus endless mode, with procedural maps, live flow-field mazing with a visible path trail, 13 structures in 5 tiers x 3 upgrade levels, 9 shadow kinds plus 2 bosses, dynamic lighting, procedural audio, 8 languages, save/respawn/sandbox modes, and a Play link to lumenrift.wbg.gg. ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/README.md))
+- README controls table documents desktop keyboard+mouse (hotkeys 1..=, U/X/T, V/B, N/Space/F/M, wheel zoom, drag pan) and touch controls (tap-to-place with confirm, panel buttons, pinch-zoom and drag), plus a 'Desktop and mobile, installable as an app' statement. No gamepad or motion controls are mentioned; no multiplayer is mentioned anywhere. ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/README.md))
 - README 'How it was made' section attributes design, code, art, music, and balance to Claude (Anthropic model, running in Claude Code), quoting the original single brief verbatim and listing sub-agent work (audio, sprites, review, translators). ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/README.md))
-- package.json shows a Vite+TypeScript project with zero runtime dependencies and dev-only typescript, vite, tsx, and playwright-core; index.html boots a canvas + UI overlay from /src/main.ts with the meta description of a 30-night tower defense. ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/package.json))
-- Play URL https://lumenrift.wbg.gg/ returns HTTP 200 with title 'LUMENRIFT — Hold the Light' and a game canvas element, matching the repo homepage and README play link; it is the playable game, not a repo or promo page. ([source](https://lumenrift.wbg.gg/))
+- package.json shows a Vite+TypeScript project with zero runtime dependencies and dev-only typescript, vite, tsx, and playwright-core; the project states no game engine, no image files, and no audio files, with all rendering on bare Canvas2D and all sound synthesized via WebAudio. ([source](https://github.com/WhiteBlackGoose/Lumenrift/blob/main/package.json))
 
 ## Fictional reviews
 

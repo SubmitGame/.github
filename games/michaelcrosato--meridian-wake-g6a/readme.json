@@ -53,11 +53,11 @@
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/compatibility.md"
     },
     {
-      "finding": "README and flight handbook describe simultaneous touch steering, thrust, brake, boost, primary/secondary fire and cloak controls with portrait and landscape layouts, and the touch screenshot shows on-screen direction, thrust, fire and boost buttons, establishing mobile touch support.",
+      "finding": "README and handbook describe simultaneous touch steering, thrust, brake, boost, primary/secondary fire and cloak controls with portrait and landscape layouts, and the inspected touch-landscape frame shows on-screen steering, thrust, fire and boost buttons, establishing mobile touch support.",
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md"
     },
     {
-      "finding": "No accelerometer, gyroscope, or device-motion controls are documented in the README or compatibility docs; motion support is unestablished rather than ruled out.",
+      "finding": "No accelerometer, gyroscope, or device-motion controls are documented in the README or compatibility docs; motion support is unestablished rather than explicitly ruled out.",
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/compatibility.md"
     },
     {
@@ -77,7 +77,7 @@
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/content.md"
     },
     {
-      "finding": "Deployed homepage returns HTTP 200 and serves the game shell with scene/app mounts, MERIDIAN WAKE loading text, and game bundles for universe, render-engine, and physics-engine, verifying a publicly reachable playable URL.",
+      "finding": "Deployed homepage returns the game shell with scene/app mounts, MERIDIAN WAKE loading text, and game bundles for universe, render-engine, and physics-engine, verifying a publicly reachable playable URL.",
       "url": "https://meridian-wake-g6a.vercel.app"
     },
     {
@@ -87,29 +87,29 @@
   ],
   "screenshots": [
     {
+      "observation": "Inspected full gameplay frame: top-down 3D flight at Rutilicus near New Boston with large faceted teal/white low-poly planet, white/teal brick-built Sparrow with engine flames, ring station, scattered asteroids, orbit rings, second ship, mission banners, top Starmap/Spaceport/My ship/Journal/Options/Cloak bar, 24,000 cr plus 75,000 cr loan readout, shield/hull/fuel/power/heat bars, Land/Plot a course/Actions buttons, radar, and WebGL2 Auto-High 16.8 ms 29 bodies telemetry. Clearly the game's own runtime output.",
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/flight.png",
-      "observation": "Inspected 1920x1080 gameplay frame: top-down 3D flight at Rutilicus near New Boston with large faceted teal/white planet, white/teal brick-built Sparrow with engine flames, ring station, scattered asteroids, orbit rings, second ship, mission banners, top Starmap/Spaceport/My ship/Journal/Options/Cloak bar, 24,000 cr plus 75,000 cr loan readout, shield/hull/fuel/power/heat bars, Land/Plot a course/Actions buttons, radar, and WebGL2 Auto-High 16.8 ms 29 bodies telemetry. Clearly the game's own runtime output.",
       "local_path": "screenshots/795097682ba47d658140230b7de03ab869161480a83f27c5fc028b2b368a24cb.png",
       "sha256": "795097682ba47d658140230b7de03ab869161480a83f27c5fc028b2b368a24cb",
       "downloaded_at": "2026-09-28T04:52:14.710268+00:00"
     },
     {
+      "observation": "Inspected gameplay frame: same planet and station surrounded by a large Quarg Hydra fleet of dark multi-arm ships, AUTOPILOT LANDING APPROACH text, captain's-heading mission panel, full top bar and credits readout, bottom Land/Plot/Actions buttons, left ship stat bars, right scanner showing 12 hostile contacts, WebGPU High 248.1 ms 41 bodies telemetry. Clearly the game's own runtime output showing fleet encounter scale.",
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/webgpu.png",
-      "observation": "Inspected 1440x900 gameplay frame: same planet and station surrounded by a large Quarg Hydra fleet of dark multi-arm ships, AUTOPILOT LANDING APPROACH text, captain's-heading mission panel, full top bar and credits readout, bottom Land/Plot/Actions buttons, left ship stat bars, right scanner showing 12 hostile contacts, WebGPU High 248.1 ms 41 bodies telemetry. Clearly the game's own runtime output showing fleet encounter scale.",
       "local_path": "screenshots/d21d6277c7e9108cf935904a01feaca38a5fae05741a79763052d85e8e7353f9.png",
       "sha256": "d21d6277c7e9108cf935904a01feaca38a5fae05741a79763052d85e8e7353f9",
       "downloaded_at": "2026-09-28T04:52:14.756293+00:00"
     },
     {
+      "observation": "Inspected gameplay frame: touch layout with top icon bar, credits readout, planet and brick ship, mission panel, right-side Sparrow stat bars, bottom on-screen steering/thrust/brake/boost buttons left and fire/boost buttons right, WebGL2 Balanced 54.0 ms 17 bodies telemetry. Clearly the game's own runtime output proving touch controls.",
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/touch-landscape.png",
-      "observation": "Inspected 844x390 gameplay frame: touch layout with top icon bar, credits readout, planet and brick ship, mission panel, right-side Sparrow stat bars, bottom on-screen steering/thrust/brake/boost buttons left and fire/boost buttons right, WebGL2 Balanced 54.0 ms 17 bodies telemetry. Clearly the game's own runtime output proving touch controls.",
       "local_path": "screenshots/861c1e095a315f468951674a947d283771f8f14dfb5e71bc8f92e3f0a951ffd9.png",
       "sha256": "861c1e095a315f468951674a947d283771f8f14dfb5e71bc8f92e3f0a951ffd9",
       "downloaded_at": "2026-09-28T04:52:14.797279+00:00"
     },
     {
+      "observation": "Inspected title screen: MERIDIAN WAKE masthead with Begin your voyage button, Flight handbook and Options links, large brick-built ship and faceted planet backdrop with asteroids and station. Menu/title card, not active gameplay; discounted for graphics scoring.",
       "url": "https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/title.png",
-      "observation": "Inspected 1920x1080 title screen: MERIDIAN WAKE masthead with Begin your voyage button, Flight handbook and Options links, large brick-built ship and faceted planet backdrop with asteroids and station. Menu/title card, not active gameplay; discounted for graphics scoring.",
       "local_path": "screenshots/7b35d3c8831c7b515e4375654511119b6ceb80a9d3566d42efa217e03fc5d4c2.png",
       "sha256": "7b35d3c8831c7b515e4375654511119b6ceb80a9d3566d42efa217e03fc5d4c2",
       "downloaded_at": "2026-09-28T04:52:14.851364+00:00"
@@ -193,13 +193,13 @@
   ],
   "repository_created_at": "2026-09-27T04:27:41Z",
   "analysis": {
-    "analyzed_at": "2026-09-28T04:52:12.377953+00:00",
+    "analyzed_at": "2026-09-29T03:15:49.227144+00:00",
     "model": "opencode/muse-spark-1.3-contributor-free",
-    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36379323940/job/108791601935",
-    "session_id": "ses_f19a671c9ffey4krr72UVkhYB3",
-    "prompt_sha256": "b4178b2e97f1a848b9c2b6b98d6d69c347d1a6f762d7ccb1e79ff1e883935b6c"
+    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36516194673/job/109238889529",
+    "session_id": "ses_f14d82a97ffe7LBHNOfwhYu8tQ",
+    "prompt_sha256": "73ae03f8eca3ab73881036b6915ad86d341f73d112bf269a1d31e474d4f65ba3"
   },
   "catalog_added_at": "2026-09-27T06:18:25.226515+00:00",
-  "catalog_updated_at": "2026-09-28T04:52:12.377953+00:00",
-  "previous_report_url": "https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/michaelcrosato--meridian-wake-g6a/README.md"
+  "catalog_updated_at": "2026-09-29T03:15:49.227144+00:00",
+  "previous_report_url": "https://github.com/SubmitGame/.github/blob/c897e3009585fee500e94f9611f7bd41e06504d2/games/michaelcrosato--meridian-wake-g6a/README.md"
 }

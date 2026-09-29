@@ -1,6 +1,6 @@
 # Forja Abisal
 
-[Play the game](https://carte1972.github.io/forja-abisal/) · [View source](https://github.com/Carte1972/forja-abisal)
+[Play the game](https://carte1972.github.io/forja-abisal/) · [View source](https://github.com/Carte1972/forja-abisal) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/Carte1972--forja-abisal/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,11 +11,11 @@
 
 ### Overall rating
 
-Evidence shows unusually complete scope for the catalog: 3 hand-designed vertical levels (13/21/34 enemies), 5 dual-mode weapons, 4 AI enemy archetypes with perception/navmesh/infighting, keys/secrets/automap, persistent campaign inventory, options, synthesized positional audio, and 254 tests. That exceeds thin FPS peers such as Dead Signal (47) and Neural Sight (30 overall) and sits above mid-catalog systems games like Ashlands (55) and OSRS Tower Defense (52), but below moorestech (64) with its persistent multiplayer factory simulation. Still images and docs cannot prove playability, balance, or sustained 60fps, so this stays well short of AAA.
+Reanalysis confirms unusually complete scope for the catalog: 3 key-gated vertical levels (13/21/34 enemies), 5 dual-mode weapons, 4 AI enemy archetypes with perception/navmesh/infighting, keys/secrets/automap, persistent campaign inventory, options, synthesized positional audio, and Vitest-tested pure logic. Excluding the target itself, that exceeds thin FPS peers such as Dead Signal-style prototypes and Neural Sight (30 overall, polished 3D but narrow scope) and sits above mid-catalog systems games like Ashlands (55) and OSRS Tower Defense (52), but below moorestech (64) with its persistent multiplayer factory simulation, Meridian Wake (60), and LUMENRIFT (58). Stills and docs cannot prove playability, balance, or sustained 60fps, so this stays well short of AAA.
 
 ### Screenshot score
 
-Inspected gameplay frames show a coherent retro-3D FPS: full HUD, first-person weapon models, enemies, emissive lava/acid, dynamic lamps, and automap overlay. Best frames (canal de lava, fundicion, combate) have clear composition and readable systems, above flat/minimal catalog entries such as 2048 (45), chess rot (40), and neverquest (30). Below the top catalog 3D showcases moorestech (76), Kart Royale (70), and Neural Sight (70), which have denser scenes and finer materials; Forja's procedural textures are repetitive, many areas are very dark, and enemy models are simple blocks. Roughly on par with scumm-game (62) and HEX DANMAKU (60). Stills cannot prove motion, performance, or gunfeel.
+All seven images opened and inspected. Best gameplay frame (lava canal) shows coherent retro-3D FPS output: full HUD, first-person pistol model, two enemies, emissive lava, cyan strip lighting, crosshair. Combat/foundry frames add muzzle flash, damage arc, stairs, lamps; sima frame adds outdoor sky, bridge, pickup banner; lava-lake frame is atmospheric but very dark; automap shows the vector map system over dimmed 3D; menu is a title card and discounted. Above flat/minimal catalog entries such as 2048 (45), chess rot (40), and neverquest (30); below dense top 3D showcases moorestech (76), Kart Royale (70), and Neural Sight (70) with finer materials and denser scenes; roughly on par with scumm-game (62) and HEX DANMAKU (60). Stills cannot prove motion, performance, or gunfeel.
 
 </details>
 
@@ -25,50 +25,50 @@ Inspected gameplay frames show a coherent retro-3D FPS: full HUD, first-person w
 | --- | --- |
 | Repository created | 26 Sep 2026 · 14:53 UTC |
 | Added to catalog | 27 Sep 2026 · 06:22 UTC |
-| Last updated | 27 Sep 2026 · 06:22 UTC |
+| Last updated | 29 Sep 2026 · 03:15 UTC |
 | Documented creation models | [Claude Opus 5.5](https://github.com/Carte1972/forja-abisal/blob/main/README.md), [Claude Sonnet 5](https://github.com/Carte1972/forja-abisal/blob/main/README.md) |
 
 ## Screenshots
 
 ![Forja Abisal gameplay](screenshots/1196f9d936a5939ecbcc61ae110f215ae532259776c6d67971b59d63879bfd67.jpg)
 
-Inspected downloaded copy: first-person view over lava pits with animated orange emissive texture, dark tech hall with cyan/green strip lighting, two blocky sentinel enemies mid-room, grey pistol model bottom-right, crosshair center, bottom HUD showing 12/RESERVA 38, 100% SALUD, helmet icon, 0% BLINDAJE, weapon slots 1-5. Game's own runtime output.
+First-person view over twin lava pits with animated orange emissive texture, dark tech hall with cyan/green strip lighting, two blocky sentinel enemies mid-room, grey pistol model bottom-right, crosshair center, bottom HUD showing 12/RESERVA 38, 100% SALUD, helmet icon, 0% BLINDAJE, weapon slots 1-5. Game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/nivel_1_canal_de_lava.jpg)
 
 ![Forja Abisal gameplay](screenshots/66b0c0002c1e88fd55fd7cbc8db35a2c00688ad5aa152760d4fec5d663b495b2.jpg)
 
-Inspected downloaded copy: first-person combat firing the Remachadora with large white-yellow muzzle flash, red directional damage arc around crosshair, tech-pillar enemy target with circuit texture ahead, lava floor both sides, HUD reading 37/RESERVA 58, 70% SALUD, 0% BLINDAJE. Game's own runtime output.
+First-person combat firing the Remachadora with large white-yellow muzzle flash, red directional damage arc around crosshair, tech-pillar enemy target with circuit texture ahead, lava floor both sides, HUD reading 37/RESERVA 58, 70% SALUD, 0% BLINDAJE. Game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/combate.jpg)
 
 ![Forja Abisal gameplay](screenshots/afa462152b822d601440ee128c0538ddda931b6ca23baace57be29f04bb51d30.jpg)
 
-Inspected downloaded copy: large interior foundry hall with cyan-lit panel walls, ceiling lamp glow, small sentinel enemy center-left, staircase right, pistol viewmodel, HUD 12/RESERVA 38 and 100% SALUD. Shows sector geometry, step trim lighting, and scale. Game's own runtime output.
+Large interior foundry hall with cyan-lit panel walls, ceiling lamp glow, small sentinel enemy center-left, staircase right, pistol viewmodel, HUD 12/RESERVA 38 and 100% SALUD. Shows sector geometry, step trim lighting, and scale. Game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/nivel_1_fundicion.jpg)
 
 ![Forja Abisal gameplay](screenshots/2bcbc97e3a5297e1a3ecad04e4306b98c62a242e8a428f2a6b1f4249fd0ff997.jpg)
 
-Inspected downloaded copy: open-air stone pit at dusk with bridge over acid/void gap, shotgun viewmodel prominent, 'Has recogido: Caja de municion' pickup banner top, lamp post and glowing pickups, HUD 2/RESERVA 14 Escopeta de dispersion. Shows outdoor sky, verticality, and pickup feedback. Game's own runtime output.
+Open-air stone pit at dusk with bridge over acid/void gap, shotgun viewmodel prominent, 'Has recogido: Caja de municion' pickup banner top, lamp post and glowing pickups, HUD 2/RESERVA 14 Escopeta de dispersion. Shows outdoor sky, verticality, and pickup feedback. Game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/nivel_2_sima.jpg)
 
 ![Forja Abisal gameplay](screenshots/35bc64602b7eb6460e581017bf587f8643a0371abe0695644b847af9724aa073.jpg)
 
-Inspected downloaded copy: dark cavern with wide checkered lava lake, central island tower with cyan circuit/tech textures, HUD 50/RESERVA 58 Remachadora 100% SALUD. Atmospheric but very dark with distant detail loss. Game's own runtime output.
+Dark cavern with wide checkered lava lake, central island tower with cyan circuit/tech textures, HUD 50/RESERVA 58 Remachadora 100% SALUD. Atmospheric but very dark with distant detail loss. Game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/nivel_3_lago_de_lava.jpg)
 
 ![Forja Abisal gameplay](screenshots/064c94f2171504124c3d120edb31e38c4c2d96114a941dc2dda84756f6d90c37.jpg)
 
-Inspected downloaded copy: gameplay overlaid with orange vector automap (rooms, stair hatching, red/blue door lines, key dots, player arrow), FUNDICION CERO label bottom-left, dimmed 3D corridor behind, HUD partially visible. Shows in-game map system, not a separate menu. Game's own runtime output.
+Gameplay overlaid with orange vector automap (rooms, stair hatching, red/blue door lines, key dots, player arrow), FUNDICION CERO label bottom-left, dimmed 3D corridor behind, HUD partially visible. Shows in-game map system, not a separate menu. Game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/automapa.jpg)
 
 ![Forja Abisal gameplay](screenshots/70f7f68aa05f11def8510aa78c911a008a6509fd2826f42eaa5cb8cf74e3f24a.jpg)
 
-Inspected downloaded copy: title screen with large orange FORJA ABISAL lettering, tagline 'Desciende. Abre paso. Sal con vida.', four orange buttons Nueva partida / Elegir nivel / Opciones / Controles on dark gradient background. Menu/title card, discounted as non-gameplay. Game's own UI output.
+Title screen with large orange FORJA ABISAL lettering, tagline 'Desciende. Abre paso. Sal con vida.', four orange buttons Nueva partida / Elegir nivel / Opciones / Controles on dark gradient background. Menu/title card, discounted as non-gameplay. Game's own UI output.
 
 [Original screenshot](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/docs/capturas/menu_principal.jpg)
 
@@ -128,14 +128,15 @@ Build a retro 90s-style 3D FPS for the browser with Three.js and Rapier: 3 verti
 
 ## Source evidence
 
-- Repository is an actual game: full name Carte1972/forja-abisal, description 'FPS 3D retro para el navegador con Three.js y Rapier. Todo el contenido es original y se genera por código.' gh CLI was unusable without auth in this runner, so the same GitHub REST evidence was fetched via unauthenticated public API/raw endpoints. ([source](https://github.com/Carte1972/forja-abisal))
-- README defines a 3-level retro FPS campaign (Fundicion Cero with 13 enemies, Pozos de Ceniza with 21, Nucleo Abisal with 34), each requiring red/blue/yellow keys plus exit switch, at least two secrets per level, and end-of-level time/enemies/items/secrets scoring. ([source](https://github.com/Carte1972/forja-abisal/blob/main/README.md))
+- Link is an actual game page: live URL returns HTTP 200 with the 'Forja Abisal' app shell loading JS bundles including three and rapier chunks, matching a retro FPS for the browser. ([source](https://carte1972.github.io/forja-abisal/))
+- gh CLI was unusable in this runner (no GH\_TOKEN/GITHUB\_TOKEN), so the same GitHub REST evidence was fetched via unauthenticated public API endpoints: repo Carte1972/forja-abisal, description 'FPS 3D retro para el navegador con Three.js y Rapier. Todo el contenido es original y se genera por código.', language TypeScript, topics fps/game/rapier/threejs/typescript/vite, main branch, MIT license. ([source](https://api.github.com/repos/Carte1972/forja-abisal))
+- Repository README defines a 3-level retro FPS campaign (Fundicion Cero with 13 enemies, Pozos de Ceniza with 21, Nucleo Abisal with 34), each requiring red/blue/yellow keys plus exit switch, at least two secrets per level, and end-of-level time/enemies/items/secrets scoring; it advertises the demo at carte1972.github.io/forja-abisal, tying the submission URL to this repository. ([source](https://github.com/Carte1972/forja-abisal/blob/main/README.md))
 - README documents 5 weapons (hammer, pistol, shotgun, riveter, launcher) each with primary and alternate fire, plus 4 enemy types (sentinel 60 HP, crawler 45, spitter 130, watcher 55) with vision-cone/hearing perception, navmesh pursuit, infighting, and pain interrupts. ([source](https://github.com/Carte1972/forja-abisal/blob/main/README.md))
-- Keyboard/mouse controls are explicitly supported: WASD/arrows move, mouse look, Space jump, C/Ctrl crouch, Shift run, left/right click fire, 1-5/wheel weapons, R reload, E use, Tab automap, F3 perf panel, Esc pause. No touch, gamepad, or motion controls are documented. ([source](https://github.com/Carte1972/forja-abisal/blob/main/INSTRUCCIONES.md))
-- Play is single-player only: one human descends the forge against AI enemies (up to 34 per level), campaign inventory carries between levels, death offers level retry or menu return; no local or online multiplayer is documented. ([source](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/INSTRUCCIONES.md))
-- Playable browser build is verified reachable: README advertises demo at carte1972.github.io/forja-abisal ('juega en el navegador, sin instalar nada'), the deploy workflow builds dist/ and publishes to GitHub Pages, and the live URL returns HTTP 200 with the 'Forja Abisal' app shell. ([source](https://carte1972.github.io/forja-abisal/))
-- package.json pins Three.js ^0.186.1, @dimforge/rapier3d-compat ^0.21.0, recast-navigation ^0.43.1, postprocessing ^6.39.5, React ^19.3.0, Vite ^8.3.1, TypeScript ~6.0.3, Vitest, with Node \>=22.12.0; vite.config.ts confirms Vite+React build with dedicated rapier/three/react chunks. ([source](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/package.json))
-- Audio is code-synthesized with positional playback (no audio files; THREE.PositionalAudio, per-enemy alert/pain/death voices plus ambient hum), and textures/models/levels are procedurally generated; creation credits attribute the game to Claude Code CLI with Claude Opus 5.5 main model and Claude Sonnet 5 auxiliary analysis. ([source](https://github.com/Carte1972/forja-abisal/blob/main/README.md))
+- Keyboard/mouse controls are explicitly supported: WASD/arrows move, mouse look, Space jump, C/Ctrl crouch, Shift run, left/right click fire, 1-5/wheel weapons, R reload, E use, Tab automap, F3 perf panel, Esc pause. No touch, gamepad, or motion controls are documented, so those remain unknown rather than ruled out. ([source](https://github.com/Carte1972/forja-abisal/blob/main/INSTRUCCIONES.md))
+- Play is single-player only: one human descends the forge against AI enemies (up to 34 per level), campaign inventory carries between levels, death offers level retry or menu return; no local or online multiplayer is documented. ([source](https://github.com/Carte1972/forja-abisal/blob/main/INSTRUCCIONES.md))
+- docs/capturas lists exactly 7 screenshots (automapa, combate, menu\_principal, nivel\_1\_canal\_de\_lava, nivel\_1\_fundicion, nivel\_2\_sima, nivel\_3\_lago\_de\_lava); all were downloaded and visually inspected for this report. ([source](https://api.github.com/repos/Carte1972/forja-abisal/contents/docs/capturas))
+- package.json pins three ^0.186.1, @dimforge/rapier3d-compat ^0.21.0, recast-navigation ^0.43.1, postprocessing ^6.39.5, react ^19.3.0, vite ^8.3.1, typescript ~6.0.3, vitest, with Node \>=22.12.0; vite.config.ts confirms a Vite+React build with dedicated rapier/three/react chunks. ([source](https://raw.githubusercontent.com/Carte1972/forja-abisal/main/package.json))
+- Audio is code-synthesized with positional playback (no audio files; THREE.PositionalAudio, per-enemy alert/pain/death voices plus ambient hum); creation credits attribute the game to Claude Code CLI with Claude Opus 5.5 main model (644 calls) and Claude Sonnet 5 auxiliary level analysis (6 calls). No gameplay, performance, or balance claims can be proven from docs or stills. ([source](https://github.com/Carte1972/forja-abisal/blob/main/README.md))
 
 ## Fictional reviews
 

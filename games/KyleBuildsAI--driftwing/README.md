@@ -1,6 +1,6 @@
 # DRIFTWING
 
-[Play the game](https://kylebuildsai.github.io/driftwing/) · [View source](https://github.com/KyleBuildsAI/driftwing)
+[Play the game](https://kylebuildsai.github.io/driftwing/) · [View source](https://github.com/KyleBuildsAI/driftwing) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/KyleBuildsAI--driftwing/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,11 +11,11 @@
 
 ### Overall rating
 
-Excluding the target, most relevant comparators are Kart Royale (50 overall / 70 screenshots: complete polished 3D loop but single 1.6km track), Turbo Kart Rally (40/70: full kart loop with items and AI but single circuit and simple art), Neural Sight (30/70: striking 3D output but narrow prototype scope), and moorestech (64/76: broadest verified systems and densest HUDs, current catalog top). DRIFTWING sits above the kart racers on technical scope (infinite seeded worker terrain with LOD, WebGPU+WebGL2, day/night/aurora/weather/water/boids, voice copilot with executable actions, rings/journal/photo mode) and stronger atmospheric polish in both inspected stills, but below moorestech and Ashlands (55) on gameplay depth since it is deliberately ambient with no fail state, enemies, progression, or multiplayer. Evidence gaps: gh api unavailable (no token, rate-limited) so commit/version history unverified; no GPU-backed live playtest, performance, audio, balance, or motion verification; screenshots show only snow biome without UI, landmarks, or vegetation detail.
+Excluding itself, most relevant comparators are Kart Royale (50 overall / 70 screenshots: complete polished 3D loop but single 1.6km track), Emberwake (53/70: complete survivors-like loop with upgrades and boss), Turbo Kart Rally (40/70: full kart loop with items and AI but single circuit and simple art), and moorestech (64/76: broadest verified systems and densest HUDs, current catalog top). DRIFTWING sits above the kart racers on technical scope (infinite seeded worker terrain with LOD, WebGPU+WebGL2, day/night/aurora/weather/water/boids, voice copilot with executable actions, rings/journal/photo mode) and stronger atmospheric polish in both inspected stills, near Emberwake overall but below moorestech on gameplay depth since it is deliberately ambient with no fail state, enemies, progression, or multiplayer. Evidence gaps: gh api unavailable (no GH\_TOKEN) so commit/version history unverified; no GPU-backed live playtest, performance, audio, balance, or motion verification; screenshots show only snow biome without UI, landmarks, or vegetation detail.
 
 ### Screenshot score
 
-Both inspected frames are the game's own runtime output with coherent flat-shaded low-poly style, strong sky work (golden-hour sun with god rays; night aurora with stars and wingtip lights) and clean composition centered on the glider. Above Kart Royale (screenshots 70) and Turbo Kart Rally (70) on lighting/atmosphere cohesion, and above Neural Sight (70) on composed game framing, but below moorestech (76) because only one snow-peaks biome is visible with no trees, water, landmarks, birds, rings, or HUD/UI density in either still. Stills cannot prove motion, performance, or feel.
+Both inspected frames are the game's own runtime output with coherent flat-shaded low-poly style, strong sky work (golden-hour sun with god rays; night aurora with stars and wingtip lights) and clean glider-centered composition. Above Kart Royale (70) and Turbo Kart Rally (70) on lighting/atmosphere cohesion and above Neural Sight (70) on composed game framing, but below moorestech (76) because only one snow-peaks biome is visible with no trees, water, landmarks, birds, rings, or HUD/UI density in either still. Stills cannot prove motion, performance, or feel.
 
 </details>
 
@@ -25,20 +25,20 @@ Both inspected frames are the game's own runtime output with coherent flat-shade
 | --- | --- |
 | Repository created | 26 Sep 2026 · 17:46 UTC |
 | Added to catalog | 27 Sep 2026 · 06:13 UTC |
-| Last updated | 27 Sep 2026 · 06:13 UTC |
+| Last updated | 29 Sep 2026 · 03:16 UTC |
 | Documented creation models | [Claude Opus 5.5](https://github.com/KyleBuildsAI/driftwing) |
 
 ## Screenshots
 
 ![DRIFTWING gameplay](screenshots/19e1980fbc01b3b82335a13685bfa95fa3591374bc20653598f703d4508c43e8.jpg)
 
-Inspected downloaded copy of docs/screenshot.jpg (1600x900): chase view directly behind a white low-poly glider with orange wingtip marks flying between jagged dark snow peaks at golden hour; warm orange-pink gradient sky, bright sun disc with radial god-ray streaks upper right, soft clouds, flat-shaded white/grey terrain with long shadows. No HUD visible (auto-hide). Clearly the game's own runtime output.
+Chase view directly behind a white low-poly glider with orange wingtip marks flying between jagged dark snow peaks at golden hour; warm orange-pink gradient sky, bright sun disc with radial god-ray streaks upper right, soft clouds, flat-shaded white/grey terrain with long shadows. No HUD visible. The game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/KyleBuildsAI/driftwing/main/docs/screenshot.jpg)
 
 ![DRIFTWING gameplay](screenshots/8565ac163e2b4542b8688df0e47758b63a1ec090736904b8669f0870c4853d3d.jpg)
 
-Inspected downloaded copy of docs/screenshot-night.jpg (1600x900): same white glider from behind over dark low-poly snow spires at night under vivid green aurora curtains, scattered stars and soft clouds; red left and green right wingtip lights visible, cool blue-grey flat-shaded terrain. No HUD visible. Clearly the game's own runtime output, companion night/aurora showcase to the day shot.
+Same white glider from behind over dark low-poly snow spires at night under vivid green aurora curtains, scattered stars and soft clouds; red left and green right wingtip lights visible, cool blue-grey flat-shaded terrain. No HUD visible. Companion night showcase, the game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/KyleBuildsAI/driftwing/main/docs/screenshot-night.jpg)
 
@@ -94,11 +94,11 @@ Inspected downloaded copy of docs/screenshot-night.jpg (1600x900): same white gl
 
 ## Technologies
 
-- **three.js r184** — engine ([evidence](https://github.com/KyleBuildsAI/driftwing))
+- **three.js 0.184.0** — engine ([evidence](https://kylebuildsai.github.io/driftwing/))
 - **JavaScript** — language ([evidence](https://github.com/KyleBuildsAI/driftwing))
-- **WebGPU** — rendering ([evidence](https://github.com/KyleBuildsAI/driftwing))
-- **WebGL2** — rendering ([evidence](https://github.com/KyleBuildsAI/driftwing))
-- **Web Workers** — framework ([evidence](https://github.com/KyleBuildsAI/driftwing))
+- **WebGPU** — rendering ([evidence](https://kylebuildsai.github.io/driftwing/))
+- **WebGL2** — rendering ([evidence](https://kylebuildsai.github.io/driftwing/))
+- **Web Workers** — framework ([evidence](https://kylebuildsai.github.io/driftwing/))
 
 ## Reconstructed prompt
 
@@ -106,14 +106,16 @@ Build DRIFTWING, an ambient infinite-flight exploration browser game in a single
 
 ## Source evidence
 
-- Repository is an actual game: DRIFTWING, an ambient infinite-flight exploration game in a single index.html where you pilot a low-poly glider over an endless procedural world with no fail state, no fuel and no enemies, plus an AI copilot named WREN. ([source](https://github.com/KyleBuildsAI/driftwing))
-- Engine is three.js r184 with WebGPURenderer and automatic WebGL2 fallback loaded from a CDN import map with SHA-384 integrity checks; there is no build step and r184 is deliberately pinned. ([source](https://github.com/KyleBuildsAI/driftwing))
-- World is chunked heightmap terrain from seeded simplex noise generated in Web Workers with transferable buffers, ring LOD with skirts and pooled meshes, five blended biomes (snow peaks, pine valleys, dune sea, archipelago, flower meadows), deterministic shareable seeds, and procedural landmarks (stone arches, monolith circles, lighthouses, hot-air balloons) logged to a discovery journal. ([source](https://github.com/KyleBuildsAI/driftwing))
-- Keyboard/mouse controls are established: mouse steers pitch and roll (click to capture, Esc releases) or drag, WASD/arrows work, W/S or wheel throttle, Space boost on cooldown, double-tap A/D barrel roll, plus keys C/Enter// for WREN, P photo mode, J journal, H help, T time, R rings, G/X waypoint, O autopilot, V voice, I/Tab stats/HUD. ([source](https://github.com/KyleBuildsAI/driftwing))
-- Touch controls are established: virtual left joystick for pitch/bank plus right throttle slider and on-screen Boost, roll, WREN and menu buttons; ?touch=1 forces on-screen touch controls. ([source](https://github.com/KyleBuildsAI/driftwing))
-- Single-player structure is established: one pilot glider, optional ring courses, discovery journal (biomes, landmarks, distance, altitude), photo mode, day/night cycle and copilot actions; no multiplayer, co-op, versus, or human-player-count range is documented. ([source](https://github.com/KyleBuildsAI/driftwing))
-- Game is publicly playable at GitHub Pages https://kylebuildsai.github.io/driftwing/ with seed/time/renderer/debug/touch URL parameters and example worlds ?seed=D27TEH (golden hour) and ?seed=ARCH1&time=0.02 (night aurora); the live page renders the full DRIFTWING HUD, settings, journal, help and WREN command bar. Locally it runs by double-clicking index.html or npm run serve on localhost:8080. ([source](https://kylebuildsai.github.io/driftwing/))
-- Project is explicitly a single-shot prompt test of Claude Opus 5.5 built from one prompt with no human code edits; gh api could not be used in this runner (no GH\_TOKEN and unauthenticated REST was rate-limited), so the public repository page, raw screenshots and live playable page were inspected instead and no source files were cloned. ([source](https://github.com/KyleBuildsAI/driftwing))
+- Link describes an actual playable game: DRIFTWING, an ambient infinite-flight exploration game where you pilot a low-poly glider over an endless procedural world with no fail state, plus an AI copilot named WREN. ([source](https://kylebuildsai.github.io/driftwing/))
+- Live page renders the full game UI: compass strip, speed/altitude instruments, waypoint/ring/autopilot chips, seed chip, WREN command bar, journal, photo mode, settings, help with keyboard/mouse/touch tables, and time-of-day controls. ([source](https://kylebuildsai.github.io/driftwing/))
+- Repository page verifies the project: single-shot prompt test of Claude Opus 5.5 in a single index.html, three.js r184 WebGPURenderer with automatic WebGL2 fallback via CDN import map, playable at kylebuildsai.github.io/driftwing/. ([source](https://github.com/KyleBuildsAI/driftwing))
+- Engine pinned to three.js 0.184.0 via jsDelivr import map (three.webgpu.js, three.tsl.js, addons) with SHA-384 integrity; renderer is WebGPU first with WebGL2 fallback; comment notes r184 TSL API specifics. ([source](https://kylebuildsai.github.io/driftwing/))
+- World is chunked heightmap terrain from seeded simplex noise generated in Web Workers (Blob URL, transferable buffers), ring LOD with skirts and pooled meshes, five blended biomes (snow peaks, pine valleys, dune sea, archipelago, flower meadows), deterministic shareable seeds, and landmarks (stone arches, monolith circles, lighthouses, hot-air balloons) logged to a discovery journal. ([source](https://github.com/KyleBuildsAI/driftwing))
+- Keyboard/mouse controls established: mouse steers pitch/roll (click to capture, Esc releases) or drag, WASD/arrows, W/S or wheel throttle, Space boost, double-tap A/D barrel roll, Q/E rudder, Shift fine control, plus C/Enter// WREN, P photo mode, J journal, H help, T time, R rings, G/X waypoint, O autopilot, V voice, I/Tab stats/HUD. ([source](https://kylebuildsai.github.io/driftwing/))
+- Touch controls established: left-side drag to bank/pitch (virtual joystick), right throttle slider, on-screen Boost, barrel-roll, WREN and menu buttons; ?touch=1 forces touch controls. ([source](https://kylebuildsai.github.io/driftwing/))
+- Single-player established: one pilot glider, optional ring courses with times/streaks, discovery journal, photo mode, day/night cycle and copilot actions; no multiplayer, co-op, versus, gamepad, or motion controls documented. ([source](https://kylebuildsai.github.io/driftwing/))
+- Game is publicly playable at the submitted GitHub Pages URL with seed/time/renderer/debug/touch parameters and example seeds ?seed=D27TEH (golden hour) and ?seed=ARCH1&time=0.02 (night aurora); opens already airborne with no menu wall. ([source](https://kylebuildsai.github.io/driftwing/))
+- gh api could not be used in this runner (gh CLI requires GH\_TOKEN env var, unauthenticated REST unavailable), so repository evidence was verified via fetched GitHub repository page and live playable page instead; no source files were cloned and commit/version history is unverified. ([source](https://github.com/KyleBuildsAI/driftwing))
 
 ## Fictional reviews
 
@@ -121,7 +123,7 @@ Treat these as illustrative, not real user reviews.
 
 - 85/100: Fictional review: I loaded the golden-hour seed just to check the lighting and ended up gliding for twenty minutes while WREN found me a lighthouse. No score, no crash, just wind and sun — the calmest tab I own.
 - 60/100: Fictional review: Made-up weekend pilot note: gorgeous sky and clever copilot tricks, but I wished the rings and journal pushed back a little more. Lovely to drift in, easy to put down.
-- 100/100: Fictional review: Invented dev-fan take: one HTML file that streams endless mountains, auroras, balloons and a talking copilot without a build step? As a single-prompt artifact this feels absurd and wonderful.
+- 100/100: Invented dev-fan take: one HTML file that streams endless mountains, auroras, balloons and a talking copilot without a build step? As a single-prompt artifact this feels absurd and wonderful.
 
 ## Links
 

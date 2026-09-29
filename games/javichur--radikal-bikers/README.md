@@ -1,6 +1,6 @@
 # Radikal Riders
 
-[Play the game](https://javichur.github.io/radikal-bikers/leoGjAW41OH-fIkg/) · [View source](https://github.com/javichur/radikal-bikers)
+[Play the game](https://javichur.github.io/radikal-bikers/leoGjAW41OH-fIkg/) · [View source](https://github.com/javichur/radikal-bikers) · [Previous report](https://github.com/SubmitGame/.github/blob/c897e3009585fee500e94f9611f7bd41e06504d2/games/javichur--radikal-bikers/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,11 +11,11 @@
 
 ### Overall rating
 
-Strong indie arcade scope: 5 difficulty-ordered stages plus a Valencia Fallas stage and night variant, 3 riders with stats, checkpoint/combo/challenge/grade/XP/ghost/rival systems, deterministic fixed-step sim with Vitest and Playwright (desktop + emulated iPhone) coverage. That breadth exceeds single-track catalog racers Kart Royale (50/100) and Turbo Kart Rally (40/100), but the single-AI-rival field is thinner than their 8-kart grids, cel-shaded low-poly art is simpler than Kart Royale's golden-hour coast, and there is no multiplayer or live-ops scale, so it sits below moorestech (64/100). Evidence gaps: judged from repo docs, config and one 480x360 still plus game shell only; no full live playthrough, performance or balance data, so playability and tuning are not proven.
+Strong indie arcade scope: 5 difficulty-ordered stages plus a Valencia Fallas stage and night variant, 3 riders with stats, checkpoint/combo/challenge/grade/XP/ghost/rival systems, deterministic fixed-step sim with Vitest and Playwright desktop + emulated iPhone coverage. Excluding the target itself, that breadth exceeds single-track catalog racers Kart Royale (50/100) and Turbo Kart Rally (40/100), sits near Sakura Rally (56/100) which has a larger connected world but no browser play, but the single-AI-rival field is thinner than 8-kart grids, cel-shaded low-poly art is simpler than Kart Royale's golden-hour coast, and there is no multiplayer or live-ops scale, so it sits below moorestech (64/100). Evidence gaps: judged from repo docs, config and one 480x360 still plus game shell only; no full live playthrough, performance or balance data, so playability and tuning are not proven.
 
 ### Screenshot score
 
-The single inspected 480x360 gameplay still shows coherent cel-shaded city racing with readable bike, traffic, clubs/billboards and a full HUD (time, score, combo banner, 150 km/h speedometer, touch GAS/FRENO/CABALLITO and joystick), so it is the game's own output, not concept art. It sits below Kart Royale (70) and Turbo Kart Rally (70), whose 1080p frames show denser tracksides, lighting and detail, and below moorestech (76); flat building facades, simple road texture and low capture resolution limit detail. Still image only: no inference about motion, performance or feel.
+The single inspected 480x360 gameplay still shows coherent cel-shaded city racing with readable bike, traffic, buildings/billboards and a full HUD (time, score, combo banners, 150 km/h speedometer, touch GAS/FRENO/CABALLITO and joystick), so it is the game's own output, not concept art. It sits below Kart Royale (70) and Turbo Kart Rally (70), whose 1080p frames show denser trackside detail, lighting and sharper composition, below Sakura Rally (68) on scene richness, and below moorestech (76); flat building facades, simple road texture and low capture resolution limit detail. Still image only: no inference about motion, performance or feel.
 
 </details>
 
@@ -25,14 +25,14 @@ The single inspected 480x360 gameplay still shows coherent cel-shaded city racin
 | --- | --- |
 | Repository created | 26 Sep 2026 · 06:14 UTC |
 | Added to catalog | 27 Sep 2026 · 06:25 UTC |
-| Last updated | 27 Sep 2026 · 06:25 UTC |
+| Last updated | 29 Sep 2026 · 03:16 UTC |
 | Documented creation models | [Claude Opus 5.5](https://github.com/javichur/radikal-bikers/blob/main/README.md) |
 
 ## Screenshots
 
 ![Radikal Riders gameplay](screenshots/2575aff96cb4f08a9bdb2c2bf72976873bb81a705130addd8a06f5a1fbab3f52.jpg)
 
-Inspected downloaded copy of the YouTube demo thumbnail (480x360): third-person chase view behind a pizza-delivery bike on a multi-lane cel-shaded city avenue, yellow taxi directly ahead, blue car at left, brick buildings both sides; HUD shows TIEMPO 60, PUNTOS 71858, combo banner BUUUM! +1000 and A UN PELO +250, progress bar, 150 km/h speedometer, and on-screen touch controls (left floating joystick, GAS / FRENO / CABALLITO buttons) plus pause button. Clearly the game's own runtime output.
+Inspected 480x360 YouTube demo thumbnail, the game's own runtime output: third-person chase view behind a pizza-delivery bike on a multi-lane cel-shaded city avenue, yellow taxi directly ahead, blue car at left, brick buildings both sides; HUD shows TIEMPO 60, PUNTOS 71858, combo banners BUUUM! +1000 and A UN PELO +250, progress bar, 150 km/h speedometer, and on-screen touch controls (left floating joystick, GAS / FRENO / CABALLITO buttons) plus pause button.
 
 [Original screenshot](https://img.youtube.com/vi/Ds_wtQz6IG0/hqdefault.jpg)
 
@@ -50,12 +50,12 @@ Inspected downloaded copy of the YouTube demo thumbnail (480x360): third-person 
 ## Mechanics
 
 - Checkpoint time-attack pizza delivery with extra time per checkpoint and 9-second continue from last checkpoint with score penalty
-- Wheelie system: +12% top speed with reduced handling, limited duration with cooldown, lets the bike jump over crossing vehicles
+- Wheelie system with extra top speed and reduced handling, limited duration with cooldown, lets the bike jump over crossing vehicles
 - Ramp jumps with airtime-scaled trick points and slow-motion camera on near-miss and jump tricks
-- Combo engine: 7 trick types bank into a pending combo paid out with up to x5 multiplier; crashes forfeit it
+- Combo engine: trick types bank into a pending combo paid out with up to x5 multiplier; crashes forfeit it
 - 3 star challenges per stage plus S/A/B/C score grades; stars unlock the Nitro rider and a night stage
 - AI rival rider that dodges traffic with rubber-banding plus a translucent ghost of the best local delivery per stage+rider
-- XP levels (max 10) unlocking bike paint jobs, persistent records/stars/shortcuts/ghosts in localStorage
+- XP levels unlocking bike paint jobs, persistent records/stars/shortcuts/ghosts in localStorage
 - Procedural city stages with traffic mix, level crossings, roadworks cones, shortcuts, tunnels, bridges, parks and Valencia monuments
 
 ## Tags
@@ -96,24 +96,24 @@ Inspected downloaded copy of the YouTube demo thumbnail (480x360): third-person 
 
 ## Reconstructed prompt
 
-Build Radikal Riders, a browser arcade tribute to Radikal Bikers: 3D cel-shaded pizza-delivery bike racing in Three.js with code-generated models and Web Audio synth sound. 5 difficulty-ordered stages plus a Valencia Fallas stage with real monuments and a night variant, 3 riders with speed/accel/handling stats, checkpoint time-attack with 9s continue, wheelies, ramps, shortcuts, 7 trick types with x5 combo multiplier, 3 star challenges and S/A/B/C grades per stage, AI rival plus best-delivery ghost, XP levels unlocking bike paints, localStorage saves, Spanish/English UI, keyboard + Gamepad API + floating-joystick touch controls, deterministic fixed-step sim with Vitest and Playwright coverage, Vite build deployable to GitHub Pages.
+Build Radikal Riders, a browser arcade tribute to Radikal Bikers: 3D cel-shaded pizza-delivery bike racing in Three.js with code-generated models and Web Audio synth sound. 5 difficulty-ordered stages plus a Valencia Fallas stage with real monuments and a night variant, 3 riders with speed/accel/handling stats, checkpoint time-attack with 9s continue, wheelies, ramps, shortcuts, trick types with x5 combo multiplier, 3 star challenges and S/A/B/C grades per stage, AI rival plus best-delivery ghost, XP levels unlocking bike paints, localStorage saves, Spanish/English UI, keyboard + Gamepad API + floating-joystick touch controls, deterministic fixed-step sim with Vitest and Playwright coverage, Vite build deployable to GitHub Pages.
 
 ## Source evidence
 
-- Repository javichur/radikal-bikers is a public non-fork, primary language TypeScript, default branch main, has\_pages true; no description/homepage/topics. ([source](https://api.github.com/repos/javichur/radikal-bikers))
-- Game is Radikal Riders: arcade browser pizza-delivery bike racing inspired by Gaelco's 1998 Radikal Bikers; all art, audio and code original; cel-shaded code-generated 3D graphics and real-time Web Audio synth sound. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
-- Arcade mode for 1 human player with 5 difficulty-ordered stages (Paseo Maritimo, Puerto Radikal, Centro Historico, Zona Industrial, Carretera de la Colina) plus a Valencia Fallas stage, 2 starting riders (Rocco, Luna) plus unlockable Nitro, in Spanish and English. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
-- Playable browser build opens at the secret GitHub Pages path; page shell returns HTTP 200 with Radikal Riders title, game-canvas element, overlay/screens containers and rotate-device hint. ([source](https://javichur.github.io/radikal-bikers/leoGjAW41OH-fIkg/))
+- Repository javichur/radikal-bikers is public, non-fork, primary language TypeScript, default branch main, has\_pages true, 1 star, 0 forks, created 2026-09-26T06:14:00Z. ([source](https://api.github.com/repos/javichur/radikal-bikers))
+- Game is Radikal Riders: arcade browser pizza-delivery bike racing inspired by Gaelco's 1998 Radikal Bikers; all art, audio and code original with code-generated cel-shaded 3D graphics and real-time Web Audio synth sound. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
+- Arcade mode for 1 human player with 5 difficulty-ordered stages (Paseo Maritimo, Puerto Radikal, Centro Historico, Zona Industrial, Carretera de la Colina) plus a Valencia Fallas stage with real monuments and a night variant, 2 starting riders (Rocco, Luna) plus unlockable Nitro, in Spanish and English. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
+- Playable browser build opens at the submitted secret GitHub Pages path; page shell returns HTTP 200 with Radikal Riders title, game-canvas element, overlay/screens containers and rotate-device hint, loading a Vite JS bundle. ([source](https://javichur.github.io/radikal-bikers/leoGjAW41OH-fIkg/))
 - Keyboard controls documented: steer Left/Right or A/D, accelerate Up/W, brake/reverse Down/S, wheelie Space/Shift, pause Esc/P, restart R, menus arrows+Enter. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
-- Gamepad controls documented (Gamepad API): steer left stick/d-pad, accelerate RT/A, brake LT/X, wheelie RB/Y, pause Start, restart Select/Back, menus d-pad+A/B; src/input/gamepad.ts implements the Gamepad API source. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
-- Touch controls documented and implemented (not just responsive layout): floating joystick on left half, GAS / FRENO / CABALLITO buttons, II pause button, tap menus, landscape play with portrait warning, iPhone safe-area and zoom/scroll locking; src/input/touch.ts implements TouchInput with floating analogue stick and gas/brake/wheelie buttons. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
+- Gamepad controls documented via Gamepad API: steer left stick/d-pad, accelerate RT/A, brake LT/X, wheelie RB/Y, pause Start, restart Select/Back, menus d-pad+A/B. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
+- Touch controls documented and implemented (not just responsive layout): floating joystick on left half, GAS / FRENO / CABALLITO buttons, II pause button, tap menus, landscape play with portrait warning, iPhone safe-area and zoom/scroll locking. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
 - No accelerometer or gyroscope device-motion controls are documented; motion support is unestablished. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
 - Single-player only: explicitly 1-player arcade mode; the rival is a machine-controlled rider and the ghost is the player's own best delivery, so human-player count is fixed at 1. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
-- Systems: checkpoints add time, 9-second continue with -5000 points, near-miss/wheelie/jump/glass/shortcut/explosion/turbo tricks feed a combo multiplier up to x5 lost on falls, 3 star challenges and S/A/B/C grades per stage, rival + ghost, XP levels unlocking bike paints, instant restart. ([source](https://github.com/javichur/radikal-bikers/blob/main/docs/game-design.md))
+- Systems: checkpoints add time, 9-second continue with -5000 points, near-miss/wheelie/jump/glass/shortcut/explosion tricks feed a combo multiplier up to x5 lost on falls, 3 star challenges and S/A/B/C grades per stage, rival + ghost, XP levels unlocking bike paints, instant restart. ([source](https://github.com/javichur/radikal-bikers/blob/main/docs/game-design.md))
 - Built 26 Sept 2026 with the GitHub Copilot for iPhone app and the Claude Opus 5.5 model. ([source](https://github.com/javichur/radikal-bikers/blob/main/README.md))
-- Tech: three ^0.186.1 dependency with toon-material Three.js renderer, TypeScript strict, Vite build with base './', Vitest unit tests with coverage thresholds, Playwright e2e on desktop plus emulated iPhone, ESLint + Prettier; simulation in sim/ and core/ is DOM/Three.js-free and deterministic at 1/60s fixed step with seeded PRNG. ([source](https://github.com/javichur/radikal-bikers/blob/main/package.json))
-- Demo video thumbnail provides the only inspected gameplay still; repo file tree contains no gameplay PNG/JPG screenshots, only PWA icons under public/icons/. ([source](https://youtu.be/Ds_wtQz6IG0))
-- No existing catalog entry matches javichur/radikal-bikers or Radikal Riders; the catalog's closest racing comparators are Kart Royale (50/100, screenshots 70), Turbo Kart Rally (40/100, screenshots 70) and moorestech (64/100, screenshots 76). ([source](https://github.com/SubmitGame/.github/blob/main/README.md))
+- Tech: three ^0.186.1 dependency, TypeScript strict ~6.0.2, Vite ^8.3.0 build with base './', Vitest ^5.0.2 unit tests with coverage thresholds, Playwright e2e on desktop plus emulated iPhone, ESLint + Prettier; deterministic 1/60s fixed-step sim with seeded PRNG. ([source](https://github.com/javichur/radikal-bikers/blob/main/package.json))
+- Demo video thumbnail provides the inspected gameplay still; repo file tree contains no gameplay PNG/JPG screenshots, only PWA icons under public/icons/. ([source](https://youtu.be/Ds_wtQz6IG0))
+- Catalog match verified: games/javichur--radikal-bikers already catalogs this exact repository and play URL (Radikal Riders, overall 54, screenshots 55); matched by verified repository URL and playable URL, not by title alone. Closest racing comparators excluding the target are Kart Royale (50/100, screenshots 70), Turbo Kart Rally (40/100, screenshots 70), Sakura Rally (56/100, screenshots 68) and moorestech (64/100, screenshots 76). ([source](https://github.com/SubmitGame/.github/blob/main/README.md))
 
 ## Fictional reviews
 

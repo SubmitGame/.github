@@ -1,6 +1,6 @@
 # Tempora
 
-[Play the game](https://mofferato.github.io/tempora/) · [View source](https://github.com/Mofferato/tempora)
+[Play the game](https://mofferato.github.io/tempora/) · [View source](https://github.com/Mofferato/tempora) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/Mofferato--tempora/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,7 +11,7 @@
 
 ### Overall rating
 
-Tempora shows the deepest systems scope in the catalog: eleven eras, 22 lands, genetics, settlements, migrations, politics, wars, dynasties, three modes, autoplay and procedural music, verified through README layout tables and the src module list. Against calibration points, it sits above Ashlands (55), OSRS Tower Defense (52) and neverquest (45, the closest text-sim comparator but far narrower) on gameplay depth and scope, and above THORNMERE (46) and The Nine Lives of Ash (47) on simulation breadth. It stays below moorestech (64) because that game pairs deep systems with coherent 3D multiplayer execution, while Tempora is single-player text/DOM UI with no 3D scene, verified screenshots showing only panels and stat bars. Evidence gaps: no independent playtest of balance, performance, or long-run stability; headless sim harness claims exist but were not executed here.
+Tempora shows the deepest systems scope in the catalog: eleven eras, 22 lands, genetics, settlements, migrations, politics, wars, dynasties, three modes, autoplay and procedural music, verified through repository README layout tables and the src module list. Excluding the target itself, it sits above neverquest (45, the closest text-sim comparator but far narrower), THORNMERE (46) and The Nine Lives of Ash (47) on simulation breadth, and above OSRS Tower Defense (52) on historical/systems scope while below moorestech (64) because that game pairs deep systems with coherent 3D multiplayer execution, while Tempora is single-player text/DOM UI with no 3D scene, verified screenshots showing only panels and stat bars. Evidence gaps: no independent playtest of balance, performance, or long-run stability; headless sim harness claims exist but were not executed here; source-code findings are from inspected docs and raw files only, not a full clone.
 
 ### Screenshot score
 
@@ -25,7 +25,7 @@ Best frame (screenshot.png) is the game's own runtime output: coherent dark UI w
 | --- | --- |
 | Repository created | 26 Sep 2026 · 17:57 UTC |
 | Added to catalog | 27 Sep 2026 · 06:22 UTC |
-| Last updated | 27 Sep 2026 · 06:22 UTC |
+| Last updated | 29 Sep 2026 · 03:15 UTC |
 | Documented creation models | Not established |
 
 ## Screenshots
@@ -100,7 +100,7 @@ Inspected 780x1688 mobile frame: responsive phone layout of the same character c
 - **HTML5** — rendering ([evidence](https://raw.githubusercontent.com/Mofferato/tempora/main/src/shell.html))
 - **CSS** — rendering ([evidence](https://raw.githubusercontent.com/Mofferato/tempora/main/build.js))
 - **Web Audio API** — audio ([evidence](https://raw.githubusercontent.com/Mofferato/tempora/main/src/sound.js))
-- **Node.js 18** — build ([evidence](https://raw.githubusercontent.com/Mofferato/tempora/main/package.json))
+- **Node.js \>=18** — build ([evidence](https://raw.githubusercontent.com/Mofferato/tempora/main/package.json))
 
 ## Reconstructed prompt
 
@@ -108,18 +108,18 @@ Build a free open-source single-file browser life simulator spanning 10,000 BC t
 
 ## Source evidence
 
-- Repository title and description present Tempora as a life simulator across twelve thousand years: born 10,000 BC to far future, living one year at a time in a world of dynasties, migrations, wars and politics; free, open source, one HTML file. ([source](https://github.com/Mofferato/tempora))
-- Play link points to https://mofferato.github.io/tempora/ with autosave in browser; offline play by downloading index.html; platform server adds accounts and cloud saves. ([source](https://github.com/Mofferato/tempora))
-- Features list documents eleven eras across 22 lands, living world, genetics, MBTI, class, fame, pets, school, careers, love, marriage, places, courts, wills, sports, Olympics, politics, era-appropriate communication, stat-change feedback, autoplay, Guide, Claude integration, dynasties, three modes, and procedural era music. ([source](https://github.com/Mofferato/tempora))
-- Playable page at mofferato.github.io/tempora/ opens the actual game shell (Tempora header with Age +1 control), not just a repo or promo page. ([source](https://mofferato.github.io/tempora/))
+- Playable page at mofferato.github.io/tempora/ opens the actual game shell (Tempora header, era ribbon, Age +1 bar), not just a repo or promo page; title is 'Tempora: a life simulator across twelve thousand years'. ([source](https://mofferato.github.io/tempora/))
+- Repository presents Tempora as a life simulator across twelve thousand years: born 10,000 BC to far future, living one year at a time in a world of dynasties, migrations, wars and politics; free, open source, one HTML file, MIT licensed. ([source](https://github.com/Mofferato/tempora))
+- Play link points to https://mofferato.github.io/tempora/ with browser autosave; offline play by downloading index.html; platform server adds accounts and cloud saves. ([source](https://github.com/Mofferato/tempora))
+- Features list documents eleven eras across 22 lands, living world with settlements/migrations/revolutions/wars, genetics, MBTI, class, fame, pets, school, careers, love/marriage, places, courts, wills, sports/Olympics, politics, era-appropriate communication, stat-change feedback, autoplay, Guide, optional Claude integration, dynasties, three modes (Narrative/Household/God), and procedural era music. ([source](https://github.com/Mofferato/tempora))
 - Game is single-player life/dynasty play: live one year at a time and continue through children, relatives or anyone known; Community tab is profiles/posts, not multiplayer gameplay. ([source](https://github.com/Mofferato/tempora))
-- UI is pointer/click driven with buttons and tabs; sound module listens to pointerdown and keydown; shell includes viewport-fit mobile meta; mobile screenshot shows responsive phone layout with the same Age flow. ([source](https://raw.githubusercontent.com/Mofferato/tempora/main/src/sound.js))
+- UI is pointer/click driven with buttons and tabs; sound module listens to pointerdown and keydown to unlock audio; shell includes viewport-fit mobile meta; mobile screenshot shows responsive phone layout with the same Age flow. ([source](https://raw.githubusercontent.com/Mofferato/tempora/main/src/sound.js))
 - No gamepad, accelerometer, gyroscope, or on-screen joystick documented; no explicit touch-control statement beyond tap-friendly browser UI and responsive layout. ([source](https://github.com/Mofferato/tempora))
 - package.json declares the tempora package, homepage, MIT license, build/test/start scripts, and Node \>=18 engine requirement. ([source](https://raw.githubusercontent.com/Mofferato/tempora/main/package.json))
 - build.js bundles ordered src/\*.js modules plus CSS and shell.html into a single self-contained index.html with zero install dependencies. ([source](https://raw.githubusercontent.com/Mofferato/tempora/main/build.js))
 - sound.js synthesizes per-era music and effects with the Web Audio API and no audio files; first click unlocks audio. ([source](https://raw.githubusercontent.com/Mofferato/tempora/main/src/sound.js))
-- server/server.js is a plain-Node (no framework) platform server using http, crypto scrypt, HttpOnly cookies, server-sent events, and the official Anthropic SDK for an optional Claude proxy. ([source](https://raw.githubusercontent.com/Mofferato/tempora/main/server/server.js))
-- No catalog entry matches this game: grep over games/\*/readme.json and README.md finds no Mofferato/tempora slug, title, or repository reference; catalog holds 36 prior game reports used only as score calibration. ([source](https://github.com/Mofferato/tempora))
+- Catalog match verified: existing directory games/Mofferato--tempora with same title, repository URL, and playable URL; this submission reuses that slug. ([source](https://github.com/Mofferato/tempora))
+- gh api could not be used for GitHub evidence in this environment (gh auth missing, no GH\_TOKEN); GitHub evidence was verified via web fetch of repository and raw files instead. ([source](https://github.com/Mofferato/tempora))
 
 ## Fictional reviews
 

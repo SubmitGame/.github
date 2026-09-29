@@ -1,6 +1,6 @@
 # Meridian Wake
 
-[Play the game](https://meridian-wake-g6a.vercel.app) · [View source](https://github.com/michaelcrosato/meridian-wake-g6a) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/michaelcrosato--meridian-wake-g6a/README.md)
+[Play the game](https://meridian-wake-g6a.vercel.app) · [View source](https://github.com/michaelcrosato/meridian-wake-g6a) · [Previous report](https://github.com/SubmitGame/.github/blob/c897e3009585fee500e94f9611f7bd41e06504d2/games/michaelcrosato--meridian-wake-g6a/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -25,32 +25,32 @@ Best gameplay frame (flight.png) is the game's own output: faceted low-poly plan
 | --- | --- |
 | Repository created | 27 Sep 2026 · 04:27 UTC |
 | Added to catalog | 27 Sep 2026 · 06:18 UTC |
-| Last updated | 28 Sep 2026 · 04:52 UTC |
+| Last updated | 29 Sep 2026 · 03:15 UTC |
 | Documented creation models | [GPT-6 Astra](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md) |
 
 ## Screenshots
 
 ![Meridian Wake gameplay](screenshots/795097682ba47d658140230b7de03ab869161480a83f27c5fc028b2b368a24cb.png)
 
-Inspected 1920x1080 gameplay frame: top-down 3D flight at Rutilicus near New Boston with large faceted teal/white planet, white/teal brick-built Sparrow with engine flames, ring station, scattered asteroids, orbit rings, second ship, mission banners, top Starmap/Spaceport/My ship/Journal/Options/Cloak bar, 24,000 cr plus 75,000 cr loan readout, shield/hull/fuel/power/heat bars, Land/Plot a course/Actions buttons, radar, and WebGL2 Auto-High 16.8 ms 29 bodies telemetry. Clearly the game's own runtime output.
+Inspected full gameplay frame: top-down 3D flight at Rutilicus near New Boston with large faceted teal/white low-poly planet, white/teal brick-built Sparrow with engine flames, ring station, scattered asteroids, orbit rings, second ship, mission banners, top Starmap/Spaceport/My ship/Journal/Options/Cloak bar, 24,000 cr plus 75,000 cr loan readout, shield/hull/fuel/power/heat bars, Land/Plot a course/Actions buttons, radar, and WebGL2 Auto-High 16.8 ms 29 bodies telemetry. Clearly the game's own runtime output.
 
 [Original screenshot](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/flight.png)
 
 ![Meridian Wake gameplay](screenshots/d21d6277c7e9108cf935904a01feaca38a5fae05741a79763052d85e8e7353f9.png)
 
-Inspected 1440x900 gameplay frame: same planet and station surrounded by a large Quarg Hydra fleet of dark multi-arm ships, AUTOPILOT LANDING APPROACH text, captain's-heading mission panel, full top bar and credits readout, bottom Land/Plot/Actions buttons, left ship stat bars, right scanner showing 12 hostile contacts, WebGPU High 248.1 ms 41 bodies telemetry. Clearly the game's own runtime output showing fleet encounter scale.
+Inspected gameplay frame: same planet and station surrounded by a large Quarg Hydra fleet of dark multi-arm ships, AUTOPILOT LANDING APPROACH text, captain's-heading mission panel, full top bar and credits readout, bottom Land/Plot/Actions buttons, left ship stat bars, right scanner showing 12 hostile contacts, WebGPU High 248.1 ms 41 bodies telemetry. Clearly the game's own runtime output showing fleet encounter scale.
 
 [Original screenshot](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/webgpu.png)
 
 ![Meridian Wake gameplay](screenshots/861c1e095a315f468951674a947d283771f8f14dfb5e71bc8f92e3f0a951ffd9.png)
 
-Inspected 844x390 gameplay frame: touch layout with top icon bar, credits readout, planet and brick ship, mission panel, right-side Sparrow stat bars, bottom on-screen steering/thrust/brake/boost buttons left and fire/boost buttons right, WebGL2 Balanced 54.0 ms 17 bodies telemetry. Clearly the game's own runtime output proving touch controls.
+Inspected gameplay frame: touch layout with top icon bar, credits readout, planet and brick ship, mission panel, right-side Sparrow stat bars, bottom on-screen steering/thrust/brake/boost buttons left and fire/boost buttons right, WebGL2 Balanced 54.0 ms 17 bodies telemetry. Clearly the game's own runtime output proving touch controls.
 
 [Original screenshot](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/touch-landscape.png)
 
 ![Meridian Wake gameplay](screenshots/7b35d3c8831c7b515e4375654511119b6ceb80a9d3566d42efa217e03fc5d4c2.png)
 
-Inspected 1920x1080 title screen: MERIDIAN WAKE masthead with Begin your voyage button, Flight handbook and Options links, large brick-built ship and faceted planet backdrop with asteroids and station. Menu/title card, not active gameplay; discounted for graphics scoring.
+Inspected title screen: MERIDIAN WAKE masthead with Begin your voyage button, Flight handbook and Options links, large brick-built ship and faceted planet backdrop with asteroids and station. Menu/title card, not active gameplay; discounted for graphics scoring.
 
 [Original screenshot](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/19e49a23f4ce9e41c3d937a73e6a9973cf3b49fd/docs/images/title.png)
 
@@ -116,13 +116,13 @@ Build Meridian Wake: a brick-built 3D browser reimagining of Endless Sky with Vi
 - README titles the game Meridian Wake, attributes generation to GPT-6 Astra (g6a) on 26 September 2026, and describes trading, passengers, mining, ship equipment, escorts, and the Free Worlds story in a 3D browser adaptation of Endless Sky. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md))
 - README documents keyboard controls (W/arrows thrust, A/D turn, S brake, Space primary, F secondary, Shift boost, L land/launch, M map, E operations, B board, G scoop fuel, R scan, C cloak, T contacts, J journal, I equipment, Esc pause), establishing keyboard support. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md))
 - README states the same game is available through keyboard, touch and standard gamepads, and compatibility docs state keyboard, remapped controls, simultaneous touch and standard gamepads are supported, establishing gamepad support. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/compatibility.md))
-- README and flight handbook describe simultaneous touch steering, thrust, brake, boost, primary/secondary fire and cloak controls with portrait and landscape layouts, and the touch screenshot shows on-screen direction, thrust, fire and boost buttons, establishing mobile touch support. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md))
-- No accelerometer, gyroscope, or device-motion controls are documented in the README or compatibility docs; motion support is unestablished rather than ruled out. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/compatibility.md))
+- README and handbook describe simultaneous touch steering, thrust, brake, boost, primary/secondary fire and cloak controls with portrait and landscape layouts, and the inspected touch-landscape frame shows on-screen steering, thrust, fire and boost buttons, establishing mobile touch support. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md))
+- No accelerometer, gyroscope, or device-motion controls are documented in the README or compatibility docs; motion support is unestablished rather than explicitly ruled out. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/compatibility.md))
 - Progress autosaves in browser storage as a single captain where a new captain replaces the save, with JSON export/import and no multiplayer, lobby, or netcode documented, establishing single-player with one human player. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md))
 - package.json pins three 0.186.1, @dimforge/rapier3d-compat 0.21.0, vite 8.3.1 and @playwright/test 1.63.0, establishing engine, physics, and build versions. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/package.json))
 - README rendering section documents Three.js WebGPU with WebGL2 fallback, node materials, bloom/AO, automatic quality selection, and fixed-step Rapier simulation with interpolation. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/README.md))
 - Content docs pin Endless Sky data, describe 694 systems, 2344 native mission declarations, 351 base hull names, a large outfit catalog, Free Worlds Reconciliation/Checkmate paths plus sandbox, and authored wiki side stories; counts describe inventory, not proof every script is playable. ([source](https://raw.githubusercontent.com/michaelcrosato/meridian-wake-g6a/main/docs/content.md))
-- Deployed homepage returns HTTP 200 and serves the game shell with scene/app mounts, MERIDIAN WAKE loading text, and game bundles for universe, render-engine, and physics-engine, verifying a publicly reachable playable URL. ([source](https://meridian-wake-g6a.vercel.app))
+- Deployed homepage returns the game shell with scene/app mounts, MERIDIAN WAKE loading text, and game bundles for universe, render-engine, and physics-engine, verifying a publicly reachable playable URL. ([source](https://meridian-wake-g6a.vercel.app))
 - Existing catalog directory games/michaelcrosato--meridian-wake-g6a matches this repository and playable URL exactly, so the existing slug is reused; it was identified by repository and deployment match, not title alone. ([source](https://github.com/michaelcrosato/meridian-wake-g6a))
 
 ## Fictional reviews
