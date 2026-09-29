@@ -14,7 +14,7 @@ Publish the final report before uploading diagnostics and starting the owner-onl
 
 ## Verify the live flow
 
-Verify SSH on a live AgentsWeb runner before editing workflow YAML. Deploy the workflow to the default branch. Open an owner-authored test issue with a real source-backed game and a real game without verified source. Inspect the startup comment, banner response, and job link. SSH into the issue worker during analysis; inspect OpenCode records, logs, and processes. Inspect the final reports and combined catalog. Confirm the catalog branch publishes directly without a PR and its issue links resolve. Report the commit and comment URLs immediately. Return while the same worker remains in its 30-minute hold.
+Verify SSH on a live issue-catalog worker before editing workflow YAML. Deploy the workflow to the default branch. Open an owner-authored test issue with a real source-backed game and a real game without verified source. Inspect the startup comment, banner response, and job link. SSH into the issue worker during analysis; inspect OpenCode records, logs, and processes. Inspect the final reports and combined catalog. Confirm the catalog branch publishes directly without a PR and its issue links resolve. Report the commit and comment URLs immediately. Return while the same worker remains in its 30-minute hold.
 
 Keep credentials out of the analysis step. Use the workflow token only for the acknowledgment and publication steps. Account for GitHub runner queue time before the first comment; treat the 10–30-minute estimate as guidance, not a deadline.
 

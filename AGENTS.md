@@ -1,8 +1,8 @@
 # SubmitGame instructions
 
-## AgentsWeb runner testing
+## Issue-worker SSH
 
-For SSH requests here, use the live AgentsWeb Actions runner and `~/.ssh/aiplay-agentsweb`; use `a2` only if named. Verify SSH before editing runner YAML.
+Inspect the live issue-catalog Actions worker over SSH with `~/.ssh/aiplay-agentsweb`; use `a2` only if named. Verify SSH on an issue worker before editing its workflow YAML.
 
 ## Issue catalog workflow
 
