@@ -450,7 +450,7 @@ def repository_created(url):
     if not url:
         return None
     owner, repo = urlsplit(url).path.strip('/').split('/')[:2]
-    headers = {'User-Agent': 'AwesomeClaude'}
+    headers = {'User-Agent': 'SubmitGame'}
     if os.getenv('GH_TOKEN'):
         headers['Authorization'] = 'Bearer ' + os.environ['GH_TOKEN']
     request = urllib.request.Request(f'https://api.github.com/repos/{owner}/{repo}', headers=headers)
@@ -551,7 +551,7 @@ def content_only(data):
 
 def apply_results(artifact, outcomes):
     run_key = os.getenv('GITHUB_RUN_ID', str(time.time_ns())) + '-' + os.getenv('GITHUB_RUN_ATTEMPT', '1')
-    repo = os.getenv('GITHUB_REPOSITORY', 'AwesomeClaude/.github')
+    repo = os.getenv('GITHUB_REPOSITORY', 'SubmitGame/.github')
     changed = set()
     history = []
     for item in outcomes:

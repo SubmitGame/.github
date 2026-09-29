@@ -126,7 +126,7 @@
     },
     {
       "finding": "Existing catalog already contains this exact game at games/no-source/neal-fun--be5898efdb64 (overall 52, screenshots 32, no verified source repository), matched by identical playable URL https://neal.fun/infinite-craft/, not by title alone; existing slug is reused",
-      "url": "https://github.com/AwesomeClaude/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md"
+      "url": "https://github.com/SubmitGame/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md"
     }
   ],
   "source_url": "https://neal.fun/infinite-craft/",

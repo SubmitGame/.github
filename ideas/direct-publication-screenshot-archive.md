@@ -8,4 +8,4 @@ Reuse the 2026-09-28 backfill evidence: 135 of 140 screenshot records archived a
 
 Inspect the live issue workflow after deployment. Confirm direct publication, matching report/profile output, archived screenshot bytes, issue links, and the same SSH worker during the owner hold. Treat manual-mode PR permission and race-rejection paths as separate from the default-mode E2E evidence.
 
-Reuse the successful [issue #3 report](https://github.com/AwesomeClaude/.github/issues/3#issuecomment-5863690944): three refreshed games published directly without a PR, seven screenshot hashes matched, and both generated galleries resolved all 35 image references. Keep manual-mode permissions unchanged.
+Reuse the archived pre-migration issue #3 record: three refreshed games published directly without a PR, seven screenshot hashes matched, and both generated galleries resolved all 35 image references. Inspect committed records rather than a current-organization issue link. Keep manual-mode permissions unchanged.

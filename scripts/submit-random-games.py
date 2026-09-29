@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DATASET = Path('/Users/igor/Documents/Codex/2026-09-08/find-games-last-week-made-with/games.json')
-DEFAULT_REPO = 'AwesomeClaude/.github'
+DEFAULT_REPO = 'SubmitGame/.github'
 COUNT = 10
 
 

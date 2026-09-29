@@ -1,6 +1,6 @@
 # Publish issue game links
 
-Treat the issue, PR, comment, and Actions numbers below as private predecessor records. Do not look them up under the new organization: Git migration preserves commits, not GitHub discussions or runs. Inspect the committed game analysis records for public evidence.
+Treat pre-migration issue, PR, comment, and Actions numbers as archival records. Do not resolve them under the current organization: Git migration preserves commits, not GitHub discussions or runs. Treat repository URLs normalized in archived analysis records as labels, not proof that old run links resolve. Inspect committed analysis records for evidence.
 
 Post the animated `assets/issue-analysis-banner.svg` and “I’m on it. Analyzing the links may take 10–30 minutes.” as the first job step. Link the banner to the Actions run. Link the text to the current attempt’s analysis job; use the run URL if job lookup fails. Pin the SVG URL to the workflow commit. Keep the issue body unchanged.
 
@@ -22,7 +22,7 @@ Keep credentials out of the analysis step. Use the workflow token only for the a
 
 Use issue #12 and Actions job 108524405448 as the first production E2E record. Inspect its startup comment for the rendered banner, 10–30-minute estimate, and direct job link. Inspect the final comment and merged catalog PR #13 for publication and automatic merge.
 
-Compare [2048](https://github.com/AwesomeClaude/.github/blob/main/games/gabrielecirulli--2048/README.md) and [Infinite Craft](https://github.com/AwesomeClaude/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md) in the same root ranking and screenshot gallery. Check the latter's explicit no-verified-source label. Note that both OpenCode processes exited 0 with empty stderr after roughly 128 and 149 seconds. Confirm the observed worker, OpenCode server, and AgentsWeb SSH tunnel remained alive when `sleep 1800` began at 01:22 UTC on 2026-09-27; do not wait for the hold to finish. Treat OpenCode analysis time, not publication, as the observed throughput bottleneck. Do not treat this single production run as proof that future external pages remain accessible.
+Compare [2048](https://github.com/SubmitGame/.github/blob/main/games/gabrielecirulli--2048/README.md) and [Infinite Craft](https://github.com/SubmitGame/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md) in the same root ranking and screenshot gallery. Check the latter's explicit no-verified-source label. Note that both OpenCode processes exited 0 with empty stderr after roughly 128 and 149 seconds. Confirm the observed worker, OpenCode server, and AgentsWeb SSH tunnel remained alive when `sleep 1800` began at 01:22 UTC on 2026-09-27; do not wait for the hold to finish. Treat OpenCode analysis time, not publication, as the observed throughput bottleneck. Do not treat this single production run as proof that future external pages remain accessible.
 
 ## Refresh reports and retain evidence
 
@@ -92,7 +92,7 @@ Fetch public HTTP(S) images without credentials. Validate every redirect and pin
 
 ## Reuse direct-publication E2E evidence
 
-Inspect [issue #3](https://github.com/AwesomeClaude/.github/issues/3), [its publication report](https://github.com/AwesomeClaude/.github/issues/3#issuecomment-5863690944), and [Actions run 36379323940](https://github.com/AwesomeClaude/.github/actions/runs/36379323940). Confirm the banner at 04:49:42 UTC preceded analysis at 04:50:24 UTC on 2026-09-28. Check all three updated reports: 2048, Infinite Craft, and Meridian Wake. Confirm direct publication succeeded with no associated PR.
+Inspect the archived run 36379323940 through committed records, not a current-organization Actions link. Confirm the banner at 04:49:42 UTC preceded analysis at 04:50:24 UTC on 2026-09-28. Check all three updated reports: 2048, Infinite Craft, and Meridian Wake. Confirm direct publication succeeded with no associated PR.
 
 Reuse the real 83-, 84-, and 108-second analysis durations and exit code 0 for all three sessions. Verify seven screenshot hashes and 35 committed image references in each of the root and profile READMEs. Inspect Meridian Wake’s four recovered images and the original 135-of-140 backfill result. Keep the five HTTP-404 OxCity sources as unavailable metadata.
 

@@ -52,7 +52,7 @@ def download(url, target):
             'curl', '-q', '--silent', '--show-error', '--noproxy', '*',
             '--proto', '=http,https', '--max-time', '20', '--connect-timeout', '8',
             '--max-filesize', str(MAX_BYTES), '--resolve', f'{host}:{port}:{address}',
-            '--user-agent', 'AwesomeClaude-screenshot-archive', '--dump-header', str(headers),
+            '--user-agent', 'SubmitGame-screenshot-archive', '--dump-header', str(headers),
             '--output', str(target), '--write-out', '%{http_code}', '--url', url,
         ], capture_output=True, text=True, timeout=25)
         if result.returncode:

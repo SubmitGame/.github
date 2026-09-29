@@ -1,4 +1,4 @@
-# AwesomeClaude instructions
+# SubmitGame instructions
 
 ## AgentsWeb runner testing
 

@@ -1,6 +1,6 @@
 # Meridian Wake
 
-[Play the game](https://meridian-wake-g6a.vercel.app) · [View source](https://github.com/michaelcrosato/meridian-wake-g6a) · [Previous report](https://github.com/AwesomeClaude/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/michaelcrosato--meridian-wake-g6a/README.md)
+[Play the game](https://meridian-wake-g6a.vercel.app) · [View source](https://github.com/michaelcrosato/meridian-wake-g6a) · [Previous report](https://github.com/SubmitGame/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/michaelcrosato--meridian-wake-g6a/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
