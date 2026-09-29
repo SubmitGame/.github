@@ -332,15 +332,7 @@ def catalog_readme(entries, link_prefix=''):
            'Add games with `./scripts/games.sh <game-url> [more-urls...]` or '
            '`./scripts/games.sh --file links.txt`. Rebuild every page and this index with '
            '`./scripts/games.sh`. Inspect `games/history/` for per-run analysis outcomes and provenance. '
-           'Inspect `work/game-batches/` for agent logs and rejected reports.', '', '## Games', '']
-    for directory, data in entries:
-        target = link_prefix + quote(str(directory.relative_to(ROOT) / 'README.md'), safe='/')
-        graphic = data['screenshot_based_score']
-        graphic_text = 'not scored' if graphic is None else f"{graphic['score']}/100"
-        source_text = '' if data['repository_url'] else '; no verified source repository'
-        out.append(f"- [{markdown(data['title'])}]({target}) — overall {data['rating']['score']}/100; screenshots {graphic_text}{source_text}")
-    if not entries:
-        out.append('No valid games yet.')
+           'Inspect `work/game-batches/` for agent logs and rejected reports.']
     gallery = [(directory, data) for directory, data in entries
                if data['screenshot_based_score'] is not None
                and any(screenshots.local_path(directory, shot) for shot in data['screenshots'])]
@@ -369,6 +361,15 @@ def catalog_readme(entries, link_prefix=''):
         out.extend(['</table>', ''])
     else:
         out.append('No scored screenshots yet.')
+    out += ['', '## Games', '']
+    for directory, data in entries:
+        target = link_prefix + quote(str(directory.relative_to(ROOT) / 'README.md'), safe='/')
+        graphic = data['screenshot_based_score']
+        graphic_text = 'not scored' if graphic is None else f"{graphic['score']}/100"
+        source_text = '' if data['repository_url'] else '; no verified source repository'
+        out.append(f"- [{markdown(data['title'])}]({target}) — overall {data['rating']['score']}/100; screenshots {graphic_text}{source_text}")
+    if not entries:
+        out.append('No valid games yet.')
     return '\n'.join(out).rstrip() + '\n'
 
 
