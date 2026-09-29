@@ -1,0 +1,7 @@
+{
+  "world": "../issue-analysis/assets/world.jpg",
+  "robot": "assets/robot-investigator.webp",
+  "cards": "../issue-analysis/assets/cards.webp",
+  "controller": "../issue-analysis/assets/controller.webp",
+  "pixelFont": "../issue-analysis/assets/PressStart2P-Regular.ttf"
+}

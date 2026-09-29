@@ -25,6 +25,7 @@ Copy every live OpenCode session URL printed by `scripts/test-oc.sh` immediately
 - Read [Submit-game button](wiki/submit-game-button.md) before changing the README call to action.
 - Read [SVG parallax banner](wiki/svg-parallax.md) before changing the animated banner.
 - Read [Issue-analysis animation](wiki/issue-analysis-animation.md) before changing the layered issue banner.
+- Read [Detective banner concept](wiki/issue-investigation-animation.md) before changing the dramatic alternate banner.
 
 ## Verification
 
