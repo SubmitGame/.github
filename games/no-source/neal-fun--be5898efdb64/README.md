@@ -1,6 +1,6 @@
 # Infinite Craft
 
-[Play the game](https://neal.fun/infinite-craft/) · [View original submission](https://neal.fun/infinite-craft/) · [Previous report](https://github.com/AwesomeClaude/.github/blob/e866255fc5cb8e58c821c089ae8d9381df1f427d/games/no-source/neal-fun--be5898efdb64/README.md)
+[Play the game](https://neal.fun/infinite-craft/) · [View original submission](https://neal.fun/infinite-craft/) · [Previous report](https://github.com/SubmitGame/.github/blob/70721f73031ad5c55996fc438eb674a2c79244ff/games/no-source/neal-fun--be5898efdb64/README.md)
 
 No verified source repository.
 
@@ -17,7 +17,7 @@ Far from AAA: single blank-canvas drag-and-drop loop, no campaign, multiplayer, 
 
 ### Screenshot score
 
-One inspected gameplay frame only, judged from stills without inferring motion. Flat pill-node DOM canvas with thin link lines and a sidebar list: clean, coherent and readable but no lighting, texture, environment, effects or composed scene. Sits with Top-10 Tension (32, flat quiz cards) and neverquest (30, monochrome dashboard) and below 2048 (45, iconic color-progression board), Taipo (55, pixel-art board) and far below Kart Royale, Turbo Kart Rally and Neural Sight (70 each for dense 3D or photographic scenes). Title/logo art discounted.
+One inspected gameplay frame only, judged from stills without inferring motion. Flat pill-node DOM canvas with thin link lines and sidebar list: coherent and readable but no lighting, texture, environment, effects or composed scene. Sits with Top-10 Tension (32, flat quiz cards) and neverquest (30, monochrome dashboard) and below 2048 (45, iconic color-progression board), Taipo (55, pixel-art board) and far below Kart Royale, Turbo Kart Rally and Neural Sight (70 each for dense 3D or photographic scenes). Title/logo art discounted.
 
 </details>
 
@@ -26,14 +26,14 @@ One inspected gameplay frame only, judged from stills without inferring motion. 
 | Detail | Value |
 | --- | --- |
 | Added to catalog | 27 Sep 2026 · 01:22 UTC |
-| Last updated | 28 Sep 2026 · 04:51 UTC |
+| Last updated | 29 Sep 2026 · 01:41 UTC |
 | Documented creation models | Not established |
 
 ## Screenshots
 
 ![Infinite Craft gameplay](screenshots/e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730.png)
 
-Inspected downloaded 457x218 gameplay frame, the game's own runtime output: white infinite canvas with small pill-shaped text nodes such as Peter Griffin, Mickey Mouse, Sea Unicorn, Head-first, Ghost, Aquarium, Red Dragon, Mountain Range and Donald Trump linked by thin grey lines; right sidebar lists Discoveries with emoji rows; top bars show NEAL.FUN and Infinite Craft logos. Clean minimalist styling, flat DOM text with no lighting, texture or composed scene.
+Inspected gameplay frame, the game's own runtime output: white infinite canvas with small pill-shaped text nodes such as Peter Griffin, Mickey Mouse, Sea Unicorn, Head-first, Ghost, Aquarium, Red Dragon, Mountain Range and Donald Trump linked by thin grey lines; right sidebar lists Discoveries with emoji rows; top bars show NEAL.FUN and Infinite Craft logos. Flat DOM text, clean and readable, no lighting, texture, environment or composed scene.
 
 [Original screenshot](https://upload.wikimedia.org/wikipedia/en/a/aa/Gameplay_screenshot_of_Infinite_Craft%2C_2024.png)
 
@@ -41,7 +41,7 @@ Inspected downloaded 457x218 gameplay frame, the game's own runtime output: whit
 
 - Open https://neal.fun/infinite-craft/ in a desktop or mobile browser; no install or account is needed.
 - Start with the four base elements Water, Fire, Wind and Earth in the sidebar palette.
-- Drag one element onto the empty canvas, then drag a second element on top of it to combine them (on touch devices drag with touch).
+- Drag one element onto the empty canvas, then drag a second element on top of it to combine them (on touch devices tap or drag with touch).
 - New results such as Steam from Water plus Fire are added to the sidebar collection for reuse.
 - Keep chaining outputs into new inputs, combine an item with itself to scale up, and use sidebar search and sort as the collection grows.
 - Use left-click to select, double-click to copy and right-click to delete items; use the broom to clear the canvas without losing discoveries and Reset only to wipe all discoveries.
@@ -87,16 +87,16 @@ Build Infinite Craft, a browser sandbox crafting game: blank infinite canvas plu
 
 ## Source evidence
 
-- Infinite Craft is a 2024 sandbox game developed by Neal Agarwal, released Jan 31 2024 on neal.fun, iOS April 27/30 2024 and Android May 21 2024; genre Sandbox, Mode Single-player ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
+- Infinite Craft is a 2024 sandbox game developed by Neal Agarwal; platforms Web, iOS, Android; releases Web Jan 31 2024, iOS Apr 27/30 2024, Android May 21 2024; Genre Sandbox, Mode Single-player ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
 - Official neal.fun blurb: a crafting game where you can make anything, start with Water, Fire, Wind and Earth and branch out to the rest of the universe ([source](https://neal.fun/infinite-craft))
-- Gameplay: player starts with water, fire, wind and earth and combines two elements to form new ones; all crafted elements saved to sidebar with search; no defined goal ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
+- Gameplay: player starts with water, fire, wind and earth and combines two elements to form new ones; all crafted elements saved to sidebar with search by name; no defined goal, infinite possible elements ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
 - Uses Llama 2 and Llama 3.1 to create new elements and assign emojis; unseen pairs go to generative AI then saved to database so the same pair always outputs the same result; first finder gets First Discovery label; content filter with occasional incoherent results ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
-- Layout has infinite workspace on the left and element list with Discoveries and sorting menu on the right; all you need is a working mouse to click and drag elements from the right onto the canvas to combine them ([source](https://www.ign.com/wikis/infinite-craft/How_to_Play_Infinite_Craft))
-- Mouse shortcuts: left-click selects item, double-click copies it, right-click deletes it; bottom-corner buttons are trashcan, moon night-mode, broom to clear workspace, and megaphone/sound toggle ([source](https://www.ign.com/wikis/infinite-craft/How_to_Play_Infinite_Craft))
-- Official app listing: the official Infinite Craft app from neal.fun, start with Water, Fire, Earth and Wind, over 100 million combinations, be first to discover new items; tagged Puzzle, Merge, Casual, Single player, Stylized; 5M+ downloads; new features include save files, infinite canvas, importing/exporting saves, better searching/sorting ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
-- Mobile/touch support: browser version works on modern smartphones and tablets using touch controls by dragging one element onto another; official Android/iOS apps ship the same loop for touch devices ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
-- GitHub API search returns only third-party clones, scrapers and guides (expitau/InfiniteCraftWiki crafting guide, lia-07/infinite-crafter-cracked, finiteCraft/finiteCraft scraper, functorism/world-graph reconstruction); users/nealagarwal repos listing is empty, so no verified official source repository is established ([source](https://api.github.com/search/repositories?q=infinite-craft+neal+agarwal&per_page=5))
-- Direct fetch of the playable page returns Cloudflare 403 challenge (5380-byte Just-a-moment page), so live DOM was corroborated via search excerpts, Wikipedia, IGN guide and store listings; source code was not cloned and no engine or code findings are claimed ([source](https://neal.fun/infinite-craft/))
+- Layout has infinite workspace plus element list with Discoveries and sorting; all you need is a working mouse to click and drag elements onto the canvas to combine them; left-click selects, double-click copies, right-click deletes ([source](https://www.ign.com/wikis/infinite-craft/How_to_Play_Infinite_Craft))
+- Official app listing: the official Infinite Craft app from neal.fun, start with Water, Fire, Earth and Wind, over 100 million combinations, be first to discover new items; tagged Puzzle, Merge, Casual, Single player, Stylized; 5M+ downloads, 4.8 stars; new features save files, infinite canvas, importing/exporting saves, better searching/sorting ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
+- Mobile/touch support: browser version works on desktop, laptop, tablet or mobile; on PC drag elements, on mobile tap one element then another to merge; official Android/iOS apps ship the same loop for touch devices ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
+- GitHub API search returns only third-party clones, scrapers and reconstructions (lia-07/infinite-crafter-cracked, finiteCraft/finiteCraft scraper, functorism/world-graph reconstruction, quantumbagel/InfiniteScrape, microbrewerGM/infinite-craft explorer); no official Neal Agarwal source repository, so no verified repository\_url ([source](https://api.github.com/search/repositories?q=infinite-craft+neal+agarwal&per_page=5))
+- Direct fetch of the playable page returns Cloudflare 403 challenge, so live DOM was corroborated via search excerpts, Wikipedia, IGN guide and store listings; source code was not cloned and no engine or code findings are claimed ([source](https://neal.fun/infinite-craft/))
+- Existing catalog already contains this exact game at games/no-source/neal-fun--be5898efdb64 (overall 52, screenshots 32, no verified source repository), matched by identical playable URL https://neal.fun/infinite-craft/, not by title alone; existing slug is reused ([source](https://github.com/AwesomeClaude/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md))
 
 ## Fictional reviews
 

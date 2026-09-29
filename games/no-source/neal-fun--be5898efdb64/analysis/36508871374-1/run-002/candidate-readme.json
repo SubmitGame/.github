@@ -50,10 +50,7 @@
   "screenshots": [
     {
       "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/Gameplay_screenshot_of_Infinite_Craft%2C_2024.png",
-      "observation": "Inspected gameplay frame, the game's own runtime output: white infinite canvas with small pill-shaped text nodes such as Peter Griffin, Mickey Mouse, Sea Unicorn, Head-first, Ghost, Aquarium, Red Dragon, Mountain Range and Donald Trump linked by thin grey lines; right sidebar lists Discoveries with emoji rows; top bars show NEAL.FUN and Infinite Craft logos. Flat DOM text, clean and readable, no lighting, texture, environment or composed scene.",
-      "local_path": "screenshots/e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730.png",
-      "sha256": "e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730",
-      "downloaded_at": "2026-09-28T04:46:51.178414+00:00"
+      "observation": "Inspected gameplay frame, the game's own runtime output: white infinite canvas with small pill-shaped text nodes such as Peter Griffin, Mickey Mouse, Sea Unicorn, Head-first, Ghost, Aquarium, Red Dragon, Mountain Range and Donald Trump linked by thin grey lines; right sidebar lists Discoveries with emoji rows; top bars show NEAL.FUN and Infinite Craft logos. Flat DOM text, clean and readable, no lighting, texture, environment or composed scene."
     }
   ],
   "screenshot_based_score": {
@@ -136,22 +133,7 @@
     },
     {
       "label": "Related link",
-      "url": "https://dotesports.com/general/news/how-to-play-infinite-craft-from-neal-fun"
-    },
-    {
-      "label": "Related link",
       "url": "https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en"
     }
-  ],
-  "repository_created_at": null,
-  "analysis": {
-    "analyzed_at": "2026-09-29T01:41:04.574265+00:00",
-    "model": "opencode/muse-spark-1.3-contributor-free",
-    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/36508871374/job/109216370910",
-    "session_id": "ses_f152ed25affe35m3BLGfJA10GT",
-    "prompt_sha256": "4452c976c1c8887bdb87cfe6fba9d10d23142b0ecb6cd0011f7ccbafcc1e25c1"
-  },
-  "catalog_added_at": "2026-09-27T01:22:14Z",
-  "catalog_updated_at": "2026-09-29T01:41:04.574265+00:00",
-  "previous_report_url": "https://github.com/SubmitGame/.github/blob/70721f73031ad5c55996fc438eb674a2c79244ff/games/no-source/neal-fun--be5898efdb64/README.md"
+  ]
 }
