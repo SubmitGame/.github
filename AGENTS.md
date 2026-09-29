@@ -26,6 +26,7 @@ Copy every live OpenCode session URL printed by `scripts/test-oc.sh` immediately
 - Read [SVG parallax banner](wiki/svg-parallax.md) before changing the animated banner.
 - Read [Issue-analysis animation](wiki/issue-analysis-animation.md) before changing the layered issue banner.
 - Read [Detective banner concept](wiki/issue-investigation-animation.md) before changing the dramatic alternate banner.
+- Read [Arcane game detective](wiki/game-detective-animation.md) before changing the moonlit robot animation.
 
 ## Verification
 

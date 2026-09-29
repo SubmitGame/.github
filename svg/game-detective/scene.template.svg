@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" width="2172" height="724" style="display:block;width:100%;height:auto;background:#090f2b" role="img" aria-labelledby="title description">
+<title id="title">On the case — Investigating your game links</title>
+<desc id="description">A robot detective runs through moonlit floating islands while glowing game cards float beside its magnifying glass. Searchlight, sparkles and mist animate independently. Investigating your game links — 10–30 minutes. Decorative animation, not live progress. Respect reduced motion.</desc>
+<defs>
+ <linearGradient id="footer" x2="0" y2="1"><stop offset="0" stop-color="#071029" stop-opacity="0"/><stop offset=".48" stop-color="#060c21" stop-opacity=".8"/><stop offset="1" stop-color="#060c21" stop-opacity=".97"/></linearGradient>
+ <linearGradient id="beam"><stop stop-color="#a4f5ff" stop-opacity=".38"/><stop offset="1" stop-color="#9cf0ff" stop-opacity="0"/></linearGradient>
+ <linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#fff6df"/><stop offset="1" stop-color="#ffd895"/></linearGradient>
+ <radialGradient id="moonlight"><stop stop-color="#b5deff" stop-opacity=".14"/><stop offset="1" stop-color="#9acbff" stop-opacity="0"/></radialGradient>
+ <linearGradient id="fog" x2="0" y2="1"><stop stop-color="#bccbff" stop-opacity="0"/><stop offset=".5" stop-color="#aabfff" stop-opacity=".13"/><stop offset="1" stop-color="#bccbff" stop-opacity="0"/></linearGradient>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="shadow"><feDropShadow dy="4" stdDeviation="6" flood-color="#020817" flood-opacity=".8"/></filter>
+ <path id="star" d="M0-7 2-2 7 0 2 2 0 7-2 2-7 0-2-2Z" fill="#d0f6ff"/>
+<linearGradient id="bronze" x2="0" y2="1"><stop stop-color="#ffe6a3"/><stop offset=".3" stop-color="#b98437"/><stop offset=".55" stop-color="#ffdd86"/><stop offset="1" stop-color="#725023"/></linearGradient>
+<radialGradient id="mana"><stop stop-color="#f0ffff"/><stop offset=".25" stop-color="#8aedff"/><stop offset=".65" stop-color="#298bc7"/><stop offset="1" stop-color="#182e66"/></radialGradient>
+<filter id="magic" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" result="a"/><feMerge><feMergeNode in="a"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<path id="rune" d="M-5-9 5 0-5 9V-9M-5 0H5" fill="none" stroke="#ffdaa0" stroke-width="2"/>
+</defs>
+<style>
+.depth{transform:translate(var(--dx,0px),var(--dy,0px))}.world-loop{transform-origin:1086px 362px;animation:breathe 18s ease-in-out infinite}.moon-pulse{animation:pulse 6s ease-in-out infinite alternate}.twinkle{animation:twinkle 3.4s ease-in-out infinite alternate}.late{animation-delay:-1.8s}.beam-loop{transform-origin:1120px 285px;animation:sweep 7s ease-in-out infinite}.robot-loop{transform-origin:915px 495px;animation:run .9s ease-in-out infinite}.cards-loop{transform-origin:1580px 300px;animation:hover 4.8s ease-in-out infinite}.lens-glint{animation:glint 4s ease-in-out infinite}.spark{animation:spark 3s ease-out infinite}.s2{animation-delay:-1s}.s3{animation-delay:-2s}.mist-loop{animation:mist 16s ease-in-out infinite alternate}.shadow-loop{transform-origin:925px 535px;animation:shadow .9s ease-in-out infinite}.stage{opacity:.3;animation:stage 9s linear infinite}.two{animation-delay:-6s}.three{animation-delay:-3s}.meteor{animation:meteor 11s linear infinite}.flow{stroke-dasharray:3 15;animation:flow 3s linear infinite}.ring{transform-origin:1135px 288px;animation:ring 3.2s ease-out infinite}.r2{animation-delay:-1.6s}
+.rune-turn{animation:turn 28s linear infinite}.rune-reverse{animation:turn 36s linear infinite reverse}.spell-trail{stroke-dasharray:55 1200;animation:spell 4.5s ease-in-out infinite}.trail2{animation-delay:-2.25s;stroke-dasharray:30 1200}.arcane-flare{animation:flare 4.5s ease-in-out infinite}.mana-pulse{animation:mana 3.5s ease-in-out infinite alternate}.golden-dust{animation:dust 4s ease-out infinite}.dust2{animation-delay:-2s}
+@keyframes turn{to{transform:rotate(360deg)}}
+@keyframes spell{0%{stroke-dashoffset:55;opacity:0}12%{opacity:.85}75%{opacity:.85}100%{stroke-dashoffset:-1200;opacity:0}}
+@keyframes flare{0%,68%,100%{opacity:.1}78%{opacity:.9}88%{opacity:.25}}
+@keyframes mana{from{opacity:.5}to{opacity:1}}
+@keyframes dust{0%{transform:translate(0,5px);opacity:0}15%{opacity:.8}100%{transform:translate(-25px,-65px);opacity:0}}
+@keyframes breathe{0%,100%{transform:scale(1.004)}50%{transform:scale(1.013)}}
+@keyframes pulse{from{opacity:.35}to{opacity:.9}}
+@keyframes twinkle{from{opacity:.2}to{opacity:.85}}
+@keyframes sweep{0%,100%{transform:rotate(-5deg);opacity:.4}50%{transform:rotate(8deg);opacity:.8}}
+@keyframes run{0%,100%{transform:translate(0,0) rotate(-1deg)}50%{transform:translate(5px,-13px) rotate(1deg)}}
+@keyframes hover{0%,100%{transform:translate(0,3px) rotate(-.35deg)}50%{transform:translate(0,-10px) rotate(.35deg)}}
+@keyframes glint{0%,20%,70%,100%{opacity:.1}35%,50%{opacity:.9}}
+@keyframes spark{0%{opacity:0;transform:translate(0,0)}20%{opacity:.85}100%{opacity:0;transform:translate(45px,-70px)}}
+@keyframes mist{from{transform:translate(-70px,0)}to{transform:translate(70px,-12px)}}
+@keyframes shadow{0%,100%{transform:scaleX(1);opacity:.22}50%{transform:scaleX(.84);opacity:.1}}
+@keyframes stage{0%,30%{opacity:1}34%,100%{opacity:.3}}
+@keyframes meteor{0%,75%{opacity:0;transform:translate(0,0)}77%{opacity:.7}94%,100%{opacity:0;transform:translate(-300px,125px)}}
+@keyframes flow{to{stroke-dashoffset:-72}}
+@keyframes ring{0%{transform:scale(.6);opacity:.45}90%,100%{transform:scale(1.8);opacity:0}}
+[data-paused="true"] *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){:root:not([data-motion="enabled"]) *{animation:none!important}:root:not([data-motion="enabled"]) .depth{transform:none!important}:root:not([data-motion="enabled"]) .meteor,:root:not([data-motion="enabled"]) .ring{opacity:0}:root:not([data-motion="enabled"]) .stage{opacity:.75}}
+</style>
+<g id="layer-world" class="depth" data-depth=".1" data-label="Clean world"><g class="world-loop"><image x="-16" y="-6" width="2204" height="736" preserveAspectRatio="none" href="{{world}}"/></g></g>
+<g id="layer-moon" class="depth" data-depth=".15" data-label="Moonlight"><ellipse class="moon-pulse" cx="472" cy="146" rx="390" ry="285" fill="url(#moonlight)"/></g>
+<g id="layer-stars" class="depth" data-depth=".25" data-label="Stars"><g class="twinkle" filter="url(#glow)"><use href="#star" x="715" y="62"/><use href="#star" x="1430" y="75"/><use href="#star" x="1950" y="110"/></g><g class="twinkle late"><use href="#star" x="1080" y="110"/><use href="#star" x="620" y="160"/></g><path class="meteor" d="m1450 30 100-40" stroke="#c3eaff" stroke-width="2"/></g>
+<g id="layer-beam" class="depth" data-depth=".55" data-label="Magnifier scan"><g class="beam-loop"><path d="M1130 288 1820 130 1860 455Z" fill="url(#beam)"/><path d="M1130 288 1840 345" stroke="#bafaff" opacity=".25" stroke-width="1.5"/></g><g stroke="#bbf8ff" fill="none" stroke-width="1.5"><ellipse class="ring" cx="1135" cy="288" rx="36" ry="52"/><ellipse class="ring r2" cx="1135" cy="288" rx="36" ry="52"/></g></g>
+<g id="layer-runes" class="depth" data-depth=".55" data-label="Golden summoning circle"><g transform="translate(1570 455) scale(1 .22)" opacity=".58" filter="url(#glow)"><g class="rune-turn" fill="none" stroke="#ffd487"><circle r="335" stroke-width="2"/><circle r="313" stroke-width="5" stroke-dasharray="30 15 3 15"/><circle r="291" stroke-width="1"/><use href="#rune" transform="rotate(0) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(18) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(36) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(54) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(72) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(90) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(108) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(126) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(144) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(162) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(180) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(198) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(216) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(234) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(252) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(270) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(288) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(306) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(324) translate(0 -270) scale(1.7)"/><use href="#rune" transform="rotate(342) translate(0 -270) scale(1.7)"/></g><g class="rune-reverse" fill="none" stroke="#83e6ff"><circle r="240" stroke-width="2" stroke-dasharray="130 35"/><path d="M0-233 202 116H-202ZM0 233 202-116H-202Z" stroke-width="1.5" opacity=".7"/></g></g></g>
+<g id="layer-shadow" class="depth" data-depth=".65" data-label="Ground shadow"><ellipse class="shadow-loop" cx="925" cy="535" rx="103" ry="12" fill="#050922"/></g>
+<g id="layer-robot" class="depth" data-depth=".85" data-label="Robot detective"><g class="robot-loop"><image x="90" y="15" width="1998" height="666" preserveAspectRatio="none" href="{{robot}}"/><path class="lens-glint" d="m1143 262 3 10 10 3-10 3-3 10-3-10-10-3 10-3Z" fill="#e6ffff" filter="url(#glow)"/></g></g>
+<g id="layer-cards" class="depth" data-depth=".6" data-label="Game cards"><g class="cards-loop"><image width="2172" height="724" href="{{cards}}"/></g></g>
+<g id="layer-spells" class="depth" data-depth=".7" data-label="Arcane spell trails" fill="none"><path d="M1125 290C1180 480 1480 540 1550 220C1575 120 1470 95 1450 165" stroke="#91eaff" stroke-width="1" opacity=".16"/><g filter="url(#magic)"><path class="spell-trail" d="M1125 290C1180 480 1480 540 1550 220C1575 120 1470 95 1450 165" stroke="#83eaff" stroke-width="4" stroke-linecap="round"/><path class="spell-trail trail2" d="M1125 290C1220 540 1660 565 1820 280" stroke="#ffd38a" stroke-width="3" stroke-linecap="round"/><g class="arcane-flare" stroke="#ffe6aa"><path d="M1460 133v44m-22-22h44m-37-15 30 30m0-30-30 30" stroke-width="2"/><circle cx="1460" cy="155" r="6" fill="#fff8da" stroke="none"/></g></g><g class="golden-dust" fill="#ffe3a3" filter="url(#glow)"><circle cx="1205" cy="462" r="3"/><circle cx="1520" cy="463" r="2"/><circle cx="1765" cy="490" r="3"/><path d="m1900 478 4-7 4 7-4 7Z"/></g><g class="golden-dust dust2" fill="#89e7ff" filter="url(#glow)"><circle cx="1360" cy="465" r="3"/><circle cx="1660" cy="484" r="2"/><circle cx="1950" cy="471" r="3"/></g></g>
+<g id="layer-particles" class="depth" data-depth="1" data-label="Clue particles" filter="url(#glow)"><path class="flow" d="M1120 412Q1430 575 1915 478" stroke="#ffdda1" stroke-width="2" fill="none" opacity=".5"/><g class="spark" fill="#ffe0a2"><circle cx="1170" cy="455" r="3"/><circle cx="1645" cy="454" r="3"/><circle cx="1860" cy="492" r="2"/></g><g class="spark s2" fill="#a9eaff"><circle cx="1320" cy="475" r="3"/><circle cx="1760" cy="497" r="2"/></g><g class="spark s3" fill="#fff4dc"><circle cx="1430" cy="456" r="2.5"/><circle cx="1980" cy="488" r="2"/></g></g>
+<g id="layer-mist" class="depth" data-depth=".4" data-label="Drifting mist"><g class="mist-loop"><path d="M-140 485Q330 405 950 475T2312 445V615H-140Z" fill="url(#fog)"/></g></g>
+<g id="layer-type" class="depth" data-depth="0" data-label="Headline" font-family="Arial,Helvetica,sans-serif">
+ <rect y="485" width="2172" height="239" fill="url(#footer)"/>
+ <text x="90" y="570" font-size="18" font-weight="700" fill="#b4dcff" letter-spacing="5">GAME LINK INVESTIGATION</text>
+ <text x="86" y="637" font-family="Georgia,serif" font-size="76" font-weight="800" letter-spacing="1" fill="url(#gold)" stroke="#68461d" stroke-width="2" paint-order="stroke fill" filter="url(#shadow)">ON THE CASE.</text>
+ <text x="90" y="680" font-size="25" fill="#d9e4fa">Investigating your game links · 10–30 minutes</text>
+ <g transform="translate(1430 592)"><rect x="-28" y="-32" width="664" height="92" rx="16" fill="#0d1831" fill-opacity=".75" stroke="#91b2d5" stroke-opacity=".24"/>
+ <g class="stage" fill="#b7f5ff"><circle cy="4" r="4"/><text x="18" y="11" font-size="20" letter-spacing="2">DISCOVER</text></g>
+ <path d="M155 5h36m-6-5 6 5-6 5M373 5h35m-6-5 6 5-6 5" stroke="#637c9a" fill="none"/>
+ <g class="stage two" transform="translate(219)" fill="#b7f5ff"><circle cy="4" r="4"/><text x="18" y="11" font-size="20" letter-spacing="2">INSPECT</text></g>
+ <g class="stage three" transform="translate(435)" fill="#ffe1a6"><circle cy="4" r="4"/><text x="18" y="11" font-size="20" letter-spacing="2">CATALOG</text></g>
+ </g><text x="1430" y="671" font-size="17" fill="#96abc8" letter-spacing="2">EVERY LINK IS A NEW ADVENTURE.</text>
+</g>
+<g id="layer-frame" class="depth" data-depth="0" data-label="Enchanted gold frame" pointer-events="none">
+<rect x="18" y="18" width="2136" height="688" rx="16" fill="none" stroke="url(#bronze)" stroke-width="2" opacity=".45"/>
+<g fill="none" stroke="url(#bronze)" stroke-width="3"><path d="M28 107V46Q28 28 46 28h110M2016 28h110q18 0 18 18v61M28 617v61q0 18 18 18h110M2016 696h110q18 0 18-18v-61"/><path d="M38 81 52 52 81 38M2091 38l29 14 14 29M38 643l14 29 29 14M2091 686l29-14 14-29"/></g>
+<g transform="translate(1086 24)"><path d="M-70 0h48l22-14L22 0h48M-40 7h20L0 20 20 7h20" fill="none" stroke="url(#bronze)" stroke-width="3"/><path class="mana-pulse" d="M0-11 14 2 0 15-14 2Z" fill="url(#mana)" stroke="#ffd99a" stroke-width="2" filter="url(#glow)"/></g>
+</g>
+<script><![CDATA[
+(() => {
+ const root=document.documentElement, layers=[...root.querySelectorAll('.depth')], reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let x=0,y=0,tx=0,ty=0,raf=0,enabled=true,paused=false,strength=1;
+ const blocked=()=>reduced.matches && root.dataset.motion!=='enabled';
+ function reset(){if(raf)cancelAnimationFrame(raf);raf=0;x=y=tx=ty=0;layers.forEach(l=>{l.style.removeProperty('--dx');l.style.removeProperty('--dy');});}
+ function frame(){raf=0;if(paused||!enabled||blocked())return;x+=(tx-x)*.09;y+=(ty-y)*.09;layers.forEach(l=>{const d=Number(l.dataset.depth);l.style.setProperty('--dx',`${(x*d).toFixed(3)}px`);l.style.setProperty('--dy',`${(y*d).toFixed(3)}px`);});if(Math.abs(tx-x)+Math.abs(ty-y)>.02)raf=requestAnimationFrame(frame);}
+ function schedule(){if(!raf&&!paused&&enabled&&!blocked())raf=requestAnimationFrame(frame);}
+ root.addEventListener('pointermove',e=>{if(paused||!enabled||blocked())return;const r=root.getBoundingClientRect();tx=((e.clientX-r.left)/r.width-.5)*32*strength;ty=((e.clientY-r.top)/r.height-.5)*18*strength;schedule();});
+ root.addEventListener('pointerleave',()=>{tx=ty=0;schedule();});
+ reduced.addEventListener('change',()=>{delete root.dataset.motion;reset();});
+ window.sceneControls={
+  pause(value){paused=Boolean(value);root.dataset.paused=String(paused);if(paused){if(raf)cancelAnimationFrame(raf);raf=0;}else{root.dataset.motion='enabled';schedule();}},
+  parallax(value){enabled=Boolean(value);reset();},
+  strength(value){strength=Math.max(0,Math.min(2,Number(value)||0));reset();},
+  layer(id,visible){const layer=layers.find(l=>l.id===id);if(layer)layer.style.display=visible?'':'none';},
+  layers:layers.map(l=>({id:l.id,label:l.dataset.label,depth:Number(l.dataset.depth)}))
+ };
+})();
+]]></script>
+</svg>
