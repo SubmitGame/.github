@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" width="2172" height="724" style="display:block;width:100%;height:auto;background:#051136" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" width="2172" height="724" style="display:block;width:100%;height:auto;background:#051136" role="img" aria-labelledby="title description" data-motion="enabled">
 <title id="title">I'm on it! — Animated game-link analysis</title>
-<desc id="description">A pixel-art robot investigates game links in a moonlit world. An independent robot, floating catalog cards and controller move over clean reconstructed scenery. An animated scan beam, starlight and data pixels add depth. Analyzing game links · 10–30 minutes. Move the pointer for parallax in interactive SVG mode. Respect reduced motion unless playback is explicitly enabled.</desc>
+<desc id="description">A pixel-art robot investigates game links in a moonlit world. An independent robot, floating catalog cards and controller move over clean reconstructed scenery. An animated scan beam, starlight and data pixels add depth. Analyzing game links · 10–30 minutes. The standalone SVG autoplays and responds to pointer movement; the interactive preview can pause motion.</desc>
 <metadata id="font-license">Copyright 2012 The Press Start 2P Project Authors (cody@zone38.net), with Reserved Font Name "Press Start 2P".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.

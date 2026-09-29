@@ -6,7 +6,7 @@ Edit `svg/issue-analysis/scene.template.svg`. Preserve the four ImageGen PNG mas
 
 Run `./scripts/build-issue-analysis-svg.sh` with Node, `sips`, and `cwebp` on PATH. Re-encode the world as quality-88 JPEG and the cutouts as quality-88 WebP with full-quality alpha. Embed all assets with the local manifest helper. Preserve the bundled Press Start 2P font, its OFL license, and the license embedded in SVG metadata; obtain the original font from `https://github.com/google/fonts/tree/main/ofl/pressstart2p`.
 
-Run `python3 -m http.server 8876 --bind 127.0.0.1` from the repository root. Open `http://127.0.0.1:8876/svg/issue-analysis/`. Use the interactive preview or standalone SVG for pointer parallax. Use `<img>` for autonomous CSS motion without JavaScript. Select Play motion when reduced motion is enabled; preserve the default reduced-motion behavior in the exported file. Do not promise animation in static thumbnails or unverified GitHub rendering.
+Run `python3 -m http.server 8876 --bind 127.0.0.1` from the repository root. Open `http://127.0.0.1:8876/svg/issue-analysis/`. Use the interactive preview or standalone SVG for pointer parallax. Keep `data-motion="enabled"` on the exported root so a direct raw SVG link autoplays, even when the viewer requests reduced motion. Keep the preview paused under reduced motion until Play motion is selected. Use `<img>` only for autonomous CSS motion without JavaScript. Do not assume GitHub issue comments play the embedded SVG; verify the rendered comment separately.
 
 ## Repeat the real-browser verification
 
