@@ -129,6 +129,7 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 - [OSRS Tower Defense](../games/hamilton-junior--osrs-tower-defense/README.md) — overall 52/100; screenshots 65/100
 - [Mini Moto — Pine Ridge Park](../games/no-source/x-com--0bed74daa5b4/README.md) — overall 51/100; screenshots not scored; no verified source repository
 - [Wind & Rain](../games/michalbe--viatr-and-deshch/README.md) — overall 51/100; screenshots 58/100
+- [鹈鹕骑单车 · Pelican on a Bike](../games/riba2534--claude-opus-5-5-demo/README.md) — overall 51/100; screenshots not scored
 - [Deep Dive](../games/chichiroxursox-droid--deep-dive/README.md) — overall 50/100; screenshots 55/100
 - [DERELICT](../games/no-source/x-com--e6b37156ecf7/README.md) — overall 50/100; screenshots 62/100; no verified source repository
 - [Kart Royale](../games/ryancampbell--kart-royale/README.md) — overall 50/100; screenshots 70/100

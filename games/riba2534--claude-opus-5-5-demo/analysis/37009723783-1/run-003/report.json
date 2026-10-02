@@ -1,0 +1,184 @@
+{
+  "catalog_slug": null,
+  "creation_models": [
+    {
+      "evidence_url": "https://github.com/riba2534/claude-opus-5-5-demo",
+      "name": "Claude Opus 5.5"
+    }
+  ],
+  "technologies": [
+    {
+      "category": "engine",
+      "evidence_url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/package.json",
+      "name": "Three.js",
+      "version": "^0.186.0"
+    },
+    {
+      "category": "language",
+      "evidence_url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/src/main.js",
+      "name": "JavaScript",
+      "version": null
+    },
+    {
+      "category": "rendering",
+      "evidence_url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/src/main.js",
+      "name": "WebGL",
+      "version": null
+    },
+    {
+      "category": "audio",
+      "evidence_url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/src/audio.js",
+      "name": "Web Audio",
+      "version": null
+    },
+    {
+      "category": "build",
+      "evidence_url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/package.json",
+      "name": "esbuild",
+      "version": "^0.28.2"
+    },
+    {
+      "category": "build",
+      "evidence_url": "https://github.com/riba2534/claude-opus-5-5-demo",
+      "name": "Cloudflare Pages",
+      "version": null
+    }
+  ],
+  "source_url": "https://github.com/riba2534/claude-opus-5-5-demo](https://github.com/riba2534/claude-opus-5-5-demo",
+  "repository_url": "https://github.com/riba2534/claude-opus-5-5-demo",
+  "title": "\u9e48\u9e55\u9a91\u5355\u8f66 \u00b7 Pelican on a Bike",
+  "source_analysis": [
+    {
+      "finding": "Repository riba2534/claude-opus-5-5-demo is public, created 2026-09-23, 964 stars / 135 forks, language JavaScript, and contains three playable 3D web games: pelican-bike, cf-transport-ship, qq-speed. This report catalogs the first-listed flagship game pelican-bike (coastal pelican bicycle ride).",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "finding": "README describes pelican-bike as a helmet/sunglasses/red-scarf pelican riding a coastal highway catching fish, with cloth-simulated scarf, day-night cycle dusk to starry night, Gerstner waves and shore foam, 14 achievements, 5 cameras including cinematic and pelican view, real-time synthesized music following cadence, touch buttons and frame-rate adaptive quality, plus auto-drive fish chasing when idle.",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "finding": "Play URL https://claude-opus-5-5.riba2534.cn/ returns HTTP 200 text/html via Cloudflare and opens the actual playable game (title, Start Riding button, speed/cadence/gears HUD, fish counter, achievement counter, time-of-day control), not just a repo or promo page. Same repo also lists two other verified play URLs for CF transport-ship FPS and QQ Speed racer, confirming multi-game scope.",
+      "url": "https://claude-opus-5-5.riba2534.cn/"
+    },
+    {
+      "finding": "Keyboard controls established: W/S accelerate/brake, A/D lane-change fish catching, Space jump, T wing-spread wheelie stunt, B bell, H pelican call, C camera, Q/E gears, N fast-forward 3 hours, M music, K screenshot, F fullscreen, U hide UI, P pause; plus drag-rotate, wheel zoom, and clicking pelican/bell/sea triggers surprises.",
+      "url": "https://claude-opus-5-5.riba2534.cn/"
+    },
+    {
+      "finding": "Mouse controls established: drag rotates view, wheel zooms, clicking pelican makes it call, clicking bell rings, clicking distant sea makes fish jump; pointer/coarse touch detection and OrbitControls import in main.js.",
+      "url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/src/main.js"
+    },
+    {
+      "finding": "Mobile touch controls supported: README states touch buttons, live page shows on-screen left/right, bell/wing/reset pads, template has .touch controls with touch-action none, and main.js uses matchMedia pointer:coarse to select medium quality by default.",
+      "url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/index.template.html"
+    },
+    {
+      "finding": "Single-player with one human established: HUD shows single rider speed/cadence/mileage, 14 achievements, fish score, no multiplayer lobby, second-player input, or online modes in README, template, or src listing (11 modules: audio, bicycle, effects, fish, main, ocean, pelican, sky, textures, util, world); auto-drive is AI assist, not a human opponent.",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "finding": "No gamepad, accelerometer, or gyroscope support is documented in pelican README, template, or main.js; support is therefore unknown, not ruled out.",
+      "url": "https://raw.githubusercontent.com/riba2534/claude-opus-5-5-demo/main/pelican-bike/index.template.html"
+    },
+    {
+      "finding": "Creation model explicitly attributed: repo states it was generated by Claude Opus 5.5 in Claude Code (1M context, xhigh reasoning), one sentence prompt per game, single-session one-shot, zero manual code changes, README also model-written; single-file HTML via esbuild inline with fully procedural models/textures/animation/sound and no external assets.",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "finding": "No gameplay screenshots or image/audio asset files are stored in the repo; procedural-only claim means no stills could be downloaded and inspected, so screenshot-based graphics scoring is not possible from stills. Live pages are WebGL canvas without a fetchable still image.",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "finding": "gh CLI gh api could not be authenticated in this runner (no GH_TOKEN), so equivalent public api.github.com REST endpoints and raw.githubusercontent.com file fetches plus web fetches of repo and play URLs were inspected instead; no source was cloned. Local catalog README and comparator READMEs (Turbo Kart Rally, Kart Royale, Sakura Rally, DRIFTWING, Emberwake, HYPERBRICK) were read; no existing riba2534 entry was found so no slug is reused.",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    }
+  ],
+  "screenshots": [],
+  "screenshot_based_score": null,
+  "reconstructed_prompt": "Build a browser 3D casual riding game: a white pelican with helmet, sunglasses and red Verlet-cloth scarf riding a vintage bicycle along a coastal highway chasing fish. Three.js with Gerstner ocean waves, day-night cycle dusk to starry night, IK pedaling, 14 achievements, 5 cameras (orbit/follow/side/cinematic/pelican-view), auto-drive fish chasing, Web Audio synthesized SFX plus cadence-following generative music, touch buttons, adaptive quality, single-file esbuild HTML with zero external assets. Controls: W/S accel/brake, A/D lane, Space jump, T stunt, B bell, H call, C camera, N time-lapse, drag/wheel/click interactions.",
+  "controls": {
+    "mobile_controls": "supported",
+    "motion_controls": "unknown",
+    "gamepad": "unknown",
+    "keyboard_mouse": "supported"
+  },
+  "player_modes": {
+    "human_players": 1,
+    "modes": [
+      "single-player"
+    ]
+  },
+  "play_game_url": "https://claude-opus-5-5.riba2534.cn/",
+  "how_to_play": [
+    "Open https://claude-opus-5-5.riba2534.cn/ in a WebGL browser and press Start Riding",
+    "Accelerate with W/Up, brake with S/Down, change lanes with A/D to catch fish, Space to jump",
+    "Press T for wing-spread wheelie stunt, B for bell, H for pelican call, C to cycle 5 cameras",
+    "Use N to fast-forward 3 hours, M music toggle, K screenshot, F fullscreen, U hide UI, P pause",
+    "Drag to orbit, wheel to zoom; click the pelican, bell, or distant sea for surprises; idle triggers auto-drive fish chasing"
+  ],
+  "mechanics": [
+    "Endless coastal highway bicycle riding with acceleration, braking, gears, and lane-change fish catching",
+    "Jump and wing-spread wheelie stunt plus bell and call interactions",
+    "Golden fish worth 5 points, 14 achievements, mileage/speed/cadence HUD",
+    "Day-night cycle from dusk to starry moonlit night with street lamps",
+    "Gerstner-wave ocean with shore foam, procedural terrain and sky",
+    "Verlet cloth red scarf, dual-bone IK pedaling pelican and bicycle models",
+    "Five cameras including free orbit, follow, side, cinematic, and pelican view",
+    "Real-time Web Audio synthesized SFX and generative music paced by cadence",
+    "Touch button controls and frame-rate adaptive quality with auto-drive assist"
+  ],
+  "tags": [
+    "3d",
+    "casual",
+    "riding",
+    "exploration",
+    "procedural-generation",
+    "threejs",
+    "webgl",
+    "browser-game",
+    "single-player",
+    "cute",
+    "ocean",
+    "day-night-cycle"
+  ],
+  "rating": {
+    "score": 51,
+    "reason": "Verified complete playable 3D casual rider with distinctive character, cloth/ocean/day-night tech, 14 achievements, 5 cameras, synthesized cadence music, touch+keyboard+mouse, and documented soak/self-review testing, but single endless solo loop with no rivals, multiplayer, levels, or editor. Excluding itself, above Turbo Kart Rally (40, full kart loop but simple art/single circuit) and Kart Royale (50, polished 8-kart racer but single track) on originality and audiovisual systems, near DRIFTWING (52, ambient flight with 5 biomes/AI copilot/rings/journal) and Emberwake (53, survivors loop with 12 upgrades/boss) but below both on systems depth and world scope, and below Sakura Rally (56, campaign/garage/replays/multi-stage) and moorestech (64, catalog top). Far from AAA on content, cinematics, multiplayer, and live-ops; no playthrough metrics prove performance or balance."
+  },
+  "fictional_reviews": [
+    {
+      "rating": 85,
+      "text": "Fictional illustrative review: sunset pedaling with the scarf snapping behind me and the music picking up with my cadence is pure cozy joy \u2014 I chased golden fish until the stars came out."
+    },
+    {
+      "rating": 62,
+      "text": "Fictional illustrative review: charming ride and clever procedural detail, but one endless road means runs blur together; I wanted more routes or challenges after the first dozen fish."
+    },
+    {
+      "rating": 100,
+      "text": "Fictional illustrative review: a one-sentence prompt produced IK legs, cloth, waves, night sky, and a pelican that yells back when clicked \u2014 as a single-shot artifact this is absurd and wonderful."
+    }
+  ],
+  "links": [
+    {
+      "label": "Original submission",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo](https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "label": "Source repository",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo"
+    },
+    {
+      "label": "Play the game",
+      "url": "https://claude-opus-5-5.riba2534.cn/"
+    }
+  ],
+  "repository_created_at": null,
+  "analysis": {
+    "analyzed_at": "2026-10-02T12:59:47.455242+00:00",
+    "model": "opencode/muse-spark-1.3-contributor-free",
+    "actions_run": null,
+    "session_id": "ses_f034fa26bffetBMxjQdNtd9zmC",
+    "prompt_sha256": "8f6dfeae29a74bc1a2dda7550da1a7875b5ce4636059bca6403edf6e3eecdd2c"
+  }
+}
