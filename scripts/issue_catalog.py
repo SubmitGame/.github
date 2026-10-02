@@ -2,6 +2,7 @@
 """Collect game reports from public issue links without trusting issue prose."""
 
 import argparse
+import base64
 import concurrent.futures
 from datetime import datetime, timezone
 import ipaddress
@@ -51,6 +52,23 @@ def issue_links(body):
 
 def issue_input(path):
     payload = json.loads(path.read_text(encoding='utf-8'))
+    if 'inputs' in payload:
+        values = payload['inputs']
+        submission = values.get('submission_id', '')
+        post = values.get('post_id', '')
+        subreddit = values.get('subreddit', '').lower()
+        if not re.fullmatch(r't3_[a-z0-9]+-[0-9]{13}', submission) or not submission.startswith(post + '-'):
+            raise ValueError('Invalid Reddit correlation ID')
+        if not re.fullmatch(r't3_[a-z0-9]+', post) or subreddit not in ('submitgame', 'game_reviewer_dev'):
+            raise ValueError('Invalid Reddit source')
+        raw = json.loads(values.get('links', '[]'))
+        if not isinstance(raw, list) or not 1 <= len(raw) <= 5 or any(not isinstance(v, str) for v in raw):
+            raise ValueError('Reddit submissions require 1–5 public links')
+        links = list(dict.fromkeys(public_link(v) for v in raw))
+        if None in links:
+            raise ValueError('Invalid public game URL')
+        return {'source': 'reddit', 'submission_id': submission, 'post_id': post,
+                'subreddit': subreddit, 'owner': False, 'links': links, 'outcomes': []}
     issue = payload['issue']
     owner = issue['user']['login'].casefold() == os.getenv(
         'ISSUE_CATALOG_DEBUG_OWNER', payload['repository']['owner']['login']).casefold()
@@ -233,8 +251,10 @@ def acquire_publication_lock(repo, base):
 def publish(args):
     repo, run_id = os.environ['GITHUB_REPOSITORY'], os.environ['GITHUB_RUN_ID']
     summary_path = args.output / 'summary.json'
-    summary = json.loads(summary_path.read_text()) if summary_path.exists() else {
-        'issue_number': int(os.environ['ISSUE_NUMBER']), 'outcomes': [], 'error': 'No analysis results'}
+    summary = json.loads(summary_path.read_text()) if summary_path.exists() else (issue_input(args.event) if args.event else {
+        'issue_number': int(os.environ['ISSUE_NUMBER']), 'outcomes': []})
+    if not summary_path.exists():
+        summary['error'] = 'No analysis results'
     # Recover completed games when a later analysis or export was interrupted.
     outcomes_path = args.output / 'outcomes.json'
     if outcomes_path.exists():
@@ -246,7 +266,9 @@ def publish(args):
         summary['error'] = 'Analysis pipeline did not complete; inspect the Actions log.'
     base = os.getenv('CATALOG_BASE_BRANCH', 'main')
     run_url = os.getenv('ISSUE_CATALOG_RUN_URL') or f'https://github.com/{repo}/actions/runs/{run_id}'
-    branch = f"codex/issue-{summary['issue_number']}-run-{run_id}-attempt-{os.getenv('GITHUB_RUN_ATTEMPT', '1')}"
+    source_label = f"Reddit {summary['submission_id']}" if summary.get('source') == 'reddit' else f"issue #{summary['issue_number']}"
+    branch_label = f"reddit-{summary['submission_id']}" if summary.get('source') == 'reddit' else f"issue-{summary['issue_number']}"
+    branch = f"codex/{branch_label}-run-{run_id}-attempt-{os.getenv('GITHUB_RUN_ATTEMPT', '1')}"
     link = pr_url = merge_status = None
     locked = False
     try:
@@ -260,15 +282,15 @@ def publish(args):
             command('git', 'config', 'user.name', 'github-actions[bot]')
             command('git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
             command('git', 'switch', '-c', branch)
-            title = f"Refresh games from issue #{summary['issue_number']}"
+            title = f"Refresh games from {source_label}"
             counts = {status: sum(i['status'] == status for i in summary['outcomes'])
                       for status in ('added', 'updated', 'unchanged', 'failed')}
-            body = (f"Context: Reanalyze issue links; preserve game identity and labeled historical links.\n\n"
+            body = (f"Context: Reanalyze submitted links; preserve game identity and labeled historical links.\n\n"
                     f"Changes: {json.dumps(counts)}. Commit reports, analysis evidence and refresh provenance; "
                     f"rebuild the unified catalog. Preserve existing reports on failure.\n\n"
                     f"Verification: Inspect live analysis at {run_url}. Model findings remain evidence-limited. "
                     f"Logs are redacted before publication. Git retains prior report versions.\n\n"
-                    f"Issue: #{summary['issue_number']}\nRun-ID: {run_id}\n"
+                    f"Submission: {source_label}\nRun-ID: {run_id}\n"
                     f"Chat-ID: {os.environ['CATALOG_CHAT_ID']}")
             command('git', 'commit', '-m', title, '-m', body)
             head = command('git', 'rev-parse', 'HEAD').stdout.strip()
@@ -308,10 +330,29 @@ def publish(args):
         if item['status'] == 'analyzed':
             item.update(status='failed', reason='Publication did not complete')
     comment = issue_comment(summary, link, run_url, repo, branch, merge_status)
-    result = command('gh', 'issue', 'comment', str(summary['issue_number']), '--repo', repo, '--body', comment)
-    summary['publication'] = {'pull_request': pr_url, 'comment': result.stdout.strip(), 'merge_status': merge_status}
+    if summary.get('source') == 'reddit':
+        comment = comment.replace('Issue catalog run:', 'Game review:')
+        result_branch = 'codex/reddit-results'
+        head = command('gh', 'api', f'repos/{repo}/git/ref/heads/{base}', '--jq', '.object.sha').stdout.strip()
+        created = command('gh', 'api', '--method', 'POST', f'repos/{repo}/git/refs',
+                          '-f', f'ref=refs/heads/{result_branch}', '-f', f'sha={head}', check=False)
+        if created.returncode and 'Reference already exists' not in created.stderr:
+            raise RuntimeError('Cannot create Reddit result branch: ' + created.stderr[:500])
+        record = {'submission_id': summary['submission_id'], 'post_id': summary['post_id'],
+                  'run_url': run_url, 'error': bool(summary.get('error')), 'markdown': comment}
+        content = base64.b64encode((json.dumps(record, ensure_ascii=False) + '\n').encode()).decode()
+        path = f"repos/{repo}/contents/reddit-results/{summary['submission_id']}.json"
+        existing = command('gh', 'api', path + f'?ref={result_branch}', '--jq', '.sha', check=False)
+        values = ['-f', f'sha={existing.stdout.strip()}'] if existing.returncode == 0 else []
+        command('gh', 'api', '--method', 'PUT', path, '-f', f'branch={result_branch}',
+                '-f', f'message=Record review result for {source_label}\n\nContext: Deliver final publication outcomes to Reddit without an expiring callback.\nVerification: Real Actions run {run_url}.\nChat-ID: {os.environ["CATALOG_CHAT_ID"]}',
+                '-f', f'content={content}', *values)
+        result_url = f"https://github.com/{repo}/blob/{result_branch}/reddit-results/{summary['submission_id']}.json"
+    else:
+        result_url = command('gh', 'issue', 'comment', str(summary['issue_number']), '--repo', repo, '--body', comment).stdout.strip()
+    summary['publication'] = {'pull_request': pr_url, 'comment': result_url, 'merge_status': merge_status}
     games.write_atomic(summary_path, json.dumps(summary, indent=2) + '\n')
-    print(f'Issue report: {result.stdout.strip()}', flush=True)
+    print(f'Submission report: {result_url}', flush=True)
     return int(bool(summary.get('error'))
                or bool(merge_status and merge_status.startswith('Automatic merge failed')))
 

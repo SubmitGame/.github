@@ -1,0 +1,76 @@
+name: Review Reddit game submissions
+run-name: Reddit Game Review ${{ inputs.submission_id }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      submission_id:
+        description: Immutable Reddit post and timestamp correlation ID
+        required: true
+      post_id:
+        description: Reddit t3 post ID
+        required: true
+      subreddit:
+        description: submitgame or game_reviewer_dev
+        required: true
+      links:
+        description: JSON array of 1–5 public game URLs
+        required: true
+
+permissions: {}
+
+concurrency:
+  group: reddit-games-${{ inputs.submission_id }}
+  cancel-in-progress: false
+
+jobs:
+  analyze-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 290
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Validate the Reddit submission
+        id: preflight
+        run: python3 scripts/issue_catalog.py --event "$GITHUB_EVENT_PATH" --output "$RUNNER_TEMP/reddit-artifact" --phase preflight
+      - name: Install analysis dependencies
+        if: steps.preflight.outputs.ready == 'true'
+        run: |
+          python3 -m pip install -r scripts/requirements-catalog.txt
+          npm install --prefix "$HOME/.local" opencode-ai@1.18.31
+          echo "$HOME/.local/node_modules/.bin" >> "$GITHUB_PATH"
+      - name: Prepare game sessions
+        id: prepare
+        if: steps.preflight.outputs.ready == 'true'
+        run: python3 scripts/issue_catalog.py --event "$GITHUB_EVENT_PATH" --output "$RUNNER_TEMP/reddit-artifact" --phase prepare
+      - name: Analyze real games
+        id: analysis
+        if: steps.prepare.outcome == 'success'
+        timeout-minutes: 275
+        run: python3 scripts/issue_catalog.py --output "$RUNNER_TEMP/reddit-artifact" --phase analyze
+      - name: Publish catalog and durable Reddit result
+        if: always() && steps.preflight.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_BASE_BRANCH: ${{ github.event.repository.default_branch }}
+          CATALOG_AUTO_MERGE: ${{ vars.ISSUE_CATALOG_AUTO_MERGE || 'true' }}
+          ANALYSIS_SUCCEEDED: ${{ steps.analysis.outcome == 'success' }}
+          CATALOG_CHAT_ID: 01a0fba3-5bea-7eb0-be55-9b8ce901195c
+        run: |
+          gh auth setup-git
+          python3 scripts/issue_catalog.py --event "$GITHUB_EVENT_PATH" --output "$RUNNER_TEMP/reddit-artifact" --phase publish
+      - name: Retain diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reddit-catalog-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/reddit-artifact
+            work/game-batches
+            work/oc-server/server.log
+          retention-days: 7
