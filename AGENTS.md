@@ -14,6 +14,10 @@ Use the [game discovery dataset](/Users/igor/Documents/Codex/2026-09-08/find-gam
 
 Use the local OpenCode source checkout at `../ChatGPT/opencode`. Refer to [the upstream repository](https://github.com/anomalyco/opencode) for its GitHub page.
 
+## GitHub writes
+
+Use the `VibeFin` GitHub account for writes to repositories in the `SubmitGame` organization. Prefix each remote write with `GH_TOKEN="$(gh auth token --hostname github.com --user VibeFin)"`.
+
 ## OpenCode test links
 
 Copy every live OpenCode session URL printed by `scripts/test-oc.sh` immediately into a visible chat response as a clickable Markdown link. Include every run link again in the final response. Return after launch; inspect per-run `result.json` only when asked for outcomes.
