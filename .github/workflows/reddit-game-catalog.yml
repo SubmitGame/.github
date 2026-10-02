@@ -35,13 +35,14 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - name: Install screenshot decoder
+        run: python3 -m pip install -r scripts/requirements-catalog.txt
       - name: Validate the Reddit submission
         id: preflight
         run: python3 scripts/issue_catalog.py --event "$GITHUB_EVENT_PATH" --output "$RUNNER_TEMP/reddit-artifact" --phase preflight
       - name: Install analysis dependencies
         if: steps.preflight.outputs.ready == 'true'
         run: |
-          python3 -m pip install -r scripts/requirements-catalog.txt
           npm install --prefix "$HOME/.local" opencode-ai@1.18.31
           echo "$HOME/.local/node_modules/.bin" >> "$GITHUB_PATH"
       - name: Prepare game sessions
