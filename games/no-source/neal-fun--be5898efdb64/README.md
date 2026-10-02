@@ -1,6 +1,6 @@
 # Infinite Craft
 
-[Play the game](https://neal.fun/infinite-craft/) · [View original submission](https://neal.fun/infinite-craft/) · [Previous report](https://github.com/SubmitGame/.github/blob/012e624d8347f514378039509a46edcadc5aa4c9/games/no-source/neal-fun--be5898efdb64/README.md)
+[Play the game](https://neal.fun/infinite-craft/) · [View original submission](https://neal.fun/infinite-craft/) · [Previous report](https://github.com/SubmitGame/.github/blob/dc69f0ec2a3c5d29f4f21da6a97befcbf8b90374/games/no-source/neal-fun--be5898efdb64/README.md)
 
 No verified source repository.
 
@@ -13,7 +13,7 @@ No verified source repository.
 
 ### Overall rating
 
-Far from AAA: single blank-canvas drag-and-drop loop, no campaign, multiplayer, cinematics, voice, progression economy or live-ops scale; source not public so performance, balance and backend cost are unverified. Catalog comparison excluding the target itself: moorestech (64, catalog top) and Meridian Wake (60) beat it enormously on 3D scope and polish; Kart Royale (50, complete 3D kart loop with 70/100 frames) beats it on visual polish and real-time execution; neverquest (45, deepest text-systems scope but 30/100 monochrome dashboard) is the closest scope analogue. Infinite Craft exceeds neverquest, 2048 (38, single 4x4 loop), Top-10 Tension (32, flat quiz UI), TypeScript-Blackjack (28, single-table DOM), Beachy Beachy Ball (25), Taipo (35) and curiositY (18, static riddles) on content infinitude, shipped maturity and proven traction: 2024 viral hit on Twitch/YouTube, 100M+ combos claimed, 5M+ Android downloads, official iOS/Android apps, global shared database. It trails 3D catalog entries on simulated depth and scene rendering, but verified live playability and cultural scale place it just above Kart Royale at 52. Code and stills do not prove performance, fairness or long-term balance.
+Far from AAA: single blank-canvas drag-and-drop loop, no campaign, multiplayer, cinematics, voice, progression economy or live-ops scale; source not public so performance, balance and backend cost are unverified. Catalog comparison excluding the target itself: moorestech (64, catalog top) and Meridian Wake (60) beat it enormously on 3D scope and polish; Kart Royale (50, complete 3D kart loop with 70/100 frames) beats it on visual polish and real-time execution; neverquest (45, deepest text-systems scope but 30/100 monochrome dashboard) is the closest scope analogue. Infinite Craft exceeds neverquest, 2048 (38, single 4x4 loop), Top-10 Tension (32, flat quiz UI), TypeScript-Blackjack (28, single-table DOM), Beachy Beachy Ball (25), Taipo (35) and curiositY (18, static riddles) on content infinitude, shipped maturity and proven traction: 2024 viral hit on Twitch/YouTube, 100M+ combos claimed, official iOS/Android apps, global shared database. It trails 3D catalog entries on simulated depth and scene rendering, but verified live playability and cultural scale place it just above Kart Royale at 52. Code and stills do not prove performance, fairness or long-term balance.
 
 ### Screenshot score
 
@@ -26,7 +26,7 @@ One inspected gameplay frame only, judged from stills without inferring motion. 
 | Detail | Value |
 | --- | --- |
 | Added to catalog | 27 Sep 2026 · 01:22 UTC |
-| Last updated | 02 Oct 2026 · 11:23 UTC |
+| Last updated | 02 Oct 2026 · 11:25 UTC |
 | Documented creation models | Not established |
 
 ## Screenshots
@@ -86,14 +86,16 @@ Build Infinite Craft, a browser sandbox crafting game: blank infinite canvas plu
 
 ## Source evidence
 
-- Infinite Craft is a 2024 sandbox game developed by Neal Agarwal; platforms Web, iOS, Android; Web release Jan 31 2024, iOS Apr 2024, Android May 21 2024; genre Sandbox, mode Single-player. ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
-- Gameplay starts with water, fire, wind and earth; combining any two elements forms new ones (e.g. Plant + Smoke = Incense); all crafted elements saved to searchable sidebar; no defined goal, potentially infinite elements. ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
-- Game uses Llama 2 and Llama 3.1 to create new elements and assign emojis; unseen pairs go to generative AI then saved to a global database so the same pair always yields the same result; first finder gets First Discovery label; content filter with occasional incoherent results. ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
-- Crafting is drag-and-dropping words with emoji on top of each other; Earth+Water gives Plant, Fire+Wind gives Smoke; combining items with themselves scales concepts up; no linear progression or objective. RPS calls it a browser game and links direct play in browser. ([source](https://www.rockpapershotgun.com/infinite-craft-is-a-browser-game-in-which-you-can-craft-anything-from-god-to-minecraft))
-- Official Google Play listing: the official Infinite Craft app from neal.fun; start with Water, Fire, Earth and Wind; over 100 million combinations; be first to discover new items; tags Puzzle, Merge, Casual, Single player, Stylized; 5M+ downloads; new features save files, infinite canvas, import/export saves, better searching/sorting. ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
-- Keyboard/mouse play established by drag-and-drop descriptions; touch/mobile established by official Android/iOS apps shipping the same combine loop; no source mentions gamepad or motion controls. ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
-- neal.fun homepage lists Infinite Craft tile linking to /infinite-craft/, confirming the submitted URL is the official playable entry; direct fetch of /infinite-craft/ returns HTTP 403 Cloudflare challenge to bots while homepage loads. ([source](https://neal.fun/))
-- GitHub evidence via api.github.com search for infinite-craft neal returns only unofficial fan guides such as expitau/InfiniteCraftWiki crafting guide, no official Neal Agarwal source repository; gh CLI unavailable without GH\_TOKEN in runner, so repository\_url stays null and no engine findings are made. ([source](https://api.github.com/search/repositories?q=infinite-craft+neal&per_page=5))
+- Infinite Craft is a 2024 sandbox game developed by Neal Agarwal; platforms Web, iOS, Android; Web release January 31, 2024, iOS April 27-30 2024, Android May 21 2024; genre Sandbox, mode Single-player. ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
+- Gameplay starts with water, fire, wind and earth; combining any two elements forms new ones (e.g. Plant + Smoke = Incense, Incense + Incense = Perfume); all crafted elements saved to searchable sidebar; no defined goal, potentially infinite elements. ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
+- Game uses Llama 2 and Llama 3.1 to create new elements and assign emojis; unseen pairs go to generative AI then saved to global database so same pair always yields same result; first finder gets First Discovery label; content filter with occasional incoherent results. ([source](https://en.wikipedia.org/wiki/Infinite_Craft))
+- Crafting is drag-and-dropping words with emoji on top of each other; Earth+Water gives Plant, Fire+Wind gives Smoke; combining items with themselves scales concepts up; no linear progression or objective. ([source](https://www.rockpapershotgun.com/infinite-craft-is-a-browser-game-in-which-you-can-craft-anything-from-god-to-minecraft))
+- You start with Water, Fire, Wind and Earth, drag them into play area to combine (Water+Fire=Steam, Earth+Water=Plant); combine same item with itself to scale (Earth+Earth=Mountain); search, clear canvas without losing items, reset to wipe; goal is open-ended creation. ([source](https://dotesports.com/general/news/how-to-play-infinite-craft-from-neal-fun))
+- Official Google Play listing: official Infinite Craft app from neal.fun; start with Water, Fire, Earth and Wind; over 100 million combinations; be first to discover new items; Puzzle/Merge/Casual/Single player; save files, infinite canvas, import/export saves, better searching/sorting. ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
+- Keyboard/mouse play established by drag-and-drop descriptions on desktop browser; mobile touch established by official iOS/Android apps shipping same combine loop and infinite canvas; no source mentions gamepad or motion controls. ([source](https://play.google.com/store/apps/details?id=fun.neal.infinite.craft&hl=en))
+- neal.fun homepage lists Infinite Craft among Neal Agarwal games with direct link to /infinite-craft/, confirming it is an actual playable web game on that site. ([source](https://neal.fun/))
+- Direct fetch of https://neal.fun/infinite-craft/ returns HTTP 403 Cloudflare bot challenge in this environment, while https://neal.fun/ loads; playability is corroborated by Wikipedia release line, Dot Esports direct play instructions, and official app listing, without cloning any source. ([source](https://neal.fun/infinite-craft/))
+- GitHub evidence via \`gh api search/repositories\` could not authenticate in this environment (GH\_TOKEN missing error), so no verified official Neal Agarwal source repository could be established; no official source repo is claimed in inspected docs, so repository\_url stays null and no engine/language findings are made. ([source](https://api.github.com/search/repositories?q=infinite-craft+neal&per_page=5))
 - Existing catalog already contains this exact game at games/no-source/neal-fun--be5898efdb64 (overall 52, screenshots 32, no verified source repository), matched by identical playable URL https://neal.fun/infinite-craft/, not by title alone; existing slug is reused. ([source](https://github.com/SubmitGame/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md))
 
 ## Fictional reviews
