@@ -18,7 +18,7 @@
   "links": [
     {
       "label": "Original submission",
-      "url": "https://neal.fun/infinite-craft/"
+      "url": "https://neal.fun/infinite-craft/](https://neal.fun/infinite-craft/"
     },
     {
       "label": "Related link",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Related link",
-      "url": "https://www.ign.com/wikis/infinite-craft/How_to_Play_Infinite_Craft"
+      "url": "https://www.rockpapershotgun.com/infinite-craft-is-a-browser-game-in-which-you-can-craft-anything-from-god-to-minecraft"
     },
     {
       "label": "Related link",
@@ -38,15 +38,11 @@
     },
     {
       "label": "Related link",
-      "url": "https://www.rockpapershotgun.com/infinite-craft-is-a-browser-game-in-which-you-can-craft-anything-from-god-to-minecraft"
-    },
-    {
-      "label": "Original submission",
-      "url": "https://neal.fun/infinite-craft/](https://neal.fun/infinite-craft/"
-    },
-    {
-      "label": "Related link",
       "url": "https://neal.fun/"
+    },
+    {
+      "label": "Play game",
+      "url": "https://neal.fun/infinite-craft/"
     }
   ],
   "mechanics": [
@@ -78,10 +74,7 @@
   "screenshots": [
     {
       "observation": "Inspected gameplay frame, the game's own runtime output: white infinite canvas with small pill-shaped text-and-emoji nodes such as Peter Griffin, Mickey Mouse, Sea Unicorn, Head-first, Ghost, Aquarium, Red Dragon, Mountain Range and Donald Trump linked by thin grey lines; right sidebar lists Discoveries with emoji rows; top bars show NEAL.FUN and Infinite Craft logos. Flat DOM text, clean and readable, no lighting, texture, environment or composed scene.",
-      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/Gameplay_screenshot_of_Infinite_Craft%2C_2024.png",
-      "local_path": "screenshots/e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730.png",
-      "sha256": "e252bea3a1a3daa487abe7a07572d0689b502d631a8879d2867c9aaf6cc64730",
-      "downloaded_at": "2026-09-28T04:46:51.178414+00:00"
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/Gameplay_screenshot_of_Infinite_Craft%2C_2024.png"
     }
   ],
   "source_analysis": [
@@ -134,7 +127,7 @@
       "url": "https://github.com/SubmitGame/.github/blob/main/games/no-source/neal-fun--be5898efdb64/README.md"
     }
   ],
-  "source_url": "https://neal.fun/infinite-craft/",
+  "source_url": "https://neal.fun/infinite-craft/](https://neal.fun/infinite-craft/",
   "tags": [
     "sandbox",
     "crafting",
@@ -169,8 +162,5 @@
     "actions_run": null,
     "session_id": "ses_f0379d130ffe3wodRfDmjEAuVa",
     "prompt_sha256": "388a873680b0c919f80afa8d8c5a0a917012feaa7d61d813260c2c900fd2f065"
-  },
-  "catalog_added_at": "2026-09-27T01:22:14Z",
-  "catalog_updated_at": "2026-10-02T12:11:56.666567+00:00",
-  "previous_report_url": "https://github.com/SubmitGame/.github/blob/59b73fdb056c363c9103a50d033ab785a74839b8/games/no-source/neal-fun--be5898efdb64/README.md"
+  }
 }

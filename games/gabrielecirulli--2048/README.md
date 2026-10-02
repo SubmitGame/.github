@@ -1,6 +1,6 @@
 # 2048
 
-[Play the game](https://play2048.co/) · [View source](https://github.com/gabrielecirulli/2048) · [Previous report](https://github.com/SubmitGame/.github/blob/dc69f0ec2a3c5d29f4f21da6a97befcbf8b90374/games/gabrielecirulli--2048/README.md)
+[Play the game](https://play2048.co/) · [View source](https://github.com/gabrielecirulli/2048) · [Previous report](https://github.com/SubmitGame/.github/blob/59b73fdb056c363c9103a50d033ab785a74839b8/games/gabrielecirulli--2048/README.md)
 
 | Overall rating | Screenshot score |
 | :---: | :---: |
@@ -11,11 +11,11 @@
 
 ### Overall rating
 
-Reanalysis matches existing catalog game gabrielecirulli--2048 via verified repository URL, so the existing slug is reused. One polished 4x4 sliding-merge loop on web plus iOS/Android, with ~13.4k stars and ~17.6k forks evidencing mass validation. Excluding the target itself, it sits above flat single-screen casuals such as TypeScript-Blackjack (28), chess rot (30) and Top-10 Tension (32) on tuning and proven appeal, roughly alongside Taipo (35), T-Rex Runner (35) and Wouf Kart (38) as complete but narrow in scope, and trails Turbo Kart Rally (40), THORNMERE (46) and catalog-top moorestech (64) enormously on scope, depth and audiovisual richness. Nowhere near AAA: no 3D scene, audio design, narrative or progression. Evidence gaps: gh CLI had no auth so GitHub evidence was verified via unauthenticated api.github.com endpoints plus curl; no live playthrough instrumented, so animations, feel, performance and spawn balance are unmeasured; inspected docs and game\_manager.js confirm the rules but do not prove balance or performance.
+Reanalysis matches existing catalog game gabrielecirulli--2048 via verified repository URL, so existing slug is reused. One polished 4x4 sliding-merge loop on web plus iOS/Android, with 13405 stars and 17582 forks evidencing mass validation. Excluding the target itself, it sits above flat single-screen casuals such as TypeScript-Blackjack (28), chess rot (30) and Top-10 Tension (32) on tuning and proven appeal, roughly alongside Taipo (35), T-Rex Runner (35) and Wouf Kart (38) as complete but narrow in scope, and trails Turbo Kart Rally (40), THORNMERE (46) and catalog-top moorestech (64) enormously on scope, depth and audiovisual richness. Nowhere near AAA: no 3D scene, audio design, narrative or progression. Evidence gaps: gh CLI had no auth so GitHub evidence verified via unauthenticated api.github.com plus curl; no live playthrough instrumented, so animations, feel, performance and spawn balance are unmeasured; inspected docs and game\_manager.js confirm rules but do not prove balance or performance.
 
 ### Screenshot score
 
-First image is the game's own full-board output: clean cream board, readable color progression, gold 2048 tile with You win overlay. Coherent and iconic but flat DOM tiles with no scene, lighting or compositional depth. It ranks below richer catalog frames such as Kart Royale and Turbo Kart Rally (70), THORNMERE (60) and Taipo (55), and above plainer flat UIs such as chess rot (40) and TypeScript-Blackjack/Beachy Beachy Ball (35). Second image is a curated angled promotional crop, discounted as non-full gameplay reference. Still images only; motion and feel cannot be judged.
+Best inspected gameplay screenshot is the game's own full-board output: coherent iconic cream board with readable color progression and gold 2048 tile plus You win overlay, but flat DOM tiles with no scene, lighting, or compositional depth. Against catalog it ranks below richer frames like Kart Royale and Turbo Kart Rally (70), THORNMERE (60) and Taipo (55), and above plainer flat UIs like chess rot (40) and TypeScript-Blackjack/Beachy Beachy Ball (35). Second image is a curated angled crop, discounted. Stills only; motion and feel cannot be judged.
 
 </details>
 
@@ -25,20 +25,20 @@ First image is the game's own full-board output: clean cream board, readable col
 | --- | --- |
 | Repository created | 05 Mar 2014 · 16:03 UTC |
 | Added to catalog | 27 Sep 2026 · 01:22 UTC |
-| Last updated | 02 Oct 2026 · 11:25 UTC |
+| Last updated | 02 Oct 2026 · 12:11 UTC |
 | Documented creation models | Not established |
 
 ## Screenshots
 
 ![2048 gameplay](screenshots/2ea0f7b8349639636fdb6ffac8bb1e48f37e8beda89bab25843e0637c9f4495b.png)
 
-Inspected 584x728 PNG of the game's own output: cream page with 2048 masthead, tagline 'Join the numbers and get to the 2048 tile!', score box 12328, full 4x4 board with flat orange/gold numbered tiles (32, 8, 4, 2, 16, highlighted gold 2048 tile) and a 'You win!' overlay. Flat minimal tile design; repo author notes the frame is staged.
+Inspected full 584x728 PNG of the game's own output: cream page with 2048 masthead, tagline 'Join the numbers and get to the 2048 tile!', score box 12328, full 4x4 board with flat orange/gold numbered tiles (32, 8, 4, 2, 16, gold 2048 tile) and 'You win!' overlay. Clean readable color progression, flat DOM tiles.
 
 [Original screenshot](https://cloud.githubusercontent.com/assets/1175750/8614312/280e5dc2-26f1-11e5-9f1f-5891c3ca8b26.png)
 
 ![2048 gameplay](screenshots/bd9f3bef2985fc2ecbc88541cf9b8d696a12cae07b85511a853e0322fa4cba72.jpg)
 
-Inspected 1200x630 JPEG promotional crop: angled close-up of beveled tiles showing 8, 64, 4, glowing 256, 2, 16, 32 with soft shadows on a taupe tray. Only a partial board is visible with no score or full grid; curated reference imagery rather than a full gameplay frame.
+Inspected 1200x630 JPEG promotional crop: angled close-up of beveled tiles showing 8, 64, 4, glowing 256, 2, 16, 32 with soft shadows on taupe tray. Partial board only, no score or full grid; curated reference imagery rather than full gameplay frame, discounted for scoring.
 
 [Original screenshot](https://play2048.co/ogImage.jpg)
 
@@ -95,15 +95,15 @@ Build a minimal single-page web sliding-tile puzzle on a 4x4 grid: arrow keys an
 
 ## Source evidence
 
-- GitHub API identifies gabrielecirulli/2048 as 'The source code for 2048', primary language JavaScript, MIT license, ~13.4k stars and ~17.6k forks, homepage https://play2048.co, topics 2048/2048-game/game/javascript/online-game/puzzle-game, created 2014-03-05. gh CLI in this environment required GH\_TOKEN and errored, so evidence was verified via equivalent unauthenticated api.github.com endpoints plus curl. ([source](https://api.github.com/repos/gabrielecirulli/2048))
-- Repository page describes it as 'a small clone of 1024 based on Saming's 2048', 'Made just for fun. Play it here!', with official Play Store and App Store links and an embedded screenshot the author notes is staged ('That screenshot is fake, by the way. I never reached 2048'). ([source](https://github.com/gabrielecirulli/2048))
-- Repository file listing shows index.html, style/, meta/, js/ layout; js/ contains animframe\_polyfill.js, application.js, bind\_polyfill.js, classlist\_polyfill.js, game\_manager.js, grid.js, html\_actuator.js, keyboard\_input\_manager.js, local\_storage\_manager.js, tile.js. ([source](https://api.github.com/repos/gabrielecirulli/2048/contents/))
-- keyboard\_input\_manager.js maps arrow keys plus WASD and Vim HJKL to moves and R to restart, and implements single-touch swipe detection on the game container with touchstart/touchmove/touchend including MSPointer variants; no gamepad or motion-sensor handling observed. ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/js/keyboard_input_manager.js))
-- index.html provides mobile web-app capable viewport with HandheldFriendly/MobileOptimized tags and apple-touch icons, and how-to-play text documents arrow-key play; together with the swipe handler this establishes keyboard and touch support. ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/index.html))
-- game\_manager.js implements the full loop: 2 starting tiles, move/restart/keepPlaying events, saved-state reload, win/game-over checks with endless continuation after winning, 90% spawn of 2 vs 10% spawn of 4 on random cells. ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/js/game_manager.js))
-- Languages endpoint reports JavaScript, CSS, SCSS, HTML and Ruby by bytes, establishing JavaScript/HTML/CSS as game languages; no engine manifest observed. ([source](https://api.github.com/repos/gabrielecirulli/2048/languages))
-- play2048.co returns HTTP 200 playable page titled '2048 - Play the Free Online Game' crediting Gabriele Cirulli with game app bundle; gabrielecirulli.github.io/2048/ returns HTTP 200 with the original game DOM plus a redirect script to play2048.co, confirming a playable URL. ([source](https://play2048.co/))
-- No multiplayer, turn-passing, or networking is documented on the repo page, playable pages, or API topics; scoring is solo score plus best-score storage, establishing single-player with one human player. ([source](https://github.com/gabrielecirulli/2048))
+- gh api repos/gabrielecirulli/2048 was attempted but gh CLI errored requiring GH\_TOKEN in this Actions environment, so equivalent unauthenticated api.github.com endpoint was inspected via curl. API identifies repo as full\_name gabrielecirulli/2048, description 'The source code for 2048', primary language JavaScript, MIT license, 13405 stars, 17582 forks, homepage https://play2048.co, topics 2048/2048-game/game/javascript/online-game/puzzle-game, created 2014-03-05, default branch master. ([source](https://api.github.com/repos/gabrielecirulli/2048))
+- Repository README describes it as 'A small clone of 1024, based on Saming's 2048', 'Made just for fun. Play it here!', with official Play Store and App Store links, and notes the embedded screenshot is staged ('That screenshot is fake, by the way. I never reached 2048'). ([source](https://github.com/gabrielecirulli/2048))
+- Repository file listing shows index.html, style/, meta/, js/ layout with .jshintrc, Rakefile, LICENSE.txt, CONTRIBUTING.md; js/ contents support a dependency-free DOM game with no engine manifest. ([source](https://api.github.com/repos/gabrielecirulli/2048/contents/))
+- keyboard\_input\_manager.js maps arrow keys (37-40) plus WASD (W/A/S/D) and Vim HJKL (H/J/K/L) to moves and R to restart, and implements single-touch swipe detection on .game-container via touchstart/touchmove/touchend with MSPointer variants; no gamepad, joystick, or motion-sensor handling observed. ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/js/keyboard_input_manager.js))
+- index.html documents arrow-key play in how-to-play text and provides mobile web-app capable viewport with HandheldFriendly/MobileOptimized tags and apple-touch icons; together with the swipe handler this establishes keyboard and touch support. ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/index.html))
+- game\_manager.js implements the full loop: size-parameter grid, 2 startTiles, move/restart/keepPlaying events, saved-state reload, 90% spawn of 2 vs 10% spawn of 4 on random cells, win check at 2048 with endless continuation, and game-over when no moves remain. ([source](https://raw.githubusercontent.com/gabrielecirulli/2048/master/js/game_manager.js))
+- Languages endpoint reports JavaScript 23481 bytes, CSS 21725, SCSS 12083, HTML 3988, Ruby 300, establishing JavaScript/HTML/CSS as game languages; no engine, rendering, physics, or audio framework established. ([source](https://api.github.com/repos/gabrielecirulli/2048/languages))
+- https://play2048.co/ returns HTTP 200 with title '2048 - Play the Free Online Game' crediting Gabriele Cirulli and og:image ogImage.jpg; https://gabrielecirulli.github.io/2048/ returns HTTP 200 with the original game DOM, confirming verified playable URLs, not just repo or promo pages. ([source](https://play2048.co/))
+- No multiplayer, turn-passing, networking, gamepad, or device-motion support is documented on the repo page, playable pages, or API topics; scoring is solo score plus best-score local storage, establishing single-player with 1 human player. ([source](https://github.com/gabrielecirulli/2048))
 
 ## Fictional reviews
 
@@ -121,3 +121,4 @@ Treat these as illustrative, not real user reviews.
 - [Play Store app](https://play.google.com/store/apps/details?id=com.gabrielecirulli.app2048)
 - [App Store app](https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805)
 - [Original submission](https://play2048.co/)
+- [Original submission](https://github.com/gabrielecirulli/2048]%28https://github.com/gabrielecirulli/2048)
