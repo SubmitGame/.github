@@ -1,0 +1,11 @@
+{
+  "run": "run-001",
+  "directory": "/home/runner/work/.github/.github/work/game-batches/36999426214-1/run-001",
+  "status": "finished",
+  "session_id": "ses_f03b1552effeSZgh1sD74xmLhZ",
+  "live_url": "https://solving-til-abs-became.trycloudflare.com/L2hvbWUvcnVubmVyL3dvcmsvLmdpdGh1Yi8uZ2l0aHViL3dvcmsvZ2FtZS1iYXRjaGVzLzM2OTk5NDI2MjE0LTEvcnVuLTAwMQ/session/ses_f03b1552effeSZgh1sD74xmLhZ",
+  "prompt_sha256": "9614123173ca6c9a5d3067e10b85d33369469c1783afd7e88dc53074a4e5870b",
+  "cli_pid": 2796,
+  "exit_code": 0,
+  "elapsed_seconds": 63.28
+}
