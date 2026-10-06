@@ -81,24 +81,15 @@
   "screenshots": [
     {
       "url": "https://raw.githubusercontent.com/yefry08/plantas-vs-ia/master/docs/gameplay-langostas.png",
-      "observation": "Inspected 1280x720 gameplay frame Nivel 15 Marea de langostas: 5-lane by 9-column grid with sunflowers, pea shooters, ice shooter, wall-nut, projectiles in flight, green health bars, top HUD with sun 1800, plant cards with costs 50-175, shovel, tokens 2, two AI cards, pause II and x1 buttons, level progress bar, left drone column, right robot roster with locust swarm and two robots, companion Transformer speech bubble. Clearly the game's own runtime output.",
-      "local_path": "screenshots/a2bc454c13cc838f820a4b3af133e0369f31912188611e4c2da2b0313dc2952a.png",
-      "sha256": "a2bc454c13cc838f820a4b3af133e0369f31912188611e4c2da2b0313dc2952a",
-      "downloaded_at": "2026-10-06T15:21:00.164683+00:00"
+      "observation": "Inspected 1280x720 gameplay frame Nivel 15 Marea de langostas: 5-lane by 9-column grid with sunflowers, pea shooters, ice shooter, wall-nut, projectiles in flight, green health bars, top HUD with sun 1800, plant cards with costs 50-175, shovel, tokens 2, two AI cards, pause II and x1 buttons, level progress bar, left drone column, right robot roster with locust swarm and two robots, companion Transformer speech bubble. Clearly the game's own runtime output."
     },
     {
       "url": "https://raw.githubusercontent.com/yefry08/plantas-vs-ia/master/docs/gameplay-claudios.png",
-      "observation": "Inspected 1280x720 gameplay frame Nivel 16 Los Claudios: same lane-defense layout with sun 800, tokens 16, full plant rows, wall-nuts, green projectiles, health bars, companion speech bubble, one beige robot entering from the right on a lavender zone background. Clearly the game's own runtime output.",
-      "local_path": "screenshots/13715b6907b0b0bd793dd8f6fb0d33dd4b8819fdcfa3fa79fc2101a8649a1ca8.png",
-      "sha256": "13715b6907b0b0bd793dd8f6fb0d33dd4b8819fdcfa3fa79fc2101a8649a1ca8",
-      "downloaded_at": "2026-10-06T15:21:00.210275+00:00"
+      "observation": "Inspected 1280x720 gameplay frame Nivel 16 Los Claudios: same lane-defense layout with sun 800, tokens 16, full plant rows, wall-nuts, green projectiles, health bars, companion speech bubble, one beige robot entering from the right on a lavender zone background. Clearly the game's own runtime output."
     },
     {
       "url": "https://raw.githubusercontent.com/yefry08/plantas-vs-ia/master/docs/menu.png",
-      "observation": "Inspected 1280x720 menu frame: title Plantas vs IA, subtitle Defiende tu jardín, buttons Jugar, Créditos, Sonido NO, Música NO, Borrar progreso, Niveles completados 7/24, lineup of five plants and five parody robots on a grassy field. Menu/title card, not active gameplay; discounted for graphics scoring.",
-      "local_path": "screenshots/c0b6abf17e92c31e239b9176712a33d19808af53b3c23d47992fab1613b5521b.png",
-      "sha256": "c0b6abf17e92c31e239b9176712a33d19808af53b3c23d47992fab1613b5521b",
-      "downloaded_at": "2026-10-06T15:21:00.251154+00:00"
+      "observation": "Inspected 1280x720 menu frame: title Plantas vs IA, subtitle Defiende tu jardín, buttons Jugar, Créditos, Sonido NO, Música NO, Borrar progreso, Niveles completados 7/24, lineup of five plants and five parody robots on a grassy field. Menu/title card, not active gameplay; discounted for graphics scoring."
     }
   ],
   "screenshot_based_score": {
@@ -177,17 +168,10 @@
     {
       "label": "Source README",
       "url": "https://github.com/yefry08/plantas-vs-ia/blob/master/README.md"
+    },
+    {
+      "label": "Original submission",
+      "url": "https://github.com/yefry08/plantas-vs-ia"
     }
-  ],
-  "repository_created_at": "2026-09-26T02:28:09Z",
-  "analysis": {
-    "analyzed_at": "2026-10-06T15:20:57.464148+00:00",
-    "model": "opencode/muse-spark-1.3-contributor-free",
-    "actions_run": "https://github.com/SubmitGame/.github/actions/runs/37486381550/job/112347347148",
-    "session_id": "ses_eee33e33dffeEHbyJJ6Ff05P3T",
-    "prompt_sha256": "317b953755df0e560d2a174a70fce775ecb08fd0059fcf10c981f19ec2cd6fa9"
-  },
-  "catalog_added_at": "2026-10-06T15:10:33.208773+00:00",
-  "catalog_updated_at": "2026-10-06T15:20:57.464148+00:00",
-  "previous_report_url": "https://github.com/SubmitGame/.github/blob/ac433cf234133c9a7fc3efe8a3884f06d3a534b8/games/yefry08--plantas-vs-ia/README.md"
+  ]
 }
