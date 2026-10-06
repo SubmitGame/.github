@@ -137,6 +137,7 @@ Add games with `./scripts/games.sh <game-url> [more-urls...]` or `./scripts/game
 - [DERELICT](games/no-source/x-com--e6b37156ecf7/README.md) — overall 50/100; screenshots 62/100; no verified source repository
 - [Kart Royale](games/ryancampbell--kart-royale/README.md) — overall 50/100; screenshots 70/100
 - [PirateSeas](games/AndreiBesliu--PirateSeas/README.md) — overall 50/100; screenshots not scored
+- [Plantas vs IA](games/yefry08--plantas-vs-ia/README.md) — overall 50/100; screenshots not scored
 - [ZOMBIES LAN](games/mitotkp--ZOMBIES-LAN/README.md) — overall 50/100; screenshots not scored
 - [HOMUNCULUS](games/Efkrdnz--opus-test-game/README.md) — overall 49/100; screenshots 55/100
 - [Frosty Tactics — A Lamina Runica · The Runic Blade](games/Ninaji--Frosty-Tatics/README.md) — overall 48/100; screenshots not scored
