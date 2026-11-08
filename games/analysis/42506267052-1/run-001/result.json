@@ -1,0 +1,11 @@
+{
+  "run": "run-001",
+  "directory": "/home/runner/work/.github/.github/work/game-batches/42506267052-1/run-001",
+  "status": "failed",
+  "session_id": "ses_e43beab59ffenaYUjp2ydq0t4x",
+  "live_url": "http://127.0.0.1:4096/L2hvbWUvcnVubmVyL3dvcmsvLmdpdGh1Yi8uZ2l0aHViL3dvcmsvZ2FtZS1iYXRjaGVzLzQyNTA2MjY3MDUyLTEvcnVuLTAwMQ/session/ses_e43beab59ffenaYUjp2ydq0t4x",
+  "prompt_sha256": "07fb4893daaf755c3c3bc96caf05b8ac908594367c4f7e62187da6488e88cde8",
+  "cli_pid": 2667,
+  "exit_code": 1,
+  "elapsed_seconds": 2.01
+}
